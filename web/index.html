@@ -7,11 +7,43 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Mac Offers Finder</h1>
-    <div id="meta">Lade Daten ...</div>
-    <div id="bestOffer"></div>
-    <div id="offers"></div>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">GitHub Pages App</p>
+        <h1>Mac Offers Finder</h1>
+        <p class="hero-text">
+          Live gescrapte Angebote von MacTrade und Apple Refurbished –
+          mit Fokus auf Preis-Leistung.
+        </p>
+      </div>
+      <div class="hero-box">
+        <div class="hero-stat">
+          <span id="offerCount">–</span>
+          <small>Angebote</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="topbar">
+      <div id="meta" class="meta-box">Lade Daten ...</div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Bestes Angebot</h2>
+      </div>
+      <div id="bestOffer"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Alle Angebote</h2>
+      </div>
+      <div id="offers" class="offers-grid"></div>
+    </section>
   </main>
 
   <script src="./app.js"></script>
