@@ -1,1 +1,40 @@
-n/a
+name: Scrape live offers
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm install
+
+      - name: Playwright Browser installieren
+        run: npx playwright install --with-deps chromium
+
+      - name: Scraper ausführen
+        run: npm run scrape
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/offers.json
+          git diff --cached --quiet || git commit -m "chore: update offers data"
+
+      - name: Änderungen pushen
+        run: git push
