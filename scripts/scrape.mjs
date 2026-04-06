@@ -8,17 +8,17 @@ const SOURCES = [
   {
     key: "mactrade-vorgaenger",
     type: "mactrade",
-    url: "https://cb.mactrade.de/restposten/vorgaengermodelle/mac/"
+    url: "https://www.mactrade.de/restposten/vorgaengermodelle/mac/"
   },
   {
     key: "mactrade-gebraucht",
     type: "mactrade",
-    url: "https://cb.mactrade.de/restposten/gebrauchtware/mac/"
+    url: "https://www.mactrade.de/restposten/gebrauchtware/mac/"
   },
   {
     key: "mactrade-aware",
     type: "mactrade",
-    url: "https://cb.mactrade.de/restposten/a-ware/mac/"
+    url: "https://www.mactrade.de/restposten/a-ware/mac/"
   },
   {
     key: "apple-refurbished-mbp",
