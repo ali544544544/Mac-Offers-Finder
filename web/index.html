@@ -27,24 +27,62 @@
   </header>
 
   <main class="container page">
-    <section class="topbar">
-      <div id="meta" class="meta-box">Lade Daten ...</div>
-    </section>
+  <section class="topbar">
+    <div id="meta" class="meta-box">Lade Daten ...</div>
+  </section>
 
-    <section class="section">
-      <div class="section-head">
-        <h2>Bestes Angebot</h2>
-      </div>
-      <div id="bestOffer"></div>
-    </section>
+  <section class="filters">
+    <div class="filter-grid">
+      <label>
+        Suche
+        <input id="searchFilter" type="text" placeholder="z. B. M4 Max 36 GB">
+      </label>
 
-    <section class="section">
-      <div class="section-head">
-        <h2>Alle Angebote</h2>
-      </div>
-      <div id="offers" class="offers-grid"></div>
-    </section>
-  </main>
+      <label>
+        Quelle
+        <select id="sourceFilter">
+          <option value="">Alle</option>
+        </select>
+      </label>
+
+      <label>
+        Modell
+        <select id="modelFilter">
+          <option value="">Alle</option>
+        </select>
+      </label>
+
+      <label>
+        Max. Preis
+        <input id="maxPriceFilter" type="number" placeholder="z. B. 2500">
+      </label>
+
+      <label>
+        Min. RAM
+        <input id="minRamFilter" type="number" placeholder="z. B. 16">
+      </label>
+
+      <label>
+        Min. SSD (GB)
+        <input id="minStorageFilter" type="number" placeholder="z. B. 512">
+      </label>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Bestes Angebot</h2>
+    </div>
+    <div id="bestOffer"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Alle Angebote</h2>
+    </div>
+    <div id="offers" class="offers-grid"></div>
+  </section>
+</main>
 
   <script src="./app.js"></script>
 </body>
