@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "scrape": "node scripts/scrape.mjs",
+    "render:report": "node scripts/render-report.mjs",
     "serve": "python3 -m http.server 8080",
     "start": "npm run serve"
   },
