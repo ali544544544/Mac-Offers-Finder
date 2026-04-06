@@ -1,10 +1,7 @@
 function cleanup(value) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;/g, "'")
-    .replace(/&amp;/g, "&")
+    .replace(/&[#\w]+;/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -37,12 +34,12 @@ function parseStorageGb(text) {
 }
 
 function parseCpuCores(text) {
-  const m = text.match(/(\d+)\W*Core CPU/i);
+  const m = text.match(/(\d+)\D{0,15}Core\s*CPU/i);
   return m ? Number(m[1]) : null;
 }
 
 function parseGpuCores(text) {
-  const m = text.match(/(\d+)\W*Core GPU/i);
+  const m = text.match(/(\d+)\D{0,15}Core\s*GPU/i);
   return m ? Number(m[1]) : null;
 }
 

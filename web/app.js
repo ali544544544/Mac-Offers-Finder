@@ -8,6 +8,7 @@ const searchFilterEl = document.getElementById("searchFilter");
 const sortFilterEl = document.getElementById("sortFilter");
 const sourceFilterEl = document.getElementById("sourceFilter");
 const modelFilterEl = document.getElementById("modelFilter");
+const colorFilterEl = document.getElementById("colorFilter");
 const maxPriceFilterEl = document.getElementById("maxPriceFilter");
 const minRamFilterEl = document.getElementById("minRamFilter");
 const minStorageFilterEl = document.getElementById("minStorageFilter");
@@ -96,6 +97,7 @@ function renderOfferCard(offer, isBest = false, index = 0) {
       <div class="offer-details">
         <div><span>Zustand</span><strong>${esc(offer.condition || "-")}</strong></div>
         <div><span>Modell</span><strong>${esc(offer.model || "-")}</strong></div>
+        <div><span>Farbe</span><strong>${esc(offer.color || "-")}</strong></div>
         <div><span>CPU</span><strong>${offer.cpuCores ? offer.cpuCores + " Kerne" : "-"}</strong></div>
         <div><span>GPU</span><strong>${offer.gpuCores ? offer.gpuCores + " Kerne" : "-"}</strong></div>
       </div>
@@ -116,9 +118,11 @@ function uniqueSorted(values) {
 function populateFilters(offers) {
   const currentSource = sourceFilterEl.value;
   const currentModel = modelFilterEl.value;
+  const currentColor = colorFilterEl.value;
 
   sourceFilterEl.innerHTML = `<option value="">Alle Quellen</option>`;
   modelFilterEl.innerHTML = `<option value="">Alle Modelle</option>`;
+  colorFilterEl.innerHTML = `<option value="">Beliebig</option>`;
 
   uniqueSorted(offers.map(o => o.sourceKey)).forEach((source) => {
     sourceFilterEl.innerHTML += `<option value="${esc(source)}">${esc(source)}</option>`;
@@ -128,14 +132,20 @@ function populateFilters(offers) {
     modelFilterEl.innerHTML += `<option value="${esc(model)}">${esc(model)}</option>`;
   });
 
+  uniqueSorted(offers.map(o => o.color)).forEach((color) => {
+    colorFilterEl.innerHTML += `<option value="${esc(color)}">${esc(color)}</option>`;
+  });
+
   sourceFilterEl.value = currentSource;
   modelFilterEl.value = currentModel;
+  colorFilterEl.value = currentColor;
 }
 
 function filteredOffers() {
   const search = (searchFilterEl.value || "").toLowerCase().trim();
   const source = sourceFilterEl.value;
   const model = modelFilterEl.value;
+  const color = colorFilterEl.value;
   const maxPrice = Number(maxPriceFilterEl.value || 0);
   const minRam = Number(minRamFilterEl.value || 0);
   const minStorage = Number(minStorageFilterEl.value || 0);
@@ -145,12 +155,13 @@ function filteredOffers() {
     if (!/macbook pro/i.test(offer.title || "")) return false;
 
     if (search) {
-      const haystack = `${offer.title} ${offer.chip} ${offer.model} ${offer.vendor} ${offer.description}`.toLowerCase();
+      const haystack = `${offer.title} ${offer.chip} ${offer.model} ${offer.color} ${offer.vendor} ${offer.description}`.toLowerCase();
       if (!haystack.includes(search)) return false;
     }
 
     if (source && offer.sourceKey !== source) return false;
     if (model && offer.model !== model) return false;
+    if (color && offer.color !== color) return false;
     if (maxPrice && Number(offer.price || 0) > maxPrice) return false;
     if (minRam && Number(offer.ramGb || 0) < minRam) return false;
     if (minStorage && Number(offer.storageGb || 0) < minStorage) return false;
@@ -216,6 +227,7 @@ async function init() {
       sortFilterEl,
       sourceFilterEl,
       modelFilterEl,
+      colorFilterEl,
       maxPriceFilterEl,
       minRamFilterEl,
       minStorageFilterEl

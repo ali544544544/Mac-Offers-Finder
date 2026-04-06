@@ -1,11 +1,7 @@
 function cleanup(value) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&quot;/g, '"')
-    .replace(/&#0*39;/g, "'")
-    .replace(/&#x27;/g, "'")
-    .replace(/&amp;/g, "&")
+    .replace(/&[#\w]+;/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -38,12 +34,12 @@ function parseStorageGb(text) {
 }
 
 function parseCpuCores(text) {
-  const m = text.match(/(\d+)\W*Core CPU/i);
+  const m = text.match(/(\d+)\D{0,15}Core\s*CPU/i);
   return m ? Number(m[1]) : null;
 }
 
 function parseGpuCores(text) {
-  const m = text.match(/(\d+)\W*Core GPU/i);
+  const m = text.match(/(\d+)\D{0,15}Core\s*GPU/i);
   return m ? Number(m[1]) : null;
 }
 
@@ -60,6 +56,11 @@ function parseChip(text) {
 function parseScreenInch(text) {
   const m = text.match(/(\d{1,2}(?:[.,]\d)?)\s*(?:''|"|Zoll)/i);
   return m ? Number(m[1].replace(",", ".")) : null;
+}
+
+function parseColor(text) {
+  const colors = ["Space Grau", "Space Schwarz", "Silber", "Mitternacht", "Polarstern", "Himmelblau"];
+  return colors.find((c) => text.toLowerCase().includes(c.toLowerCase())) || null;
 }
 
 function deriveModel(title) {
@@ -129,6 +130,7 @@ export function parseMacTradeListing(html, source) {
       cpuCores: parseCpuCores(title),
       gpuCores: parseGpuCores(title),
       screenInches: parseScreenInch(title),
+      color: parseColor(title),
       productId: null,
       link
     });
@@ -176,6 +178,7 @@ export function parseMacTradeDetail(html, baseOffer) {
     storageGb: parseStorageGb(combinedText) ?? baseOffer.storageGb,
     cpuCores: parseCpuCores(combinedText) ?? baseOffer.cpuCores,
     gpuCores: parseGpuCores(combinedText) ?? baseOffer.gpuCores,
-    screenInches: parseScreenInch(combinedText) ?? baseOffer.screenInches
+    screenInches: parseScreenInch(combinedText) ?? baseOffer.screenInches,
+    color: parseColor(combinedText) || baseOffer.color || null
   };
 }

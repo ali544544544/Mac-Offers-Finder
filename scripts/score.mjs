@@ -10,14 +10,14 @@ function computeScore(offer) {
   const yearBonus = safeNumber(offer.year, 2022) - 2020;
 
   const performancePoints =
-    ram * 2.0 +
-    storage / 128 +
-    cpu * 1.8 +
-    gpu * 1.2 +
-    yearBonus * 1.5;
+    ram * 3.0 +
+    (storage / 128) * 2.5 +
+    cpu * 2.5 +
+    gpu * 1.5 +
+    yearBonus * 5.0;
 
   const price = safeNumber(offer.price, 999999);
-  const valueScore = Number((performancePoints / price * 1000).toFixed(3));
+  const valueScore = Number((Math.pow(performancePoints, 1.25) / price * 100).toFixed(3));
 
   return {
     performancePoints: Number(performancePoints.toFixed(2)),
