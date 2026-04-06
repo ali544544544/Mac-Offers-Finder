@@ -3,6 +3,15 @@ const bestOfferEl = document.getElementById("bestOffer");
 const offersEl = document.getElementById("offers");
 const offerCountEl = document.getElementById("offerCount");
 
+const searchFilterEl = document.getElementById("searchFilter");
+const sourceFilterEl = document.getElementById("sourceFilter");
+const modelFilterEl = document.getElementById("modelFilter");
+const maxPriceFilterEl = document.getElementById("maxPriceFilter");
+const minRamFilterEl = document.getElementById("minRamFilter");
+const minStorageFilterEl = document.getElementById("minStorageFilter");
+
+let allOffers = [];
+
 function euro(value) {
   const num = Number(value);
   if (!Number.isFinite(num)) return "-";
@@ -59,6 +68,74 @@ function renderOfferCard(offer, isBest = false) {
   `;
 }
 
+function uniqueSorted(values) {
+  return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), "de"));
+}
+
+function populateFilters(offers) {
+  const currentSource = sourceFilterEl.value;
+  const currentModel = modelFilterEl.value;
+
+  sourceFilterEl.innerHTML = `<option value="">Alle</option>`;
+  modelFilterEl.innerHTML = `<option value="">Alle</option>`;
+
+  uniqueSorted(offers.map(o => o.sourceKey)).forEach((source) => {
+    sourceFilterEl.innerHTML += `<option value="${esc(source)}">${esc(source)}</option>`;
+  });
+
+  uniqueSorted(offers.map(o => o.model)).forEach((model) => {
+    modelFilterEl.innerHTML += `<option value="${esc(model)}">${esc(model)}</option>`;
+  });
+
+  sourceFilterEl.value = currentSource;
+  modelFilterEl.value = currentModel;
+}
+
+function filteredOffers() {
+  const search = (searchFilterEl.value || "").toLowerCase().trim();
+  const source = sourceFilterEl.value;
+  const model = modelFilterEl.value;
+  const maxPrice = Number(maxPriceFilterEl.value || 0);
+  const minRam = Number(minRamFilterEl.value || 0);
+  const minStorage = Number(minStorageFilterEl.value || 0);
+
+  return allOffers.filter((offer) => {
+    if (!/macbook pro/i.test(offer.title || "")) return false;
+
+    if (search) {
+      const haystack = `${offer.title} ${offer.chip} ${offer.model} ${offer.vendor}`.toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+
+    if (source && offer.sourceKey !== source) return false;
+    if (model && offer.model !== model) return false;
+    if (maxPrice && Number(offer.price || 0) > maxPrice) return false;
+    if (minRam && Number(offer.ramGb || 0) < minRam) return false;
+    if (minStorage && Number(offer.storageGb || 0) < minStorage) return false;
+
+    return true;
+  });
+}
+
+function render() {
+  const offers = filteredOffers().sort((a, b) => Number(b.valueScore || 0) - Number(a.valueScore || 0));
+
+  if (offerCountEl) {
+    offerCountEl.textContent = String(offers.length);
+  }
+
+  metaEl.textContent = `${offers.length} passende MacBook Pro Angebote`;
+
+  if (!offers.length) {
+    bestOfferEl.innerHTML = `<div class="empty-box">Keine Angebote passend zu den Filtern.</div>`;
+    offersEl.innerHTML = "";
+    return;
+  }
+
+  bestOfferEl.innerHTML = renderOfferCard(offers[0], true);
+  offersEl.innerHTML = offers.map((offer) => renderOfferCard(offer)).join("");
+}
+
 async function init() {
   try {
     metaEl.textContent = "Lade Daten …";
@@ -72,30 +149,23 @@ async function init() {
     }
 
     const data = await response.json();
-    console.log("offers.json geladen:", data);
 
-    const offers = Array.isArray(data.offers) ? data.offers : [];
+    allOffers = (Array.isArray(data.offers) ? data.offers : []).filter((offer) =>
+      /macbook pro/i.test(offer.title || "")
+    );
 
-    if (offerCountEl) {
-      offerCountEl.textContent = String(offers.length);
-    }
+    populateFilters(allOffers);
 
-    metaEl.textContent = `${offers.length} Angebote geladen · Letztes Update: ${data.updatedAt ?? "-"}`;
+    [
+      searchFilterEl,
+      sourceFilterEl,
+      modelFilterEl,
+      maxPriceFilterEl,
+      minRamFilterEl,
+      minStorageFilterEl
+    ].forEach((el) => el.addEventListener("input", render));
 
-    if (offers.length === 0) {
-      bestOfferEl.innerHTML = `<div class="empty-box">Keine Angebote vorhanden.</div>`;
-      offersEl.innerHTML = "";
-      return;
-    }
-
-    const sorted = [...offers].sort((a, b) => {
-      const av = Number(a.valueScore ?? 0);
-      const bv = Number(b.valueScore ?? 0);
-      return bv - av;
-    });
-
-    bestOfferEl.innerHTML = renderOfferCard(sorted[0], true);
-    offersEl.innerHTML = sorted.map((offer) => renderOfferCard(offer)).join("");
+    render();
   } catch (error) {
     console.error("Fehler in init():", error);
     metaEl.textContent = "Fehler beim Laden";
