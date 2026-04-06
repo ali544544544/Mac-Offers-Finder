@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import fs from "node:fs/promises";
-import { parseMacTradeOffers } from "./parse-mactrade.mjs";
-import { parseAppleOffers } from "./parse-apple.mjs";
+import { parseMacTradeListing, parseMacTradeDetail } from "./parse-mactrade.mjs";
+import { parseAppleListing, parseAppleDetail } from "./parse-apple.mjs";
 import { enrichOffers, pickBestOffers } from "./score.mjs";
 
 const SOURCES = [
@@ -28,31 +28,75 @@ async function fetchHtml(page, url) {
   return await page.content();
 }
 
-async function main() {
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({
+async function scrapeSource(browser, source) {
+  const listPage = await browser.newPage({
     locale: "de-DE",
     userAgent:
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36"
   });
 
+  const listingHtml = await fetchHtml(listPage, source.url);
+
+  let listingOffers = [];
+  if (source.type === "mactrade") {
+    listingOffers = parseMacTradeListing(listingHtml, source);
+  } else if (source.type === "apple") {
+    listingOffers = parseAppleListing(listingHtml, source);
+  }
+
+  await listPage.close();
+
+  const detailedOffers = [];
+
+  for (const offer of listingOffers) {
+    const detailPage = await browser.newPage({
+      locale: "de-DE",
+      userAgent:
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36"
+    });
+
+    try {
+      if (!offer.link) {
+        detailedOffers.push(offer);
+        await detailPage.close();
+        continue;
+      }
+
+      console.log(`Detail: ${offer.link}`);
+      const detailHtml = await fetchHtml(detailPage, offer.link);
+
+      let merged = offer;
+      if (source.type === "mactrade") {
+        merged = parseMacTradeDetail(detailHtml, offer);
+      } else if (source.type === "apple") {
+        merged = parseAppleDetail(detailHtml, offer);
+      }
+
+      detailedOffers.push(merged);
+    } catch (error) {
+      console.error(`Fehler in Detailseite ${offer.link}:`, error.message);
+      detailedOffers.push(offer);
+    } finally {
+      await detailPage.close();
+    }
+  }
+
+  return detailedOffers;
+}
+
+async function main() {
+  const browser = await chromium.launch({ headless: true });
+
   const allOffers = [];
   const sourceResults = [];
 
   for (const source of SOURCES) {
-    console.log(`Scrape: ${source.url}`);
+    console.log(`Scrape Listing: ${source.url}`);
 
     try {
-      const html = await fetchHtml(page, source.url);
-
-      let offers = [];
-      if (source.type === "mactrade") {
-        offers = parseMacTradeOffers(html, source);
-      } else if (source.type === "apple") {
-        offers = parseAppleOffers(html, source);
-      }
-
+      const offers = await scrapeSource(browser, source);
       const enriched = enrichOffers(offers);
+
       allOffers.push(...enriched);
 
       sourceResults.push({
@@ -64,6 +108,7 @@ async function main() {
       });
     } catch (error) {
       console.error(`Fehler bei ${source.url}:`, error.message);
+
       sourceResults.push({
         key: source.key,
         url: source.url,
@@ -86,6 +131,7 @@ async function main() {
 
   await fs.writeFile("data/offers.json", JSON.stringify(result, null, 2), "utf8");
   console.log(`Fertig. ${allOffers.length} Angebote gespeichert.`);
+
   await browser.close();
 }
 
