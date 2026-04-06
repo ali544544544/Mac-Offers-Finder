@@ -37,12 +37,16 @@ async function scrapeSource(browser, source) {
 
   const listingHtml = await fetchHtml(listPage, source.url);
 
-  let listingOffers = [];
-  if (source.type === "mactrade") {
-    listingOffers = parseMacTradeListing(listingHtml, source);
-  } else if (source.type === "apple") {
-    listingOffers = parseAppleListing(listingHtml, source);
-  }
+        let merged = offer;
+      if (source.type === "mactrade") {
+        merged = parseMacTradeDetail(detailHtml, offer);
+      } else if (source.type === "apple") {
+        merged = parseAppleDetail(detailHtml, offer);
+      }
+
+      if (merged) {
+        detailedOffers.push(merged);
+      }
 
   await listPage.close();
 
