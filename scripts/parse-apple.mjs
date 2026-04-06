@@ -105,15 +105,26 @@ function findProductJsonLd(objects) {
 }
 
 export function parseAppleListing(html, source) {
-  const links = [...html.matchAll(/href="(\/de\/shop\/product\/[^"]+)"/gi)];
+  // Capture both the href AND the anchor text (which contains all product data)
+  const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
 
   const seen = new Set();
   const offers = [];
+  let index = 0;
 
-  for (const [index, match] of links.entries()) {
+  for (const match of html.matchAll(anchorRe)) {
     const link = absUrl(match[1], source.url);
     if (!link || seen.has(link)) continue;
     seen.add(link);
+
+    // Clean up the anchor text to get the product title
+    const rawTitle = cleanup(match[2]);
+    if (!rawTitle || rawTitle.length < 10) continue; // skip empty/nav links
+
+    // Only keep MacBook Pros at the listing stage too
+    if (!/macbook pro/i.test(rawTitle)) continue;
+
+    const combinedText = rawTitle;
 
     offers.push({
       id: `${source.key}-${index + 1}`,
@@ -121,23 +132,24 @@ export function parseAppleListing(html, source) {
       sourceType: source.type,
       sourceUrl: source.url,
       vendor: "Apple",
-      title: "Apple Refurbished Mac",
+      title: rawTitle,
       variant: "",
-      model: null,
-      chip: null,
-      year: null,
+      model: deriveModel(rawTitle),
+      chip: parseChip(combinedText),
+      year: parseYear(combinedText),
       condition: "refurbished",
       price: null,
       currency: "EUR",
-      ramGb: null,
-      storageGb: null,
-      cpuCores: null,
-      gpuCores: null,
-      screenInches: null,
+      ramGb: parseRamGb(combinedText),
+      storageGb: parseStorageGb(combinedText),
+      cpuCores: parseCpuCores(combinedText),
+      gpuCores: parseGpuCores(combinedText),
+      screenInches: parseScreenInch(combinedText),
       productId: null,
-      color: null,
+      color: parseColor(combinedText),
       link
     });
+    index++;
   }
 
   return offers;

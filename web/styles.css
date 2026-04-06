@@ -404,11 +404,11 @@ body {
 .spec-tile {
   background: var(--input-bg);
   border: 1px solid var(--input-border);
-  border-radius: 12px;
-  padding: 12px 10px;
+  border-radius: 10px;
+  padding: 8px 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   transition: border-color 0.2s;
 }
 
@@ -417,7 +417,7 @@ body {
 }
 
 .spec-icon {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1;
   flex-shrink: 0;
 }
@@ -430,7 +430,7 @@ body {
 }
 
 .spec-label {
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -438,7 +438,7 @@ body {
 }
 
 .spec-value {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--text-main);
   white-space: nowrap;
