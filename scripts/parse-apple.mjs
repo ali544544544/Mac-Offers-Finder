@@ -105,27 +105,32 @@ function findProductJsonLd(objects) {
 }
 
 export function parseAppleListing(html, source) {
-  // Capture both the href AND the anchor text (which contains all product data)
-  // Re-designed for modern Apple Store classes like rf-refurb-card-link
-  const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
-
-  const seen = new Set();
+  // Capture the entire product tile block to reliably associate title, price and image
+  const tileRe = /<div[^>]+class="[^"]*rf-refurb-producttile[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/gi;
+  
   const offers = [];
   let index = 0;
 
-  for (const match of html.matchAll(anchorRe)) {
-    const link = absUrl(match[1], source.url);
-    if (!link || seen.has(link)) continue;
-    seen.add(link);
+  for (const match of html.matchAll(tileRe)) {
+    const tileHtml = match[1];
+    
+    // 1. Link & Title
+    const linkMatch = tileHtml.match(/<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
+    if (!linkMatch) continue;
+    
+    const link = absUrl(linkMatch[1], source.url);
+    const title = cleanup(linkMatch[2]);
+    if (!title || title.length < 10) continue; 
+    if (!/macbook pro/i.test(title)) continue;
 
-    // Clean up the anchor text to get the product title
-    const rawTitle = cleanup(match[2]);
-    if (!rawTitle || rawTitle.length < 10) continue; // skip empty/nav links
+    // 2. Price
+    // Price typically looks like: <span class="visuallyhidden">Jetzt</span>1.519,00 €
+    const priceMatch = tileHtml.match(/(\d[\d.,]*)\s*€/);
+    const price = priceMatch ? parseEuro(priceMatch[1]) : null;
 
-    // Only keep MacBook Pros at the listing stage too
-    if (!/macbook pro/i.test(rawTitle)) continue;
-
-    const combinedText = rawTitle;
+    // 3. Image
+    const imgMatch = tileHtml.match(/<img[^>]+src="([^"]+)"/i);
+    const imageUrl = imgMatch ? absUrl(imgMatch[1], source.url) : null;
 
     offers.push({
       id: `${source.key}-${index + 1}`,
@@ -133,24 +138,59 @@ export function parseAppleListing(html, source) {
       sourceType: source.type,
       sourceUrl: source.url,
       vendor: "Apple",
-      title: rawTitle,
+      title,
       variant: "",
-      model: deriveModel(rawTitle),
-      chip: parseChip(combinedText),
-      year: parseYear(combinedText),
+      model: deriveModel(title),
+      chip: parseChip(title),
+      year: parseYear(title),
       condition: "refurbished",
-      price: null,
+      price,
       currency: "EUR",
-      ramGb: parseRamGb(combinedText),
-      storageGb: parseStorageGb(combinedText),
-      cpuCores: parseCpuCores(combinedText),
-      gpuCores: parseGpuCores(combinedText),
-      screenInches: parseScreenInch(combinedText),
+      ramGb: parseRamGb(title),
+      storageGb: parseStorageGb(title),
+      cpuCores: parseCpuCores(title),
+      gpuCores: parseGpuCores(title),
+      screenInches: parseScreenInch(title),
       productId: null,
-      color: parseColor(combinedText),
+      color: parseColor(title),
+      imageUrl,
       link
     });
     index++;
+  }
+
+  // Fallback: If no tiles were found (e.g. structure change), try the old link-based way
+  if (offers.length === 0) {
+    const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
+    for (const match of html.matchAll(anchorRe)) {
+      const link = absUrl(match[1], source.url);
+      const title = cleanup(match[2]);
+      if (!/macbook pro/i.test(title)) continue;
+      offers.push({
+        id: `${source.key}-${index + 1}`,
+        sourceKey: source.key,
+        sourceType: source.type,
+        sourceUrl: source.url,
+        vendor: "Apple",
+        title,
+        variant: "",
+        model: deriveModel(title),
+        chip: parseChip(title),
+        year: parseYear(title),
+        condition: "refurbished",
+        price: null,
+        currency: "EUR",
+        ramGb: parseRamGb(title),
+        storageGb: parseStorageGb(title),
+        cpuCores: parseCpuCores(title),
+        gpuCores: parseGpuCores(title),
+        screenInches: parseScreenInch(title),
+        productId: null,
+        color: parseColor(title),
+        link
+      });
+      index++;
+    }
   }
 
   return offers;

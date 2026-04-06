@@ -16,9 +16,9 @@ const SOURCES = [
     url: "https://cb.mactrade.de/restposten/gebrauchtware/mac/"
   },
   {
-    key: "apple-refurbished-mbp14",
+    key: "apple-refurbished-mbp",
     type: "apple",
-    url: "https://www.apple.com/de/shop/refurbished/mac/14-zoll-macbook-pro"
+    url: "https://www.apple.com/de/shop/refurbished/mac/macbook-pro"
   }
 ];
 
@@ -36,17 +36,13 @@ async function scrapeSource(browser, source) {
   });
 
   const listingHtml = await fetchHtml(listPage, source.url);
-
-        let merged = offer;
-      if (source.type === "mactrade") {
-        merged = parseMacTradeDetail(detailHtml, offer);
-      } else if (source.type === "apple") {
-        merged = parseAppleDetail(detailHtml, offer);
-      }
-
-      if (merged) {
-        detailedOffers.push(merged);
-      }
+  
+  let listingOffers = [];
+  if (source.type === "mactrade") {
+    listingOffers = parseMacTradeListing(listingHtml, source);
+  } else if (source.type === "apple") {
+    listingOffers = parseAppleListing(listingHtml, source);
+  }
 
   await listPage.close();
 
@@ -76,7 +72,9 @@ async function scrapeSource(browser, source) {
         merged = parseAppleDetail(detailHtml, offer);
       }
 
-      detailedOffers.push(merged);
+      if (merged) {
+        detailedOffers.push(merged);
+      }
     } catch (error) {
       console.error(`Fehler in Detailseite ${offer.link}:`, error.message);
       detailedOffers.push(offer);

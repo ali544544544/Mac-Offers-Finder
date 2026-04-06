@@ -125,13 +125,20 @@ export function parseMacTradeListing(html, source) {
   const dataLayer = extractDataLayer(html);
   const jsonItems = dataLayer?.ecommerce?.items || [];
   
-  // Also get links from HTML
+  // Also get links and images from HTML
   const linkMatches = [...html.matchAll(/<a[^>]+href="([^"]+)"[^>]*class="product-name"[^>]*>/gi)];
   const idToLink = new Map();
   for (const match of linkMatches) {
     const link = absUrl(match[1], source.url);
     const idMatch = link.match(/\/([\d.]+)\/?$/);
     if (idMatch) idToLink.set(idMatch[1], link);
+  }
+
+  // Extract images: <img ... class="product-image" title="[TITLE]" src="[SRC]">
+  const imgMatches = [...html.matchAll(/<img[^>]+class="[^"]*product-image[^"]*"[^>]+title="([^"]+)"[^>]+src="([^"]+)"/gi)];
+  const titleToImage = new Map();
+  for (const match of imgMatches) {
+    titleToImage.set(cleanup(match[1]), absUrl(match[2], source.url));
   }
 
   const items = [];
@@ -142,6 +149,7 @@ export function parseMacTradeListing(html, source) {
       const variant = cleanup(item.item_variant || "");
       const combined = `${title} ${variant}`;
       const link = idToLink.get(item.item_id) || source.url;
+      const imageUrl = titleToImage.get(title) || null;
 
       // Filter: only MacBook Pro
       if (!/macbook pro/i.test(title)) continue;
@@ -167,6 +175,7 @@ export function parseMacTradeListing(html, source) {
         screenInches: parseScreenInch(combined),
         color: parseColor(combined),
         productId: item.item_id || null,
+        imageUrl,
         link
       });
     }
