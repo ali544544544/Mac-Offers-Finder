@@ -29,32 +29,57 @@ async function fetchHtml(page, url) {
 }
 
 async function scrapeSource(browser, source) {
-  const listPage = await browser.newPage({
+  const browserContext = await browser.newContext({
     locale: "de-DE",
     userAgent:
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36"
   });
 
-  const listingHtml = await fetchHtml(listPage, source.url);
-  
-  let listingOffers = [];
-  if (source.type === "mactrade") {
-    listingOffers = parseMacTradeListing(listingHtml, source);
-  } else if (source.type === "apple") {
-    listingOffers = parseAppleListing(listingHtml, source);
+  const allListingOffers = [];
+  let currentPage = 1;
+  let totalPages = 1;
+
+  while (currentPage <= totalPages) {
+    const pageUrl = source.type === "apple" 
+      ? `${source.url}${source.url.includes("?") ? "&" : "?"}page=${currentPage}`
+      : `${source.url}${source.url.includes("?") ? "&" : "?"}p=${currentPage}`;
+
+    console.log(`  Page ${currentPage}/${totalPages || "?"}: ${pageUrl}`);
+    const page = await browserContext.newPage();
+    const html = await fetchHtml(page, pageUrl);
+
+    let pageOffers = [];
+    if (source.type === "mactrade") {
+      pageOffers = parseMacTradeListing(html, source);
+      // Detect total pages for MacTrade (Shopware 6 pagination)
+      const lastPageMatch = html.match(/class="pagination-nav-item">(\d+)<\/li>/g);
+      if (lastPageMatch && currentPage === 1) {
+        const lastPageStr = lastPageMatch[lastPageMatch.length - 1].match(/>(\d+)</)[1];
+        totalPages = Math.min(Number(lastPageStr), 10); // cap at 10 to be safe
+      }
+    } else if (source.type === "apple") {
+      pageOffers = parseAppleListing(html, source);
+      // Detect total pages for Apple
+      const totalMatch = html.match(/data-autom="paginationTotalPages">(\d+)<\/span>/);
+      if (totalMatch && currentPage === 1) {
+        totalPages = Math.min(Number(totalMatch[1]), 10);
+      }
+    }
+
+    allListingOffers.push(...pageOffers);
+    await page.close();
+    
+    // Stop if no items found on this page (safety)
+    if (pageOffers.length === 0) break;
+    
+    currentPage++;
   }
 
-  await listPage.close();
-
   const detailedOffers = [];
+  console.log(`  Found ${allListingOffers.length} offers. Scraping details...`);
 
-  for (const offer of listingOffers) {
-    const detailPage = await browser.newPage({
-      locale: "de-DE",
-      userAgent:
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari/537.36"
-    });
-
+  for (const offer of allListingOffers) {
+    const detailPage = await browserContext.newPage();
     try {
       if (!offer.link) {
         detailedOffers.push(offer);
@@ -62,7 +87,7 @@ async function scrapeSource(browser, source) {
         continue;
       }
 
-      console.log(`Detail: ${offer.link}`);
+      console.log(`    Detail: ${offer.link}`);
       const detailHtml = await fetchHtml(detailPage, offer.link);
 
       let merged = offer;
@@ -76,13 +101,14 @@ async function scrapeSource(browser, source) {
         detailedOffers.push(merged);
       }
     } catch (error) {
-      console.error(`Fehler in Detailseite ${offer.link}:`, error.message);
+      console.error(`    Fehler in Detailseite ${offer.link}:`, error.message);
       detailedOffers.push(offer);
     } finally {
       await detailPage.close();
     }
   }
 
+  await browserContext.close();
   return detailedOffers;
 }
 

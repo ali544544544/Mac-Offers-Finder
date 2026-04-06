@@ -105,17 +105,20 @@ function findProductJsonLd(objects) {
 }
 
 export function parseAppleListing(html, source) {
-  // Capture the entire product tile block to reliably associate title, price and image
-  const tileRe = /<div[^>]+class="[^"]*rf-refurb-producttile[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/gi;
+  // 1. New structure: <li> with class rf-refurb-producttile
+  const tileRe = /<li[^>]+class="[^"]*rf-refurb-producttile[^"]*"[^>]*>([\s\S]*?)<\/li>/gi;
   
   const offers = [];
   let index = 0;
 
-  for (const match of html.matchAll(tileRe)) {
-    const tileHtml = match[1];
+  for (const tMatch of html.matchAll(tileRe)) {
+    const tileHtml = tMatch[1];
     
-    // 1. Link & Title
-    const linkMatch = tileHtml.match(/<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
+    // Link & Title
+    // <a class="rf-refurb-producttile-link" href="...">...</a>
+    const linkMatch = tileHtml.match(/<a[^>]+href="([^"]+)"[^>]*class="[^"]*rf-refurb-producttile-link[^"]*"[^>]*>([\s\S]*?)<\/a>/i)
+                   || tileHtml.match(/<a[^>]+class="[^"]*rf-refurb-producttile-link[^"]*"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i);
+    
     if (!linkMatch) continue;
     
     const link = absUrl(linkMatch[1], source.url);
@@ -123,14 +126,10 @@ export function parseAppleListing(html, source) {
     if (!title || title.length < 10) continue; 
     if (!/macbook pro/i.test(title)) continue;
 
-    // 2. Price
-    // Price typically looks like: <span class="visuallyhidden">Jetzt</span>1.519,00 €
-    const priceMatch = tileHtml.match(/(\d[\d.,]*)\s*€/);
+    // Price
+    // <span class="rf-refurb-producttile-currentprice">...</span>
+    const priceMatch = tileHtml.match(/class="[^"]*rf-refurb-producttile-currentprice[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
     const price = priceMatch ? parseEuro(priceMatch[1]) : null;
-
-    // 3. Image
-    const imgMatch = tileHtml.match(/<img[^>]+src="([^"]+)"/i);
-    const imageUrl = imgMatch ? absUrl(imgMatch[1], source.url) : null;
 
     offers.push({
       id: `${source.key}-${index + 1}`,
@@ -160,7 +159,7 @@ export function parseAppleListing(html, source) {
 
   // Fallback: If no tiles were found (e.g. structure change), try the old link-based way
   if (offers.length === 0) {
-    const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
+    const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-[^"]*link[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
     for (const match of html.matchAll(anchorRe)) {
       const link = absUrl(match[1], source.url);
       const title = cleanup(match[2]);
