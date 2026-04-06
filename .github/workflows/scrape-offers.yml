@@ -5,9 +5,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  scrape:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,12 +34,32 @@ jobs:
       - name: Scraper ausführen
         run: npm run scrape
 
+      - name: Report erzeugen
+        run: npm run render:report
+
       - name: Änderungen committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/offers.json
-          git diff --cached --quiet || git commit -m "chore: update offers data"
+          git add data/offers.json report.md
+          git diff --cached --quiet || git commit -m "chore: update offers data and report"
+          git push
 
-      - name: Änderungen pushen
-        run: git push
+      - name: Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Deploy-Artefakt vorbereiten
+        run: |
+          mkdir -p dist
+          cp -R web/* dist/
+          mkdir -p dist/data
+          cp data/offers.json dist/data/offers.json
+
+      - name: Pages-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Auf GitHub Pages deployen
+        id: deployment
+        uses: actions/deploy-pages@v4
