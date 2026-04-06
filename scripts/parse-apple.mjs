@@ -149,6 +149,12 @@ export function parseAppleDetail(html, baseOffer) {
   const color = cleanup(product?.color || "") || parseColor(`${title} ${description}`) || baseOffer.color || null;
 
   const combinedText = `${title} ${description}`;
+  const model = deriveModel(title);
+
+  // HARTER FILTER: nur MacBook Pro
+  if (!/macbook pro/i.test(title) && model !== "MacBook Pro 14" && model !== "MacBook Pro 16") {
+    return null;
+  }
 
   return {
     ...baseOffer,
@@ -157,7 +163,7 @@ export function parseAppleDetail(html, baseOffer) {
     description,
     vendor: "Apple",
     productId: partNumber || baseOffer.productId,
-    model: deriveModel(title),
+    model,
     chip: parseChip(combinedText) || baseOffer.chip,
     year: parseYear(combinedText) || baseOffer.year,
     color,
