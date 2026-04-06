@@ -153,7 +153,6 @@ export function parseAppleListing(html, source) {
       screenInches: parseScreenInch(title),
       productId: null,
       color: parseColor(title),
-      imageUrl,
       link
     });
     index++;
@@ -209,7 +208,7 @@ export function parseAppleDetail(html, baseOffer) {
   const partNumber = cleanup(product?.offers?.[0]?.sku || baseOffer.productId || "");
   const color = cleanup(product?.color || "") || parseColor(`${title} ${description}`) || baseOffer.color || null;
 
-  const combinedText = `${title} ${description}`;
+  const combinedText = `${title} ${description} ${html}`; // Add full HTML for last-resort regex
   const model = deriveModel(title);
 
   // HARTER FILTER: nur MacBook Pro

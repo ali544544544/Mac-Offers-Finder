@@ -149,7 +149,6 @@ export function parseMacTradeListing(html, source) {
       const variant = cleanup(item.item_variant || "");
       const combined = `${title} ${variant}`;
       const link = idToLink.get(item.item_id) || source.url;
-      const imageUrl = titleToImage.get(title) || null;
 
       // Filter: only MacBook Pro
       if (!/macbook pro/i.test(title)) continue;
@@ -175,7 +174,6 @@ export function parseMacTradeListing(html, source) {
         screenInches: parseScreenInch(combined),
         color: parseColor(combined),
         productId: item.item_id || null,
-        imageUrl,
         link
       });
     }
@@ -231,9 +229,8 @@ export function parseMacTradeDetail(html, baseOffer) {
   const sku = cleanup(product?.sku || baseOffer.productId || "");
   const brand = cleanup(product?.brand?.name || "MacTrade");
 
-  const combinedText = `${title} ${description}`;
-
-    const model = deriveModel(title);
+  const combinedText = `${title} ${description} ${html}`; // Add full HTML for last-resort regex
+  const model = deriveModel(title);
 
   // HARTER FILTER: nur MacBook Pro
   if (!/macbook pro/i.test(title) && model !== "MacBook Pro 14" && model !== "MacBook Pro 16") {

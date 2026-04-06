@@ -96,10 +96,6 @@ function renderOfferCard(offer, isBest = false, index = 0) {
         ${isBest ? `<div class="best-badge">🏆 Top Deal</div>` : ""}
       </div>
 
-      <div class="offer-image-container">
-        ${offer.imageUrl ? `<img src="${esc(offer.imageUrl)}" alt="${esc(offer.title)}" class="offer-image" loading="lazy">` : `<div class="offer-image-placeholder">💻</div>`}
-      </div>
-
       <h3 class="offer-title">${esc(offer.title || "Ohne Titel")}</h3>
 
       <div class="spec-grid">
