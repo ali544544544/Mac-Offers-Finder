@@ -67,12 +67,12 @@ function parseColor(text) {
 }
 
 function deriveModel(title) {
-  if (/macbook pro 14/i.test(title)) return "MacBook Pro 14";
-  if (/macbook pro 16/i.test(title)) return "MacBook Pro 16";
-  if (/macbook air 13/i.test(title)) return "MacBook Air 13";
-  if (/macbook air 15/i.test(title)) return "MacBook Air 15";
-  if (/mac studio/i.test(title)) return "Mac Studio";
-  if (/mac mini/i.test(title)) return "Mac mini";
+  if (/14.?[" ]?macbook pro|macbook pro 14|mbp 14/i.test(title)) return "MacBook Pro 14";
+  if (/16.?[" ]?macbook pro|macbook pro 16|mbp 16/i.test(title)) return "MacBook Pro 16";
+  if (/13.?[" ]?macbook pro|macbook pro 13|mbp 13/i.test(title)) return "MacBook Pro 13";
+  if (/15.?[" ]?macbook pro|macbook pro 15|mbp 15/i.test(title)) return "MacBook Pro 15";
+  if (/macbook air/i.test(title)) return "MacBook Air";
+  if (/macbook pro|mbp/i.test(title)) return "MacBook Pro";
   return "Mac";
 }
 
@@ -150,8 +150,8 @@ export function parseMacTradeListing(html, source) {
       const combined = `${title} ${variant}`;
       const link = idToLink.get(item.item_id) || source.url;
 
-      // Filter: only MacBook Pro
-      if (!/macbook pro/i.test(title)) continue;
+      // Filter: only MacBook Pro (or MBP)
+      if (!/macbook pro|mbp/i.test(title)) continue;
 
       items.push({
         id: `${source.key}-${item.item_id || index}`,
@@ -164,7 +164,7 @@ export function parseMacTradeListing(html, source) {
         model: deriveModel(title),
         chip: parseChip(combined),
         year: parseYear(combined),
-        condition: source.key.includes("gebraucht") ? "gebraucht" : "vorgaengermodell",
+        condition: source.key.includes("gebraucht") ? "gebraucht" : (source.key.includes("aware") ? "a-ware" : "vorgaengermodell"),
         price: Number(item.price) || null,
         currency: "EUR",
         ramGb: parseRamGb(combined),
@@ -183,7 +183,7 @@ export function parseMacTradeListing(html, source) {
     for (const [index, match] of nameMatches.entries()) {
       const link = absUrl(match[1], source.url);
       const title = cleanup(match[2]);
-      if (!/macbook pro/i.test(title)) continue;
+      if (!/macbook pro|mbp/i.test(title)) continue;
 
       items.push({
         id: `${source.key}-${index + 1}`,
@@ -232,8 +232,8 @@ export function parseMacTradeDetail(html, baseOffer) {
   const combinedText = `${title} ${description} ${html}`; // Add full HTML for last-resort regex
   const model = deriveModel(title);
 
-  // HARTER FILTER: nur MacBook Pro
-  if (!/macbook pro/i.test(title) && model !== "MacBook Pro 14" && model !== "MacBook Pro 16") {
+  // HARTER FILTER: nur MacBook Pro (oder MBP)
+  if (!/macbook pro|mbp/i.test(title) && model !== "MacBook Pro 14" && model !== "MacBook Pro 16") {
     return null;
   }
 

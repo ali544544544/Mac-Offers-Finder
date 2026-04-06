@@ -67,10 +67,12 @@ function parseColor(text) {
 }
 
 function deriveModel(title) {
-  if (/14.?[" ]?macbook pro|macbook pro 14/i.test(title)) return "MacBook Pro 14";
-  if (/16.?[" ]?macbook pro|macbook pro 16/i.test(title)) return "MacBook Pro 16";
-  if (/macbook air 13/i.test(title)) return "MacBook Air 13";
-  if (/macbook air 15/i.test(title)) return "MacBook Air 15";
+  if (/14.?[" ]?macbook pro|macbook pro 14|mbp 14/i.test(title)) return "MacBook Pro 14";
+  if (/16.?[" ]?macbook pro|macbook pro 16|mbp 16/i.test(title)) return "MacBook Pro 16";
+  if (/13.?[" ]?macbook pro|macbook pro 13|mbp 13/i.test(title)) return "MacBook Pro 13";
+  if (/15.?[" ]?macbook pro|macbook pro 15|mbp 15/i.test(title)) return "MacBook Pro 15";
+  if (/macbook air/i.test(title)) return "MacBook Air";
+  if (/macbook pro|mbp/i.test(title)) return "MacBook Pro";
   return "Mac";
 }
 
@@ -163,7 +165,7 @@ export function parseAppleListing(html, source) {
     for (const match of html.matchAll(anchorRe)) {
       const link = absUrl(match[1], source.url);
       const title = cleanup(match[2]);
-      if (!/macbook pro/i.test(title)) continue;
+      if (!/macbook pro|mbp/i.test(title)) continue;
       offers.push({
         id: `${source.key}-${index + 1}`,
         sourceKey: source.key,

@@ -16,6 +16,11 @@ const SOURCES = [
     url: "https://cb.mactrade.de/restposten/gebrauchtware/mac/"
   },
   {
+    key: "mactrade-aware",
+    type: "mactrade",
+    url: "https://cb.mactrade.de/restposten/a-ware/mac/"
+  },
+  {
     key: "apple-refurbished-mbp",
     type: "apple",
     url: "https://www.apple.com/de/shop/refurbished/mac/macbook-pro"
