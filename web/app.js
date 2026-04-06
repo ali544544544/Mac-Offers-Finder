@@ -96,8 +96,8 @@ function renderOfferCard(offer, isBest = false, index = 0) {
       <div class="offer-details">
         <div><span>Zustand</span><strong>${esc(offer.condition || "-")}</strong></div>
         <div><span>Modell</span><strong>${esc(offer.model || "-")}</strong></div>
-        <div><span>CPU Kerne</span><strong>${offer.cpuCores ? offer.cpuCores : "-"}</strong></div>
-        <div><span>GPU Kerne</span><strong>${offer.gpuCores ? offer.gpuCores : "-"}</strong></div>
+        <div><span>CPU</span><strong>${offer.cpuCores ? offer.cpuCores + " Kerne" : "-"}</strong></div>
+        <div><span>GPU</span><strong>${offer.gpuCores ? offer.gpuCores + " Kerne" : "-"}</strong></div>
       </div>
 
       <div class="offer-actions">
