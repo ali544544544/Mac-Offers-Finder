@@ -146,6 +146,13 @@ export function parseMacTradeDetail(html, baseOffer) {
 
   const combinedText = `${title} ${description}`;
 
+    const model = deriveModel(title);
+
+  // HARTER FILTER: nur MacBook Pro
+  if (!/macbook pro/i.test(title) && model !== "MacBook Pro 14" && model !== "MacBook Pro 16") {
+    return null;
+  }
+
   return {
     ...baseOffer,
     title,
@@ -153,7 +160,7 @@ export function parseMacTradeDetail(html, baseOffer) {
     link: canonical,
     productId: sku || baseOffer.productId,
     description,
-    model: deriveModel(title),
+    model,
     chip: parseChip(combinedText) || baseOffer.chip,
     year: parseYear(combinedText) || baseOffer.year,
     price: price ?? baseOffer.price,
