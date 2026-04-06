@@ -1,86 +1,51 @@
-const metaEl = document.getElementById("meta");
-const bestOfferEl = document.getElementById("bestOffer");
-const offersEl = document.getElementById("offers");
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac Offers Finder</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">GitHub Pages App</p>
+        <h1>Mac Offers Finder</h1>
+        <p class="hero-text">
+          Live gescrapte Angebote von MacTrade und Apple Refurbished –
+          mit Fokus auf Preis-Leistung.
+        </p>
+      </div>
+      <div class="hero-box">
+        <div class="hero-stat">
+          <span id="offerCount">–</span>
+          <small>Angebote</small>
+        </div>
+      </div>
+    </div>
+  </header>
 
-function euro(value) {
-  const num = Number(value);
-  if (!Number.isFinite(num)) return "-";
-  return new Intl.NumberFormat("de-DE", {
-    style: "currency",
-    currency: "EUR"
-  }).format(num);
-}
+  <main class="container page">
+    <section class="topbar">
+      <div id="meta" class="meta-box">Lade Daten ...</div>
+    </section>
 
-function esc(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
+    <section class="section">
+      <div class="section-head">
+        <h2>Bestes Angebot</h2>
+      </div>
+      <div id="bestOffer"></div>
+    </section>
 
-function renderOfferCard(offer) {
-  return `
-    <article class="offer-card">
-      <h3>${esc(offer.title || "Ohne Titel")}</h3>
-      <p><strong>Preis:</strong> ${euro(offer.price)}</p>
-      <p><strong>Anbieter:</strong> ${esc(offer.vendor || "-")}</p>
-      <p><strong>Quelle:</strong> ${esc(offer.sourceKey || "-")}</p>
-      <p><strong>Modell:</strong> ${esc(offer.model || "-")}</p>
-      <p><strong>Chip:</strong> ${esc(offer.chip || "-")}</p>
-      <p><strong>RAM:</strong> ${offer.ramGb ?? "-"} GB</p>
-      <p><strong>SSD:</strong> ${offer.storageGb ?? "-"} GB</p>
-      <p><strong>Score:</strong> ${offer.valueScore ?? "-"}</p>
-      <p><a href="${offer.link || "#"}" target="_blank" rel="noopener noreferrer">Zum Angebot</a></p>
-    </article>
-  `;
-}
+    <section class="section">
+      <div class="section-head">
+        <h2>Alle Angebote</h2>
+      </div>
+      <div id="offers" class="offers-grid"></div>
+    </section>
+  </main>
 
-async function init() {
-  try {
-    const response = await fetch("./data/offers.json?t=" + Date.now(), {
-      cache: "no-store"
-    });
-
-    if (!response.ok) {
-      throw new Error("offers.json konnte nicht geladen werden. HTTP " + response.status);
-    }
-
-    const data = await response.json();
-
-    console.log("Geladene Daten:", data);
-
-    const offers = Array.isArray(data.offers) ? data.offers : [];
-
-    metaEl.textContent = `${offers.length} Angebote geladen`;
-
-    if (offers.length === 0) {
-      bestOfferEl.innerHTML = "<p>Keine Angebote vorhanden.</p>";
-      offersEl.innerHTML = "";
-      return;
-    }
-
-    const sorted = [...offers].sort((a, b) => {
-      const av = Number(a.valueScore ?? 0);
-      const bv = Number(b.valueScore ?? 0);
-      return bv - av;
-    });
-
-    bestOfferEl.innerHTML = `
-      <h2>Bestes Angebot</h2>
-      ${renderOfferCard(sorted[0])}
-    `;
-
-    offersEl.innerHTML = `
-      <h2>Alle Angebote</h2>
-      ${sorted.map(renderOfferCard).join("")}
-    `;
-  } catch (error) {
-    console.error(error);
-    metaEl.textContent = "Fehler beim Laden";
-    bestOfferEl.innerHTML = `<p>${esc(error.message)}</p>`;
-    offersEl.innerHTML = "";
-  }
-}
-
-init();
+  <script src="./app.js"></script>
+</body>
+</html>
