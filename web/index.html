@@ -3,86 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mac Offers Finder</title>
+  <title>Mac Offers Finder - Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container hero-inner">
-      <div>
-        <p class="eyebrow">GitHub Pages App</p>
+  <div class="blob-bg"></div>
+  <div class="blob-bg blob-2"></div>
+
+  <header class="glass-header">
+    <div class="container header-inner">
+      <div class="logo-area">
         <h1>Mac Offers Finder</h1>
-        <p class="hero-text">
-          Live gescrapte Angebote von MacTrade und Apple Refurbished –
-          mit Fokus auf Preis-Leistung.
-        </p>
+        <p class="subtitle">Live gescrapte Apple Deals – Fokus auf Preis-Leistung.</p>
       </div>
-      <div class="hero-box">
-        <div class="hero-stat">
-          <span id="offerCount">–</span>
-          <small>Angebote</small>
+      <div class="header-actions">
+        <button id="themeToggle" aria-label="Dark Mode umschalten" class="theme-toggle">
+          <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sun" style="display:none;"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+        </button>
+        <div class="stat-box">
+          <span id="offerCount" class="stat-number">–</span>
+          <span class="stat-label">Angebote</span>
         </div>
       </div>
     </div>
   </header>
 
   <main class="container page">
-  <section class="topbar">
-    <div id="meta" class="meta-box">Lade Daten ...</div>
-  </section>
+    <section class="topbar">
+      <div id="meta" class="meta-box glass-panel">Lade Daten ...</div>
+    </section>
 
-  <section class="filters">
-    <div class="filter-grid">
-      <label>
-        Suche
-        <input id="searchFilter" type="text" placeholder="z. B. M4 Max 36 GB">
-      </label>
+    <section class="filters glass-panel">
+      <div class="filter-header">
+        <h2>Filter & Suche</h2>
+      </div>
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label for="searchFilter">Freitext Suche</label>
+          <input id="searchFilter" type="text" placeholder="z.B. M4 Max 36GB">
+        </div>
+        <div class="filter-group">
+          <label for="sortFilter">Sortierung</label>
+          <select id="sortFilter">
+            <option value="score">Preis-Leistung (Score)</option>
+            <option value="priceAsc">Preis: Aufsteigend</option>
+            <option value="priceDesc">Preis: Absteigend</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sourceFilter">Quelle</label>
+          <select id="sourceFilter">
+            <option value="">Alle Quellen</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="modelFilter">Modell</label>
+          <select id="modelFilter">
+            <option value="">Alle Modelle</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="maxPriceFilter">Max. Preis (€)</label>
+          <input id="maxPriceFilter" type="number" placeholder="Beliebig">
+        </div>
+        <div class="filter-group">
+          <label for="minRamFilter">Min. RAM (GB)</label>
+          <select id="minRamFilter">
+            <option value="">Beliebig</option>
+            <option value="8">8 GB+</option>
+            <option value="16">16 GB+</option>
+            <option value="18">18 GB+</option>
+            <option value="24">24 GB+</option>
+            <option value="32">32 GB+</option>
+            <option value="36">36 GB+</option>
+            <option value="48">48 GB+</option>
+            <option value="64">64 GB+</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="minStorageFilter">Min. SSD (GB)</label>
+          <select id="minStorageFilter">
+            <option value="">Beliebig</option>
+            <option value="256">256 GB+</option>
+            <option value="512">512 GB+</option>
+            <option value="1000">1 TB+</option>
+            <option value="2000">2 TB+</option>
+            <option value="4000">4 TB+</option>
+          </select>
+        </div>
+      </div>
+    </section>
 
-      <label>
-        Quelle
-        <select id="sourceFilter">
-          <option value="">Alle</option>
-        </select>
-      </label>
+    <section class="section">
+      <div class="section-head">
+        <h2>Top Empfehlung</h2>
+      </div>
+      <div id="bestOffer"></div>
+    </section>
 
-      <label>
-        Modell
-        <select id="modelFilter">
-          <option value="">Alle</option>
-        </select>
-      </label>
-
-      <label>
-        Max. Preis
-        <input id="maxPriceFilter" type="number" placeholder="z. B. 2500">
-      </label>
-
-      <label>
-        Min. RAM
-        <input id="minRamFilter" type="number" placeholder="z. B. 16">
-      </label>
-
-      <label>
-        Min. SSD (GB)
-        <input id="minStorageFilter" type="number" placeholder="z. B. 512">
-      </label>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <h2>Bestes Angebot</h2>
-    </div>
-    <div id="bestOffer"></div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <h2>Alle Angebote</h2>
-    </div>
-    <div id="offers" class="offers-grid"></div>
-  </section>
-</main>
+    <section class="section">
+      <div class="section-head">
+        <h2>Weitere Angebote</h2>
+      </div>
+      <div id="offers" class="offers-grid"></div>
+    </section>
+  </main>
 
   <script src="./app.js"></script>
 </body>
