@@ -1,1 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac Offers Finder</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Mac Offers Finder</h1>
+    <p>Filterbare Übersicht + bestes Preis-Leistungs-Angebot</p>
+  </header>
 
+  <main class="container">
+    <section class="panel filters">
+      <label>
+        Quelle
+        <select id="sourceFilter">
+          <option value="">Alle</option>
+        </select>
+      </label>
+
+      <label>
+        Modell
+        <select id="modelFilter">
+          <option value="">Alle</option>
+        </select>
+      </label>
+
+      <label>
+        Maximalpreis
+        <input id="maxPriceFilter" type="number" placeholder="z. B. 2000">
+      </label>
+
+      <label>
+        Mindest-RAM
+        <input id="minRamFilter" type="number" placeholder="z. B. 16">
+      </label>
+
+      <label>
+        Mindest-SSD (GB)
+        <input id="minStorageFilter" type="number" placeholder="z. B. 512">
+      </label>
+    </section>
+
+    <section class="panel">
+      <h2>Bestes Angebot</h2>
+      <div id="bestOffer"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Angebote</h2>
+      <div id="meta"></div>
+      <div id="offers"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
