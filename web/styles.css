@@ -118,6 +118,7 @@ body {
   font-size: 28px;
   background: linear-gradient(135deg, var(--accent) 0%, #ec4899 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -314,8 +315,59 @@ body {
 .offer-card-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
+}
+
+/* Score pill */
+.offer-score-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 6px 14px;
+  font-weight: 700;
+  min-width: 60px;
+  text-align: center;
+}
+.score-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+.score-value {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.score-high  { background: rgba(34,197,94,0.18);  color: #16a34a; }
+.score-high .score-label { color: #16a34a; }
+.score-mid   { background: rgba(251,191,36,0.18); color: #d97706; }
+.score-mid .score-label  { color: #d97706; }
+.score-low   { background: rgba(239,68,68,0.12);  color: #dc2626; }
+.score-low .score-label  { color: #dc2626; }
+
+[data-theme='dark'] .score-high { background: rgba(34,197,94,0.22);  color: #4ade80; }
+[data-theme='dark'] .score-mid  { background: rgba(251,191,36,0.22); color: #fbbf24; }
+[data-theme='dark'] .score-low  { background: rgba(239,68,68,0.18);  color: #f87171; }
+
+/* Price row */
+.offer-price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.best-badge {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .offer-source {
@@ -342,32 +394,61 @@ body {
   font-weight: 600;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+/* Spec tiles: Chip / RAM / SSD */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.badge {
-  background: var(--badge-bg);
-  color: var(--badge-text);
-  font-size: 12px;
-  font-weight: 500;
-  padding: 6px 10px;
-  border-radius: 8px;
+.spec-tile {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+  padding: 12px 10px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
+  transition: border-color 0.2s;
 }
 
-.badge strong {
+.spec-tile:hover {
+  border-color: var(--accent);
+}
+
+.spec-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.spec-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.spec-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.spec-value {
+  font-size: 15px;
+  font-weight: 700;
   color: var(--text-main);
-  opacity: 0.9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .offer-details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 

@@ -76,22 +76,50 @@ function badge(label, value) {
 }
 
 function renderOfferCard(offer, isBest = false, index = 0) {
-  // Adding stagger effect on load
   const delay = Math.min(index * 0.05, 0.5);
+  const score = (offer.valueScore || 0).toFixed(1);
+  const scoreClass = offer.valueScore >= 40 ? "score-high" : offer.valueScore >= 20 ? "score-mid" : "score-low";
+
   return `
     <article class="offer-card ${isBest ? "best-card" : ""}" style="animation-delay: ${delay}s">
+
       <div class="offer-card-top">
         <div class="offer-source">${esc(offer.vendor || offer.sourceKey || "-")}</div>
+        <div class="offer-score-pill ${scoreClass}">
+          <span class="score-label">Score</span>
+          <span class="score-value">${score}</span>
+        </div>
+      </div>
+
+      <div class="offer-price-row">
         <div class="offer-price">${euro(offer.price)}</div>
+        ${isBest ? `<div class="best-badge">🏆 Top Deal</div>` : ""}
       </div>
 
       <h3 class="offer-title">${esc(offer.title || "Ohne Titel")}</h3>
 
-      <div class="badges">
-        ${badge("Chip", offer.chip)}
-        ${badge("RAM", offer.ramGb ? `${offer.ramGb} GB` : null)}
-        ${badge("SSD", offer.storageGb ? `${offer.storageGb} GB` : null)}
-        ${badge("Score", (offer.valueScore || 0).toFixed(1))}
+      <div class="spec-grid">
+        <div class="spec-tile">
+          <div class="spec-icon">💾</div>
+          <div class="spec-info">
+            <span class="spec-label">Chip</span>
+            <strong class="spec-value">${esc(offer.chip || "-")}</strong>
+          </div>
+        </div>
+        <div class="spec-tile">
+          <div class="spec-icon">🧠</div>
+          <div class="spec-info">
+            <span class="spec-label">RAM</span>
+            <strong class="spec-value">${offer.ramGb ? offer.ramGb + " GB" : "-"}</strong>
+          </div>
+        </div>
+        <div class="spec-tile">
+          <div class="spec-icon">💿</div>
+          <div class="spec-info">
+            <span class="spec-label">SSD</span>
+            <strong class="spec-value">${offer.storageGb ? (offer.storageGb >= 1000 ? (offer.storageGb/1024).toFixed(offer.storageGb % 1024 === 0 ? 0 : 1) + " TB" : offer.storageGb + " GB") : "-"}</strong>
+          </div>
+        </div>
       </div>
 
       <div class="offer-details">
@@ -100,11 +128,12 @@ function renderOfferCard(offer, isBest = false, index = 0) {
         <div><span>Farbe</span><strong>${esc(offer.color || "-")}</strong></div>
         <div><span>CPU</span><strong>${offer.cpuCores ? offer.cpuCores + " Kerne" : "-"}</strong></div>
         <div><span>GPU</span><strong>${offer.gpuCores ? offer.gpuCores + " Kerne" : "-"}</strong></div>
+        <div><span>Jahr</span><strong>${offer.year || "-"}</strong></div>
       </div>
 
       <div class="offer-actions">
         <a class="offer-link" href="${offer.link || "#"}" target="_blank" rel="noopener noreferrer">
-          Zum Angebot
+          Zum Angebot →
         </a>
       </div>
     </article>

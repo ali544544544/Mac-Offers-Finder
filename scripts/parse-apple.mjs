@@ -1,6 +1,9 @@
 function cleanup(value) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
+    .replace(/\u2011/g, "-")   // non-breaking hyphen → normal hyphen
+    .replace(/\u00ad/g, "-")   // soft hyphen
+    .replace(/\u2010/g, "-")   // regular unicode hyphen
     .replace(/&[#\w]+;/g, " ")
     .replace(/\s+/g, " ")
     .trim();
