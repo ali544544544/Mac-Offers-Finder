@@ -1,1 +1,14 @@
-
+{
+  "name": "mac-offers-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "serve": "python3 -m http.server 8080",
+    "start": "npm run serve"
+  },
+  "devDependencies": {
+    "playwright": "^1.53.0"
+  }
+}
