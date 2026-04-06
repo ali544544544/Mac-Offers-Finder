@@ -16,25 +16,33 @@ function parseEuro(value) {
 }
 
 function parseRamGb(text) {
-  const m = text.match(/(\d+)\s*GB(?:\s+gemeinsamer)?\s+Arbeitsspeicher/i) || text.match(/(\d+)\s*GB/i);
-  return m ? Number(m[1]) : null;
+  let m = text.match(/(\d+)\s*GB(?:\s+gemeinsamer)?\s+(?:Arbeitsspeicher|RAM|Unified Memory)/i);
+  if (m) return Number(m[1]);
+  m = text.match(/\b(8|16|18|24|32|36|48|64|96|128)\s*GB\b/i);
+  if (m) return Number(m[1]);
+  return null;
 }
 
 function parseStorageGb(text) {
-  const tb = text.match(/(\d+(?:[.,]\d+)?)\s*TB\s*SSD/i) || text.match(/(\d+(?:[.,]\d+)?)\s*TB/i);
+  let tb = text.match(/(\d+(?:[.,]\d+)?)\s*TB(?:\s*SSD)?/i);
   if (tb) return Math.round(Number(tb[1].replace(",", ".")) * 1024);
 
-  const gb = text.match(/(\d+)\s*GB\s*SSD/i) || text.match(/(\d+)\s*GB/i);
-  return gb ? Number(gb[1]) : null;
+  let gb = text.match(/(\d+)\s*GB\s*SSD/i);
+  if (gb) return Number(gb[1]);
+
+  gb = text.match(/\b(128|256|512|1000|1024|2000|4000|8000)\s*GB\b/i);
+  if (gb) return Number(gb[1]);
+
+  return null;
 }
 
 function parseCpuCores(text) {
-  const m = text.match(/(\d+)[-\s–-]*Core CPU/i);
+  const m = text.match(/(\d+)\W*Core CPU/i);
   return m ? Number(m[1]) : null;
 }
 
 function parseGpuCores(text) {
-  const m = text.match(/(\d+)[-\s–-]*Core GPU/i);
+  const m = text.match(/(\d+)\W*Core GPU/i);
   return m ? Number(m[1]) : null;
 }
 
