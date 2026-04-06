@@ -72,7 +72,7 @@ function render() {
 }
 
 async function init() {
-  const response = await fetch("../data/offers.json");
+  const response = await fetch("./data/offers.json");
   const data = await response.json();
   allOffers = data.offers ?? [];
 
