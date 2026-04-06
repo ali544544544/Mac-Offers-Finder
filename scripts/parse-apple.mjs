@@ -106,7 +106,8 @@ function findProductJsonLd(objects) {
 
 export function parseAppleListing(html, source) {
   // Capture both the href AND the anchor text (which contains all product data)
-  const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  // Re-designed for modern Apple Store classes like rf-refurb-card-link
+  const anchorRe = /<a[^>]+href="(\/de\/shop\/product\/[^"]+)"[^>]*class="[^"]*rf-refurb-card-link[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
 
   const seen = new Set();
   const offers = [];

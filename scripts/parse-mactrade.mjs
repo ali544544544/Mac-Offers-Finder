@@ -106,37 +106,102 @@ function findProductJsonLd(objects) {
   return objects.find((obj) => obj?.["@type"] === "Product");
 }
 
+function extractDataLayer(html) {
+  try {
+    // MacTrade stores it in let onEventDataLayer = JSON.parse('...');
+    // We need to unescape the JSON string inside the JS code.
+    const m = html.match(/let onEventDataLayer = JSON\.parse\('(.*?)'\);/);
+    if (!m) return null;
+    const jsonStr = m[1].replace(/\\'/g, "'").replace(/\\\\/g, "\\");
+    const data = JSON.parse(jsonStr);
+    return Array.isArray(data) ? data[0] : data;
+  } catch (e) {
+    console.error("DataLayer extraction error:", e.message);
+    return null;
+  }
+}
+
 export function parseMacTradeListing(html, source) {
-  const linkMatches = [...html.matchAll(/<a[^>]+href="([^"]+)"[^>]*class="product-name"[^>]*>([\s\S]*?)<\/a>/gi)];
+  const dataLayer = extractDataLayer(html);
+  const jsonItems = dataLayer?.ecommerce?.items || [];
+  
+  // Also get links from HTML
+  const linkMatches = [...html.matchAll(/<a[^>]+href="([^"]+)"[^>]*class="product-name"[^>]*>/gi)];
+  const idToLink = new Map();
+  for (const match of linkMatches) {
+    const link = absUrl(match[1], source.url);
+    const idMatch = link.match(/\/([\d.]+)\/?$/);
+    if (idMatch) idToLink.set(idMatch[1], link);
+  }
 
   const items = [];
-  for (const [index, match] of linkMatches.entries()) {
-    const link = absUrl(match[1], source.url);
-    const title = cleanup(match[2]);
+  
+  if (jsonItems.length > 0) {
+    for (const [index, item] of jsonItems.entries()) {
+      const title = cleanup(item.item_name);
+      const variant = cleanup(item.item_variant || "");
+      const combined = `${title} ${variant}`;
+      const link = idToLink.get(item.item_id) || source.url;
 
-    items.push({
-      id: `${source.key}-${index + 1}`,
-      sourceKey: source.key,
-      sourceType: source.type,
-      sourceUrl: source.url,
-      vendor: "MacTrade",
-      title,
-      variant: "",
-      model: deriveModel(title),
-      chip: parseChip(title),
-      year: parseYear(title),
-      condition: source.key.includes("gebraucht") ? "gebraucht" : "vorgaengermodell",
-      price: null,
-      currency: "EUR",
-      ramGb: parseRamGb(title),
-      storageGb: parseStorageGb(title),
-      cpuCores: parseCpuCores(title),
-      gpuCores: parseGpuCores(title),
-      screenInches: parseScreenInch(title),
-      color: parseColor(title),
-      productId: null,
-      link
-    });
+      // Filter: only MacBook Pro
+      if (!/macbook pro/i.test(title)) continue;
+
+      items.push({
+        id: `${source.key}-${item.item_id || index}`,
+        sourceKey: source.key,
+        sourceType: source.type,
+        sourceUrl: source.url,
+        vendor: "MacTrade",
+        title,
+        variant,
+        model: deriveModel(title),
+        chip: parseChip(combined),
+        year: parseYear(combined),
+        condition: source.key.includes("gebraucht") ? "gebraucht" : "vorgaengermodell",
+        price: Number(item.price) || null,
+        currency: "EUR",
+        ramGb: parseRamGb(combined),
+        storageGb: parseStorageGb(combined),
+        cpuCores: parseCpuCores(combined),
+        gpuCores: parseGpuCores(combined),
+        screenInches: parseScreenInch(combined),
+        color: parseColor(combined),
+        productId: item.item_id || null,
+        link
+      });
+    }
+  } else {
+    // FALLBACK to old HTML parsing if DataLayer fails
+    const nameMatches = [...html.matchAll(/<a[^>]+href="([^"]+)"[^>]*class="product-name"[^>]*>([\s\S]*?)<\/a>/gi)];
+    for (const [index, match] of nameMatches.entries()) {
+      const link = absUrl(match[1], source.url);
+      const title = cleanup(match[2]);
+      if (!/macbook pro/i.test(title)) continue;
+
+      items.push({
+        id: `${source.key}-${index + 1}`,
+        sourceKey: source.key,
+        sourceType: source.type,
+        sourceUrl: source.url,
+        vendor: "MacTrade",
+        title,
+        variant: "",
+        model: deriveModel(title),
+        chip: parseChip(title),
+        year: parseYear(title),
+        condition: source.key.includes("gebraucht") ? "gebraucht" : "vorgaengermodell",
+        price: null,
+        currency: "EUR",
+        ramGb: parseRamGb(title),
+        storageGb: parseStorageGb(title),
+        cpuCores: parseCpuCores(title),
+        gpuCores: parseGpuCores(title),
+        screenInches: parseScreenInch(title),
+        color: parseColor(title),
+        productId: null,
+        link
+      });
+    }
   }
 
   return items;
