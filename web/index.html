@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -83,16 +84,11 @@
           </div>
         </div>
         <div class="filter-group filter-group-span2">
-          <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 6px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 20px;">
             <label style="margin:0;">Preisbereich</label>
-            <strong id="priceRangeLabel" style="color:var(--accent); font-size:14px;">0 € - 6000+ €</strong>
+            <strong id="priceRangeLabel" style="color:var(--text-main); font-size:14px; font-weight:700;">0 € - 6000+ €</strong>
           </div>
-          <div class="range-slider">
-             <div class="range-track-bg"></div>
-             <div class="range-track-fill" id="priceTrackFill"></div>
-             <input type="range" id="minPriceRange" min="0" max="6000" value="0" step="50">
-             <input type="range" id="maxPriceRange" min="0" max="6000" value="6000" step="50">
-          </div>
+          <div id="premiumPriceSlider" style="margin: 0 10px;"></div>
         </div>
         <div class="filter-group">
           <label>RAM (GB)</label>
@@ -138,6 +134,7 @@
     </section>
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

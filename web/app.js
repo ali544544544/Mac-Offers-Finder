@@ -14,10 +14,9 @@ const conditionBoxEl = document.getElementById("conditionFilterBox");
 const ramBoxEl = document.getElementById("ramFilterBox");
 const ssdBoxEl = document.getElementById("ssdFilterBox");
 
-const minPriceRange = document.getElementById("minPriceRange");
-const maxPriceRange = document.getElementById("maxPriceRange");
+const premiumPriceSlider = document.getElementById("premiumPriceSlider");
 const priceRangeLabel = document.getElementById("priceRangeLabel");
-const priceTrackFill = document.getElementById("priceTrackFill");
+let priceSliderInstance = null;
 
 // State
 const filterState = {
@@ -173,46 +172,6 @@ function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), "de"));
 }
 
-function updatePriceSliderUI() {
-  const minP = Number(minPriceRange.value);
-  const maxP = Number(maxPriceRange.value);
-  const absoluteMin = Number(minPriceRange.min);
-  const absoluteMax = Number(minPriceRange.max);
-  
-  const minPercent = ((minP - absoluteMin) / (absoluteMax - absoluteMin)) * 100;
-  const maxPercent = ((maxP - absoluteMin) / (absoluteMax - absoluteMin)) * 100;
-  
-  priceTrackFill.style.left = `${minPercent}%`;
-  priceTrackFill.style.width = `${maxPercent - minPercent}%`;
-  priceRangeLabel.textContent = `${minP} € - ${maxP === absoluteMax ? maxP + '+ €' : maxP + ' €'}`;
-}
-
-function handlePriceInput(e) {
-  let minP = Number(minPriceRange.value);
-  let maxP = Number(maxPriceRange.value);
-  const minGap = 50;
-
-  if (e.target === minPriceRange) {
-    if (minP > maxP - minGap) {
-      minPriceRange.value = maxP - minGap;
-      minP = maxP - minGap;
-    }
-  } else {
-    if (maxP < minP + minGap) {
-      maxPriceRange.value = minP + minGap;
-      maxP = minP + minGap;
-    }
-  }
-  
-  filterState.minPrice = minP;
-  filterState.maxPrice = maxP;
-  updatePriceSliderUI();
-  render();
-}
-
-minPriceRange.addEventListener("input", handlePriceInput);
-maxPriceRange.addEventListener("input", handlePriceInput);
-
 function setupMultiChips(container, stateSet, parser = String) {
   if (!container) return;
   const chips = container.querySelectorAll(".chip");
@@ -315,23 +274,37 @@ function populateFilters(offers) {
     });
   });
 
-  // Dynamic Price Range Scale
-  if (offers.length) {
+  // Dynamic Price Range Scale using noUiSlider
+  if (offers.length && premiumPriceSlider) {
     const validPrices = offers.map(o => Number(o.price)).filter(Number.isFinite);
     if (validPrices.length) {
       const minVal = Math.floor(Math.min(...validPrices) / 100) * 100;
       const maxVal = Math.ceil(Math.max(...validPrices) / 100) * 100 + 100;
-      minPriceRange.min = minVal;
-      minPriceRange.max = maxVal;
-      maxPriceRange.min = minVal;
-      maxPriceRange.max = maxVal;
       
-      // Keep selected logic or reset bounds
       filterState.minPrice = minVal;
       filterState.maxPrice = maxVal;
-      minPriceRange.value = minVal;
-      maxPriceRange.value = maxVal;
-      updatePriceSliderUI();
+
+      if (!priceSliderInstance) {
+        noUiSlider.create(premiumPriceSlider, {
+          start: [minVal, maxVal],
+          connect: true,
+          range: { min: minVal, max: maxVal },
+          step: 50,
+          format: {
+            to: value => Math.round(value),
+            from: value => Math.round(value)
+          }
+        });
+        
+        priceSliderInstance = premiumPriceSlider.noUiSlider;
+        priceSliderInstance.on('update', (values) => {
+          filterState.minPrice = Number(values[0]);
+          filterState.maxPrice = Number(values[1]);
+          priceRangeLabel.textContent = `${filterState.minPrice} € - ${filterState.maxPrice === maxVal ? filterState.maxPrice + '+ €' : filterState.maxPrice + ' €'}`;
+        });
+        
+        priceSliderInstance.on('change', render);
+      }
     }
   }
 }
@@ -343,7 +316,10 @@ function filteredOffers() {
   filterState.sort = sortFilterEl.value;
 
   const { search, source, model, colors, conditions, minPrice, maxPrice, rams, storages } = filterState;
-  const isMaxOpen = maxPrice >= Number(maxPriceRange.max);
+  
+  // Use absolute max bounds to check if max is open
+  const sliderOpts = priceSliderInstance ? priceSliderInstance.options.range : {max: 6000};
+  const isMaxOpen = maxPrice >= Number(sliderOpts.max);
 
   return allOffers.filter((offer) => {
     if (!/macbook pro/i.test(offer.title || "")) return false;
