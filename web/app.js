@@ -77,8 +77,8 @@ function badge(label, value) {
 
 function renderOfferCard(offer, isBest = false, index = 0) {
   const delay = Math.min(index * 0.05, 0.5);
-  const score = (offer.valueScore || 0).toFixed(1);
-  const scoreClass = offer.valueScore >= 40 ? "score-high" : offer.valueScore >= 20 ? "score-mid" : "score-low";
+  const score = (offer.resolveScore || offer.valueScore || 0).toFixed(2);
+  const scoreClass = score >= 50 ? "score-high" : score >= 25 ? "score-mid" : "score-low";
 
   return `
     <article class="offer-card ${isBest ? "best-card" : ""}" style="animation-delay: ${delay}s">
@@ -86,7 +86,7 @@ function renderOfferCard(offer, isBest = false, index = 0) {
       <div class="offer-card-top">
         <div class="offer-source">${esc(offer.vendor || offer.sourceKey || "-")}</div>
         <div class="offer-score-pill ${scoreClass}">
-          <span class="score-label">Score</span>
+          <span class="score-label">Resolve-Score</span>
           <span class="score-value">${score}</span>
         </div>
       </div>
@@ -126,9 +126,10 @@ function renderOfferCard(offer, isBest = false, index = 0) {
         <div><span>Zustand</span><strong>${esc(offer.condition || "-")}</strong></div>
         <div><span>Modell</span><strong>${esc(offer.model || "-")}</strong></div>
         <div><span>Farbe</span><strong>${esc(offer.color || "-")}</strong></div>
-        <div><span>CPU</span><strong>${offer.cpuCores ? offer.cpuCores + " Kerne" : "-"}</strong></div>
-        <div><span>GPU</span><strong>${offer.gpuCores ? offer.gpuCores + " Kerne" : "-"}</strong></div>
-        <div><span>Jahr</span><strong>${offer.year || "-"}</strong></div>
+        <div><span>CPU Kerne</span><strong>${offer.cpuCores || "-"}</strong></div>
+        <div><span>GPU Kerne</span><strong>${offer.gpuCores || "-"}</strong></div>
+        <div><span>Geekbench MC</span><strong>${offer.gb6_mc || "k.A."}</strong></div>
+        <div><span>Metal GPU</span><strong>${offer.metal_gpu || "k.A."}</strong></div>
       </div>
 
       <div class="offer-actions">
@@ -205,7 +206,7 @@ function render() {
   // Sorting logic
   const sortMode = sortFilterEl.value;
   if (sortMode === "score") {
-    offers.sort((a, b) => Number(b.valueScore || 0) - Number(a.valueScore || 0));
+    offers.sort((a, b) => Number(b.resolveScore || b.valueScore || 0) - Number(a.resolveScore || a.valueScore || 0));
   } else if (sortMode === "priceAsc") {
     offers.sort((a, b) => Number(a.price || 0) - Number(b.price || 0));
   } else if (sortMode === "priceDesc") {
