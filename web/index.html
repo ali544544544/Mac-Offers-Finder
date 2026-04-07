@@ -70,10 +70,10 @@
           <label>Zustand</label>
           <div id="conditionFilterBox" class="chip-group">
              <button class="chip active" data-val="">Alle</button>
-             <button class="chip" data-val="apple-refurbished">Generalüberholt</button>
+             <button class="chip" data-val="refurbished">Generalüberholt</button>
              <button class="chip" data-val="vorgaengermodell">Vorgängermodell</button>
-             <button class="chip" data-val="gebrauchtware">Gebraucht</button>
-             <button class="chip" data-val="b-ware">B-Ware</button>
+             <button class="chip" data-val="gebraucht">Gebraucht</button>
+             <button class="chip" data-val="a-ware">A-Ware</button>
           </div>
         </div>
         <div class="filter-group">
@@ -83,10 +83,10 @@
           </div>
         </div>
         <div class="filter-group filter-group-span2">
-          <label style="display:flex; justify-content:space-between;">
-            <span>Preisbereich</span>
-            <strong id="priceRangeLabel" style="color:var(--accent);">0 € - 6000+ €</strong>
-          </label>
+          <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 6px;">
+            <label style="margin:0;">Preisbereich</label>
+            <strong id="priceRangeLabel" style="color:var(--accent); font-size:14px;">0 € - 6000+ €</strong>
+          </div>
           <div class="range-slider">
              <div class="range-track-bg"></div>
              <div class="range-track-fill" id="priceTrackFill"></div>

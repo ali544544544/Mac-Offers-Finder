@@ -319,7 +319,7 @@ body {
 .range-slider {
   position: relative;
   width: 100%;
-  height: 36px;
+  height: 48px;
   padding-top: 10px;
 }
 .range-track-bg {
@@ -328,7 +328,7 @@ body {
   height: 4px;
   background: var(--input-border);
   border-radius: 4px;
-  top: 14px;
+  top: 22px;
   opacity: 0.6;
 }
 .range-track-fill {
@@ -336,7 +336,7 @@ body {
   height: 4px;
   background: var(--accent);
   border-radius: 4px;
-  top: 14px;
+  top: 22px;
   z-index: 1;
 }
 .range-slider input[type="range"] {
@@ -347,7 +347,7 @@ body {
   background: transparent;
   pointer-events: none;
   z-index: 2;
-  top: 14px;
+  top: 22px;
   margin: 0;
   outline: none;
 }
