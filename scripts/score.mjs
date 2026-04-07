@@ -44,7 +44,8 @@ function computeScore(offer) {
   const ssd_gb = safeNumber(offer.storageGb, fallbackSsd);
   const price = safeNumber(offer.price, 999999);
   
-  const chipKey = `${offer.chip}-${offer.cpuCores || 8}-${offer.gpuCores || 8}`;
+  const baseChip = (offer.chip || "M1").replace(/ (Pro|Max|Ultra)/ig, '');
+  const chipKey = `${baseChip}-${offer.cpuCores || 8}-${offer.gpuCores || 8}`;
   const bench = benchmarks[chipKey] || { gb6_mc: 0, metal_gpu: 0 };
   
   let cpu_score = bench.gb6_mc;
