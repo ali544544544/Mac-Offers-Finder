@@ -56,10 +56,12 @@
           </select>
         </div>
         <div class="filter-group">
-          <label for="sourceFilter">Quelle</label>
-          <select id="sourceFilter">
-            <option value="">Alle Quellen</option>
-          </select>
+          <label>Quelle</label>
+          <div id="sourceFilterBox" class="chip-group">
+             <button class="chip active" data-val="">Alle</button>
+             <button class="chip" data-val="Apple">Apple Refurbished</button>
+             <button class="chip" data-val="MacTrade">MacTrade</button>
+          </div>
         </div>
         <div class="filter-group">
           <label for="modelFilter">Modell</label>

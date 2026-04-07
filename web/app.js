@@ -5,12 +5,11 @@ const offerCountEl = document.getElementById("offerCount");
 
 const searchFilterEl = document.getElementById("searchFilter");
 const sortFilterEl = document.getElementById("sortFilter");
-const sourceFilterEl = document.getElementById("sourceFilter");
 const modelFilterEl = document.getElementById("modelFilter");
 
 // Custom Filter Elements
 const colorSwatchesEl = document.getElementById("colorSwatches");
-const conditionBoxEl = document.getElementById("conditionFilterBox");
+const sourceBoxEl = document.getElementById("sourceFilterBox");
 const ramBoxEl = document.getElementById("ramFilterBox");
 const ssdBoxEl = document.getElementById("ssdFilterBox");
 
@@ -22,10 +21,9 @@ let priceSliderInstance = null;
 const filterState = {
   search: "",
   sort: "score",
-  source: "",
+  vendors: new Set(),
   model: "",
   colors: new Set(),
-  conditions: new Set(),
   minPrice: 0,
   maxPrice: 6000,
   rams: new Set(),
@@ -103,6 +101,21 @@ function badge(label, value) {
   return `<span class="badge"><strong>${esc(label)}:</strong> ${esc(value)}</span>`;
 }
 
+const ICON = {
+  condition: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>`,
+  color:     `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="12" r="2.5"/><circle cx="13.5" cy="17.5" r="2.5"/><circle cx="5" cy="12" r="3"/></svg>`,
+  cpu:       `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"/></svg>`,
+  gpu:       `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4"/><path d="M14 12h4"/><path d="M6 9v6"/><path d="M18 9v6"/><circle cx="12" cy="12" r="2"/></svg>`,
+  bench:     `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 18v4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M20 12h4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg>`,
+  metal:     `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`
+};
+
+function formatStorage(gb) {
+  if (!gb) return "-";
+  if (gb >= 1000) return (gb / 1000) % 1 === 0 ? `${gb/1000} TB` : `${(gb/1000).toFixed(1)} TB`;
+  return `${gb} GB`;
+}
+
 function renderOfferCard(offer, isBest = false, index = 0) {
   const delay = Math.min(index * 0.05, 0.5);
   const score = (offer.resolveScore || offer.valueScore || 0).toFixed(2);
@@ -112,23 +125,21 @@ function renderOfferCard(offer, isBest = false, index = 0) {
     <article class="offer-card ${isBest ? "best-card" : ""}" style="animation-delay: ${delay}s">
 
       <div class="offer-card-top">
-        <div class="offer-source">${esc(offer.vendor || offer.sourceKey || "-")}</div>
-        <div class="offer-score-pill ${scoreClass}">
-          <span class="score-label">Resolve-Score</span>
-          <span class="score-value">${score}</span>
-        </div>
-      </div>
-
-      <div class="offer-price-row">
         <div class="offer-price">${euro(offer.price)}</div>
-        ${isBest ? `<div class="best-badge">🏆 Top Deal</div>` : ""}
+        <div class="offer-card-top-right">
+          ${isBest ? `<div class="best-badge">Top Deal</div>` : ""}
+          <div class="offer-score-pill ${scoreClass}">
+            <span class="score-label">Resolve</span>
+            <span class="score-value">${score}</span>
+          </div>
+        </div>
       </div>
 
       <h3 class="offer-title">${esc(offer.title || "Ohne Titel")}</h3>
 
       <div class="spec-grid">
         <div class="spec-tile">
-          <div class="spec-icon">💾</div>
+          <div class="spec-icon">⚡</div>
           <div class="spec-info">
             <span class="spec-label">Chip</span>
             <strong class="spec-value">${esc(offer.chip || "-")}</strong>
@@ -142,21 +153,21 @@ function renderOfferCard(offer, isBest = false, index = 0) {
           </div>
         </div>
         <div class="spec-tile">
-          <div class="spec-icon">💿</div>
+          <div class="spec-icon">💾</div>
           <div class="spec-info">
             <span class="spec-label">SSD</span>
-            <strong class="spec-value">${offer.storageGb ? (offer.storageGb >= 1000 ? (offer.storageGb/1024).toFixed(offer.storageGb % 1024 === 0 ? 0 : 1) + " TB" : offer.storageGb + " GB") : "-"}</strong>
+            <strong class="spec-value">${formatStorage(offer.storageGb)}</strong>
           </div>
         </div>
       </div>
 
       <div class="offer-details">
-        <div><span>Zustand</span><strong>${esc(offer.condition || "-")}</strong></div>
-        <div><span>Farbe</span><strong>${esc(offer.color || "-")}</strong></div>
-        <div><span>CPU Kerne</span><strong>${offer.cpuCores || "-"}</strong></div>
-        <div><span>GPU Kerne</span><strong>${offer.gpuCores || "-"}</strong></div>
-        <div><span>Geekbench MC</span><strong>${offer.gb6_mc || "k.A."}</strong></div>
-        <div><span>Metal GPU</span><strong>${offer.metal_gpu || "k.A."}</strong></div>
+        <div class="detail-item">${ICON.condition}<div><span>Zustand</span><strong>${esc(offer.condition || "-")}</strong></div></div>
+        <div class="detail-item">${ICON.color}<div><span>Farbe</span><strong>${esc(offer.color || "-")}</strong></div></div>
+        <div class="detail-item">${ICON.cpu}<div><span>CPU Kerne</span><strong>${offer.cpuCores || "-"}</strong></div></div>
+        <div class="detail-item">${ICON.gpu}<div><span>GPU Kerne</span><strong>${offer.gpuCores || "-"}</strong></div></div>
+        <div class="detail-item">${ICON.bench}<div><span>Geekbench MC</span><strong>${offer.gb6_mc || "k.A."}</strong></div></div>
+        <div class="detail-item">${ICON.metal}<div><span>Metal GPU</span><strong>${offer.metal_gpu || "k.A."}</strong></div></div>
       </div>
 
       <div class="offer-actions">
@@ -206,26 +217,19 @@ function setupMultiChips(container, stateSet, parser = String) {
 }
 
 // Initial Setup
-setupMultiChips(conditionBoxEl, filterState.conditions);
+setupMultiChips(sourceBoxEl, filterState.vendors);
 setupMultiChips(ramBoxEl, filterState.rams, Number);
 setupMultiChips(ssdBoxEl, filterState.storages, Number);
 
 function populateFilters(offers) {
-  const currentSource = sourceFilterEl.value;
   const currentModel = modelFilterEl.value;
 
-  sourceFilterEl.innerHTML = `<option value="">Alle Quellen</option>`;
   modelFilterEl.innerHTML = `<option value="">Alle Modelle</option>`;
-
-  uniqueSorted(offers.map(o => o.sourceKey)).forEach((source) => {
-    sourceFilterEl.innerHTML += `<option value="${esc(source)}">${esc(source)}</option>`;
-  });
 
   uniqueSorted(offers.map(o => o.model)).forEach((model) => {
     modelFilterEl.innerHTML += `<option value="${esc(model)}">${esc(model)}</option>`;
   });
 
-  sourceFilterEl.value = currentSource;
   modelFilterEl.value = currentModel;
 
   // Render Colors
@@ -311,11 +315,10 @@ function populateFilters(offers) {
 
 function filteredOffers() {
   filterState.search = (searchFilterEl.value || "").toLowerCase().trim();
-  filterState.source = sourceFilterEl.value;
   filterState.model = modelFilterEl.value;
   filterState.sort = sortFilterEl.value;
 
-  const { search, source, model, colors, conditions, minPrice, maxPrice, rams, storages } = filterState;
+  const { search, model, vendors, colors, minPrice, maxPrice, rams, storages } = filterState;
   
   // Use absolute max bounds to check if max is open
   const sliderOpts = priceSliderInstance ? priceSliderInstance.options.range : {max: 6000};
@@ -329,10 +332,9 @@ function filteredOffers() {
       if (!haystack.includes(search)) return false;
     }
 
-    if (source && offer.sourceKey !== source) return false;
+    if (vendors.size > 0 && !vendors.has(offer.vendor)) return false;
     if (model && offer.model !== model) return false;
     if (colors.size > 0 && !colors.has(offer.color)) return false;
-    if (conditions.size > 0 && !conditions.has((offer.condition || "").toLowerCase())) return false;
     
     // Bounds Check Prices
     const limitMax = isMaxOpen ? 999999 : maxPrice;
@@ -401,7 +403,6 @@ async function init() {
     [
       searchFilterEl,
       sortFilterEl,
-      sourceFilterEl,
       modelFilterEl
     ].forEach((el) => el.addEventListener("input", render));
 

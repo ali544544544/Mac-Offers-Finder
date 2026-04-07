@@ -347,11 +347,19 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Card Top: Price left, Score right */
 .offer-card-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+}
+
+.offer-card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 /* Score pill */
@@ -403,23 +411,15 @@ body {
   padding: 4px 8px;
   border-radius: 4px;
   text-transform: uppercase;
-}
-
-.offer-source {
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--text-muted);
-  border: 1px solid var(--input-border);
-  padding: 4px 8px;
-  border-radius: 4px;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .offer-price {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   color: var(--text-main);
+  line-height: 1;
 }
 
 .offer-title {
@@ -482,25 +482,44 @@ body {
   gap: 8px;
 }
 
-.offer-details div {
+.detail-item {
   background: var(--bg-color);
-  padding: 10px;
+  border: 1px solid var(--input-border);
   border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.detail-item svg {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.detail-item > div {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  min-width: 0;
 }
 
-.offer-details span {
+.detail-item span {
   font-size: 10px;
   color: var(--text-muted);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.offer-details strong {
-  font-size: 13px;
-  font-weight: 600;
+.detail-item strong {
+  font-size: 12px;
+  font-weight: 700;
   color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .offer-actions {
