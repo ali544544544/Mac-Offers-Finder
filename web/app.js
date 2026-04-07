@@ -25,12 +25,12 @@ const filterState = {
   sort: "score",
   source: "",
   model: "",
-  color: "",
-  condition: "",
+  colors: new Set(),
+  conditions: new Set(),
   minPrice: 0,
   maxPrice: 6000,
-  minRam: 0,
-  minStorage: 0
+  rams: new Set(),
+  storages: new Set()
 };
 
 const COLOR_MAP = {
@@ -214,23 +214,43 @@ function handlePriceInput(e) {
 minPriceRange.addEventListener("input", handlePriceInput);
 maxPriceRange.addEventListener("input", handlePriceInput);
 
-function setupChips(container, stateKey, parser = String) {
+function setupMultiChips(container, stateSet, parser = String) {
   if (!container) return;
   const chips = container.querySelectorAll(".chip");
+  const allChip = container.querySelector('[data-val=""]');
+
   chips.forEach(chip => {
     chip.addEventListener("click", () => {
-      chips.forEach(c => c.classList.remove("active"));
-      chip.classList.add("active");
-      filterState[stateKey] = parser(chip.dataset.val);
+      const val = chip.dataset.val;
+      
+      if (!val) {
+        stateSet.clear();
+        chips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+      } else {
+        const parsedVal = parser(val);
+        if (stateSet.has(parsedVal)) {
+          stateSet.delete(parsedVal);
+          chip.classList.remove("active");
+        } else {
+          stateSet.add(parsedVal);
+          chip.classList.add("active");
+        }
+        
+        if (allChip) {
+          if (stateSet.size > 0) allChip.classList.remove("active");
+          else allChip.classList.add("active");
+        }
+      }
       render();
     });
   });
 }
 
 // Initial Setup
-setupChips(conditionBoxEl, "condition");
-setupChips(ramBoxEl, "minRam", Number);
-setupChips(ssdBoxEl, "minStorage", Number);
+setupMultiChips(conditionBoxEl, filterState.conditions);
+setupMultiChips(ramBoxEl, filterState.rams, Number);
+setupMultiChips(ssdBoxEl, filterState.storages, Number);
 
 function populateFilters(offers) {
   const currentSource = sourceFilterEl.value;
@@ -251,7 +271,7 @@ function populateFilters(offers) {
   modelFilterEl.value = currentModel;
 
   // Render Colors
-  colorSwatchesEl.innerHTML = `<div class="color-swatch ${!filterState.color ? 'active' : ''}" style="background: linear-gradient(135deg, #eee, #aaa); display:flex; align-items:center; justify-content:center; font-size:10px" data-color="">X</div>`;
+  colorSwatchesEl.innerHTML = `<div class="color-swatch ${filterState.colors.size === 0 ? 'active' : ''}" style="background: linear-gradient(135deg, #eee, #aaa); display:flex; align-items:center; justify-content:center; font-size:10px" data-color="">Alle</div>`;
   
   const colors = uniqueSorted(offers.map(o => o.color));
   colors.forEach(rawColor => {
@@ -263,16 +283,35 @@ function populateFilters(offers) {
         break;
       }
     }
-    const isActive = filterState.color === rawColor;
+    const isActive = filterState.colors.has(rawColor);
     colorSwatchesEl.innerHTML += `<div class="color-swatch ${isActive ? 'active' : ''}" style="background-color: ${hex}" title="${esc(rawColor)}" data-color="${esc(rawColor)}"></div>`;
   });
 
   // Attach color click events
-  [...colorSwatchesEl.querySelectorAll(".color-swatch")].forEach(swatch => {
+  const swatches = [...colorSwatchesEl.querySelectorAll(".color-swatch")];
+  const allColorSwatch = swatches.find(s => !s.dataset.color);
+  
+  swatches.forEach(swatch => {
     swatch.addEventListener("click", () => {
-      [...colorSwatchesEl.querySelectorAll(".color-swatch")].forEach(s => s.classList.remove("active"));
-      swatch.classList.add("active");
-      filterState.color = swatch.dataset.color || "";
+      const val = swatch.dataset.color;
+      if (!val) {
+        filterState.colors.clear();
+        swatches.forEach(s => s.classList.remove("active"));
+        swatch.classList.add("active");
+      } else {
+        if (filterState.colors.has(val)) {
+          filterState.colors.delete(val);
+          swatch.classList.remove("active");
+        } else {
+          filterState.colors.add(val);
+          swatch.classList.add("active");
+        }
+        
+        if (allColorSwatch) {
+          if (filterState.colors.size > 0) allColorSwatch.classList.remove("active");
+          else allColorSwatch.classList.add("active");
+        }
+      }
       render();
     });
   });
@@ -304,7 +343,7 @@ function filteredOffers() {
   filterState.model = modelFilterEl.value;
   filterState.sort = sortFilterEl.value;
 
-  const { search, source, model, color, condition, minPrice, maxPrice, minRam, minStorage } = filterState;
+  const { search, source, model, colors, conditions, minPrice, maxPrice, rams, storages } = filterState;
   const isMaxOpen = maxPrice >= Number(maxPriceRange.max);
 
   return allOffers.filter((offer) => {
@@ -317,16 +356,16 @@ function filteredOffers() {
 
     if (source && offer.sourceKey !== source) return false;
     if (model && offer.model !== model) return false;
-    if (color && offer.color !== color) return false;
-    if (condition && (offer.condition || "").toLowerCase() !== condition) return false;
+    if (colors.size > 0 && !colors.has(offer.color)) return false;
+    if (conditions.size > 0 && !conditions.has((offer.condition || "").toLowerCase())) return false;
     
     // Bounds Check Prices
     const limitMax = isMaxOpen ? 999999 : maxPrice;
     if (Number(offer.price || 0) < minPrice || Number(offer.price || 0) > limitMax) return false;
     
-    // Spec bounds
-    if (minRam && Number(offer.ramGb || 0) < minRam) return false;
-    if (minStorage && Number(offer.storageGb || 0) < minStorage) return false;
+    // Spec bounds (exact multi-select)
+    if (rams.size > 0 && !rams.has(Number(offer.ramGb || 0))) return false;
+    if (storages.size > 0 && !storages.has(Number(offer.storageGb || 0))) return false;
 
     return true;
   });
