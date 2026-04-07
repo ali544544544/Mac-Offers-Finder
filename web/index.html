@@ -67,39 +67,53 @@
           </select>
         </div>
         <div class="filter-group">
-          <label for="colorFilter">Farbe</label>
-          <select id="colorFilter">
-            <option value="">Beliebig</option>
-          </select>
+          <label>Zustand</label>
+          <div id="conditionFilterBox" class="chip-group">
+             <button class="chip active" data-val="">Alle</button>
+             <button class="chip" data-val="apple-refurbished">Generalüberholt</button>
+             <button class="chip" data-val="vorgaengermodell">Vorgängermodell</button>
+             <button class="chip" data-val="gebrauchtware">Gebraucht</button>
+             <button class="chip" data-val="b-ware">B-Ware</button>
+          </div>
         </div>
         <div class="filter-group">
-          <label for="maxPriceFilter">Max. Preis (€)</label>
-          <input id="maxPriceFilter" type="number" placeholder="Beliebig">
+          <label>Farbe</label>
+          <div id="colorSwatches" class="color-swatches">
+            <!-- Dynamisch gefüllt -->
+          </div>
+        </div>
+        <div class="filter-group filter-group-span2">
+          <label style="display:flex; justify-content:space-between;">
+            <span>Preisbereich</span>
+            <strong id="priceRangeLabel" style="color:var(--accent);">0 € - 6000+ €</strong>
+          </label>
+          <div class="range-slider">
+             <div class="range-track-bg"></div>
+             <div class="range-track-fill" id="priceTrackFill"></div>
+             <input type="range" id="minPriceRange" min="0" max="6000" value="0" step="50">
+             <input type="range" id="maxPriceRange" min="0" max="6000" value="6000" step="50">
+          </div>
         </div>
         <div class="filter-group">
-          <label for="minRamFilter">Min. RAM (GB)</label>
-          <select id="minRamFilter">
-            <option value="">Beliebig</option>
-            <option value="8">8 GB+</option>
-            <option value="16">16 GB+</option>
-            <option value="18">18 GB+</option>
-            <option value="24">24 GB+</option>
-            <option value="32">32 GB+</option>
-            <option value="36">36 GB+</option>
-            <option value="48">48 GB+</option>
-            <option value="64">64 GB+</option>
-          </select>
+          <label>Mindestens RAM</label>
+          <div id="ramFilterBox" class="chip-group">
+            <button class="chip active" data-val="0">Egal</button>
+            <button class="chip" data-val="16">16+</button>
+            <button class="chip" data-val="24">24+</button>
+            <button class="chip" data-val="32">32+</button>
+            <button class="chip" data-val="48">48+</button>
+            <button class="chip" data-val="64">64+</button>
+          </div>
         </div>
         <div class="filter-group">
-          <label for="minStorageFilter">Min. SSD (GB)</label>
-          <select id="minStorageFilter">
-            <option value="">Beliebig</option>
-            <option value="256">256 GB+</option>
-            <option value="512">512 GB+</option>
-            <option value="1000">1 TB+</option>
-            <option value="2000">2 TB+</option>
-            <option value="4000">4 TB+</option>
-          </select>
+          <label>Mindestens SSD</label>
+          <div id="ssdFilterBox" class="chip-group">
+            <button class="chip active" data-val="0">Egal</button>
+            <button class="chip" data-val="512">512 GB+</button>
+            <button class="chip" data-val="1000">1 TB+</button>
+            <button class="chip" data-val="2000">2 TB+</button>
+            <button class="chip" data-val="4000">4 TB+</button>
+          </div>
         </div>
       </div>
     </section>

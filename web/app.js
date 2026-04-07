@@ -3,15 +3,44 @@ const bestOfferEl = document.getElementById("bestOffer");
 const offersEl = document.getElementById("offers");
 const offerCountEl = document.getElementById("offerCount");
 
-// Filter and Sort Elements
 const searchFilterEl = document.getElementById("searchFilter");
 const sortFilterEl = document.getElementById("sortFilter");
 const sourceFilterEl = document.getElementById("sourceFilter");
 const modelFilterEl = document.getElementById("modelFilter");
-const colorFilterEl = document.getElementById("colorFilter");
-const maxPriceFilterEl = document.getElementById("maxPriceFilter");
-const minRamFilterEl = document.getElementById("minRamFilter");
-const minStorageFilterEl = document.getElementById("minStorageFilter");
+
+// Custom Filter Elements
+const colorSwatchesEl = document.getElementById("colorSwatches");
+const conditionBoxEl = document.getElementById("conditionFilterBox");
+const ramBoxEl = document.getElementById("ramFilterBox");
+const ssdBoxEl = document.getElementById("ssdFilterBox");
+
+const minPriceRange = document.getElementById("minPriceRange");
+const maxPriceRange = document.getElementById("maxPriceRange");
+const priceRangeLabel = document.getElementById("priceRangeLabel");
+const priceTrackFill = document.getElementById("priceTrackFill");
+
+// State
+const filterState = {
+  search: "",
+  sort: "score",
+  source: "",
+  model: "",
+  color: "",
+  condition: "",
+  minPrice: 0,
+  maxPrice: 6000,
+  minRam: 0,
+  minStorage: 0
+};
+
+const COLOR_MAP = {
+  "space schwarz": "#2b2b2b",
+  "space grau": "#7d7e80",
+  "spacegrau": "#7d7e80",
+  "silber": "#e3e4e5",
+  "mitternacht": "#2e3642",
+  "polarstern": "#f4e8ce"
+};
 
 // Theme Elements
 const themeToggleBtn = document.getElementById("themeToggle");
@@ -145,14 +174,70 @@ function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), "de"));
 }
 
+function updatePriceSliderUI() {
+  const minP = Number(minPriceRange.value);
+  const maxP = Number(maxPriceRange.value);
+  const absoluteMin = Number(minPriceRange.min);
+  const absoluteMax = Number(minPriceRange.max);
+  
+  const minPercent = ((minP - absoluteMin) / (absoluteMax - absoluteMin)) * 100;
+  const maxPercent = ((maxP - absoluteMin) / (absoluteMax - absoluteMin)) * 100;
+  
+  priceTrackFill.style.left = `${minPercent}%`;
+  priceTrackFill.style.width = `${maxPercent - minPercent}%`;
+  priceRangeLabel.textContent = `${minP} € - ${maxP === absoluteMax ? maxP + '+ €' : maxP + ' €'}`;
+}
+
+function handlePriceInput(e) {
+  let minP = Number(minPriceRange.value);
+  let maxP = Number(maxPriceRange.value);
+  const minGap = 50;
+
+  if (e.target === minPriceRange) {
+    if (minP > maxP - minGap) {
+      minPriceRange.value = maxP - minGap;
+      minP = maxP - minGap;
+    }
+  } else {
+    if (maxP < minP + minGap) {
+      maxPriceRange.value = minP + minGap;
+      maxP = minP + minGap;
+    }
+  }
+  
+  filterState.minPrice = minP;
+  filterState.maxPrice = maxP;
+  updatePriceSliderUI();
+  render();
+}
+
+minPriceRange.addEventListener("input", handlePriceInput);
+maxPriceRange.addEventListener("input", handlePriceInput);
+
+function setupChips(container, stateKey, parser = String) {
+  if (!container) return;
+  const chips = container.querySelectorAll(".chip");
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      filterState[stateKey] = parser(chip.dataset.val);
+      render();
+    });
+  });
+}
+
+// Initial Setup
+setupChips(conditionBoxEl, "condition");
+setupChips(ramBoxEl, "minRam", Number);
+setupChips(ssdBoxEl, "minStorage", Number);
+
 function populateFilters(offers) {
   const currentSource = sourceFilterEl.value;
   const currentModel = modelFilterEl.value;
-  const currentColor = colorFilterEl.value;
 
   sourceFilterEl.innerHTML = `<option value="">Alle Quellen</option>`;
   modelFilterEl.innerHTML = `<option value="">Alle Modelle</option>`;
-  colorFilterEl.innerHTML = `<option value="">Beliebig</option>`;
 
   uniqueSorted(offers.map(o => o.sourceKey)).forEach((source) => {
     sourceFilterEl.innerHTML += `<option value="${esc(source)}">${esc(source)}</option>`;
@@ -162,26 +247,67 @@ function populateFilters(offers) {
     modelFilterEl.innerHTML += `<option value="${esc(model)}">${esc(model)}</option>`;
   });
 
-  uniqueSorted(offers.map(o => o.color)).forEach((color) => {
-    colorFilterEl.innerHTML += `<option value="${esc(color)}">${esc(color)}</option>`;
-  });
-
   sourceFilterEl.value = currentSource;
   modelFilterEl.value = currentModel;
-  colorFilterEl.value = currentColor;
+
+  // Render Colors
+  colorSwatchesEl.innerHTML = `<div class="color-swatch ${!filterState.color ? 'active' : ''}" style="background: linear-gradient(135deg, #eee, #aaa); display:flex; align-items:center; justify-content:center; font-size:10px" data-color="">X</div>`;
+  
+  const colors = uniqueSorted(offers.map(o => o.color));
+  colors.forEach(rawColor => {
+    const lColor = rawColor.toLowerCase();
+    let hex = "#ddd"; // fallback
+    for (const [key, val] of Object.entries(COLOR_MAP)) {
+      if (lColor.includes(key)) {
+        hex = val;
+        break;
+      }
+    }
+    const isActive = filterState.color === rawColor;
+    colorSwatchesEl.innerHTML += `<div class="color-swatch ${isActive ? 'active' : ''}" style="background-color: ${hex}" title="${esc(rawColor)}" data-color="${esc(rawColor)}"></div>`;
+  });
+
+  // Attach color click events
+  [...colorSwatchesEl.querySelectorAll(".color-swatch")].forEach(swatch => {
+    swatch.addEventListener("click", () => {
+      [...colorSwatchesEl.querySelectorAll(".color-swatch")].forEach(s => s.classList.remove("active"));
+      swatch.classList.add("active");
+      filterState.color = swatch.dataset.color || "";
+      render();
+    });
+  });
+
+  // Dynamic Price Range Scale
+  if (offers.length) {
+    const validPrices = offers.map(o => Number(o.price)).filter(Number.isFinite);
+    if (validPrices.length) {
+      const minVal = Math.floor(Math.min(...validPrices) / 100) * 100;
+      const maxVal = Math.ceil(Math.max(...validPrices) / 100) * 100 + 100;
+      minPriceRange.min = minVal;
+      minPriceRange.max = maxVal;
+      maxPriceRange.min = minVal;
+      maxPriceRange.max = maxVal;
+      
+      // Keep selected logic or reset bounds
+      filterState.minPrice = minVal;
+      filterState.maxPrice = maxVal;
+      minPriceRange.value = minVal;
+      maxPriceRange.value = maxVal;
+      updatePriceSliderUI();
+    }
+  }
 }
 
 function filteredOffers() {
-  const search = (searchFilterEl.value || "").toLowerCase().trim();
-  const source = sourceFilterEl.value;
-  const model = modelFilterEl.value;
-  const color = colorFilterEl.value;
-  const maxPrice = Number(maxPriceFilterEl.value || 0);
-  const minRam = Number(minRamFilterEl.value || 0);
-  const minStorage = Number(minStorageFilterEl.value || 0);
+  filterState.search = (searchFilterEl.value || "").toLowerCase().trim();
+  filterState.source = sourceFilterEl.value;
+  filterState.model = modelFilterEl.value;
+  filterState.sort = sortFilterEl.value;
+
+  const { search, source, model, color, condition, minPrice, maxPrice, minRam, minStorage } = filterState;
+  const isMaxOpen = maxPrice >= Number(maxPriceRange.max);
 
   return allOffers.filter((offer) => {
-    // Only MacBook Pros! (User request constraint)
     if (!/macbook pro/i.test(offer.title || "")) return false;
 
     if (search) {
@@ -192,7 +318,13 @@ function filteredOffers() {
     if (source && offer.sourceKey !== source) return false;
     if (model && offer.model !== model) return false;
     if (color && offer.color !== color) return false;
-    if (maxPrice && Number(offer.price || 0) > maxPrice) return false;
+    if (condition && (offer.condition || "").toLowerCase() !== condition) return false;
+    
+    // Bounds Check Prices
+    const limitMax = isMaxOpen ? 999999 : maxPrice;
+    if (Number(offer.price || 0) < minPrice || Number(offer.price || 0) > limitMax) return false;
+    
+    // Spec bounds
     if (minRam && Number(offer.ramGb || 0) < minRam) return false;
     if (minStorage && Number(offer.storageGb || 0) < minStorage) return false;
 
@@ -256,11 +388,7 @@ async function init() {
       searchFilterEl,
       sortFilterEl,
       sourceFilterEl,
-      modelFilterEl,
-      colorFilterEl,
-      maxPriceFilterEl,
-      minRamFilterEl,
-      minStorageFilterEl
+      modelFilterEl
     ].forEach((el) => el.addEventListener("input", render));
 
     render();

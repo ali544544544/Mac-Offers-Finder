@@ -252,6 +252,120 @@ body {
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
+.filter-group-span2 {
+  grid-column: span 2;
+}
+
+/* Color Swatches */
+.color-swatches {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
+.color-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  position: relative;
+}
+.color-swatch:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.color-swatch.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 2px var(--panel-bg), 0 0 0 4px var(--accent);
+}
+
+/* Chips Filter */
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 2px;
+}
+.chip {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-main);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.chip:hover {
+  border-color: var(--accent);
+}
+.chip.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Dual Range Slider */
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  padding-top: 10px;
+}
+.range-track-bg {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: var(--input-border);
+  border-radius: 3px;
+  top: 14px;
+}
+.range-track-fill {
+  position: absolute;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 3px;
+  top: 14px;
+  z-index: 1;
+}
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  z-index: 2;
+  top: 8px;
+  margin: 0;
+  outline: none;
+}
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 3px solid var(--accent);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.range-slider input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 3px solid var(--accent);
+  cursor: pointer;
+}
+
 /* Sections */
 .section {
   margin-bottom: 40px;
@@ -525,5 +639,8 @@ body {
   .header-actions {
     width: 100%;
     justify-content: space-between;
+  }
+  .filter-group-span2 {
+    grid-column: span 1;
   }
 }
