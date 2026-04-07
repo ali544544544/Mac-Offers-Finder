@@ -25,13 +25,30 @@ function parseRamGb(text) {
 
 function parseStorageGb(text) {
   let tb = text.match(/(\d+(?:[.,]\d+)?)\s*TB(?:\s*SSD)?/i);
-  if (tb) return Math.round(Number(tb[1].replace(",", ".")) * 1024);
+  if (tb) {
+    let val = Math.round(Number(tb[1].replace(",", ".")) * 1000);
+    return val;
+  }
 
   let gb = text.match(/(\d+)\s*GB\s*SSD/i);
-  if (gb) return Number(gb[1]);
+  if (gb) {
+    let val = Number(gb[1]);
+    if (val === 1024) return 1000;
+    if (val === 2048) return 2000;
+    if (val === 4096) return 4000;
+    if (val === 8192) return 8000;
+    return val;
+  }
 
-  gb = text.match(/\b(128|256|512|1000|1024|2000|4000|8000)\s*GB\b/i);
-  if (gb) return Number(gb[1]);
+  gb = text.match(/\b(128|256|512|1000|1024|2000|2048|4000|4096|8000|8192)\s*GB\b/i);
+  if (gb) {
+    let val = Number(gb[1]);
+    if (val === 1024) return 1000;
+    if (val === 2048) return 2000;
+    if (val === 4096) return 4000;
+    if (val === 8192) return 8000;
+    return val;
+  }
 
   return null;
 }
