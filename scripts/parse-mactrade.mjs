@@ -23,31 +23,36 @@ function parseRamGb(text) {
   return null;
 }
 
+// Valid Apple SSD sizes in GB (marketing values)
+const VALID_STORAGE_GB = new Set([256, 512, 1000, 2000, 4000, 8000]);
+
 function parseStorageGb(text) {
-  let tb = text.match(/(\d+(?:[.,]\d+)?)\s*TB(?:\s*SSD)?/i);
+  const safeText = text.slice(0, 2000);
+
+  let tb = safeText.match(/(\d+(?:[.,]\d+)?)\s*TB(?:\s*SSD)?/i);
   if (tb) {
-    let val = Math.round(Number(tb[1].replace(",", ".")) * 1000);
-    return val;
+    const val = Math.round(Number(tb[1].replace(",", ".")) * 1000);
+    if (VALID_STORAGE_GB.has(val)) return val;
   }
 
-  let gb = text.match(/(\d+)\s*GB\s*SSD/i);
+  let gb = safeText.match(/(\d+)\s*GB\s*SSD/i);
   if (gb) {
     let val = Number(gb[1]);
-    if (val === 1024) return 1000;
-    if (val === 2048) return 2000;
-    if (val === 4096) return 4000;
-    if (val === 8192) return 8000;
-    return val;
+    if (val === 1024) val = 1000;
+    else if (val === 2048) val = 2000;
+    else if (val === 4096) val = 4000;
+    else if (val === 8192) val = 8000;
+    if (VALID_STORAGE_GB.has(val)) return val;
   }
 
-  gb = text.match(/\b(128|256|512|1000|1024|2000|2048|4000|4096|8000|8192)\s*GB\b/i);
+  gb = safeText.match(/\b(128|256|512|1000|1024|2000|2048|4000|4096|8000|8192)\s*GB\b/i);
   if (gb) {
     let val = Number(gb[1]);
-    if (val === 1024) return 1000;
-    if (val === 2048) return 2000;
-    if (val === 4096) return 4000;
-    if (val === 8192) return 8000;
-    return val;
+    if (val === 1024) val = 1000;
+    else if (val === 2048) val = 2000;
+    else if (val === 4096) val = 4000;
+    else if (val === 8192) val = 8000;
+    if (VALID_STORAGE_GB.has(val)) return val;
   }
 
   return null;
@@ -246,7 +251,7 @@ export function parseMacTradeDetail(html, baseOffer) {
   const sku = cleanup(product?.sku || baseOffer.productId || "");
   const brand = cleanup(product?.brand?.name || "MacTrade");
 
-  const combinedText = `${title} ${description} ${html}`; // Add full HTML for last-resort regex
+  const combinedText = `${title} ${description}`; // title+description only, NOT raw HTML
   const model = deriveModel(title);
 
   // HARTER FILTER: nur MacBook Pro (oder MBP)
