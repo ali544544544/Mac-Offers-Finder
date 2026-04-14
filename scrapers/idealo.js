@@ -36,7 +36,7 @@ const BENCHMARKS_PATH = path.resolve(__dirname, "../data/benchmarks.json");
 // Helpers
 // ---------------------------------------------------------------------------
 
-function sleep(ms) {
+export function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
@@ -44,7 +44,7 @@ function sleep(ms) {
  * Parst einen deutschen Preisstring ("1.799,00 €") zu einer Ganzzahl in EUR.
  * Gibt null zurück wenn nicht parsbar.
  */
-function parsePrice(raw) {
+export function parsePrice(raw) {
   if (!raw) return null;
   // "1.799,00 €" → "1799.00" → 1799
   const cleaned = raw.replace(/\./g, "").replace(",", ".").replace(/[^\d.]/g, "");
@@ -56,7 +56,7 @@ function parsePrice(raw) {
  * Baut einen URL-sicheren Slug aus einem Farbnamen.
  * "Space Schwarz" → "space-schwarz"
  */
-function slugify(str) {
+export function slugify(str) {
   return (str || "")
     .toLowerCase()
     .replace(/\s+/g, "-")
@@ -67,7 +67,7 @@ function slugify(str) {
  * Extrahiert RAM-GB aus einem Angebots-Titel.
  * Sucht nach Mustern wie "16 GB", "16GB".
  */
-function parseRam(title) {
+export function parseRam(title) {
   // Spezifische RAM-Muster zuerst
   const m = title.match(/(\d+)\s*GB\s*(?:RAM|Arbeitsspeicher|unified memory)/i);
   if (m) return parseInt(m[1], 10);
@@ -81,7 +81,7 @@ function parseRam(title) {
  * Extrahiert Storage-GB aus einem Angebots-Titel.
  * Sucht nach Mustern wie "512 GB", "1 TB", "1TB", "2 TB".
  */
-function parseStorage(title) {
+export function parseStorage(title) {
   // TB zuerst – z.B. "1 TB", "2TB", "0,5 TB"
   const tb = title.match(/(\d+(?:[.,]\d+)?)\s*TB/i);
   if (tb) return Math.round(parseFloat(tb[1].replace(",", ".")) * 1024);
@@ -98,7 +98,7 @@ function parseStorage(title) {
  * Extrahiert Chip-Bezeichnung aus einem Titel.
  * z.B. "Apple M4 Pro", "M4 Max" → "M4 Pro", "M4 Max"
  */
-function parseChip(title, expectedChipBase) {
+export function parseChip(title, expectedChipBase) {
   // Suche nach bekannten Chip-Varianten
   const variants = ["Max", "Pro"];
   for (const v of variants) {
@@ -112,7 +112,7 @@ function parseChip(title, expectedChipBase) {
  * Extrahiert CPU- und GPU-Kerne aus einem Titel.
  * Muster: "12-Core CPU, 16-Core GPU"
  */
-function parseCores(title) {
+export function parseCores(title) {
   const cpu = title.match(/(\d+)-Core CPU/i);
   const gpu = title.match(/(\d+)-Core GPU/i);
   return {
@@ -125,7 +125,7 @@ function parseCores(title) {
  * Extrahiert die Farbe aus dem Titel.
  * Bekannte Idealo-Farben: "Space Schwarz", "Silber"
  */
-function parseColor(title) {
+export function parseColor(title) {
   if (title.includes("Space Schwarz") || title.includes("Black")) return "Space Schwarz";
   if (title.includes("Silber") || title.includes("Silver")) return "Silber";
   return null;
@@ -148,7 +148,7 @@ async function loadBenchmarks() {
  * Sucht den passenden Benchmark-Eintrag.
  * Key-Format: "M4-10-10", "M4-12-16", etc.
  */
-function lookupBenchmark(benchmarks, chip, cpuCores, gpuCores) {
+export function lookupBenchmark(benchmarks, chip, cpuCores, gpuCores) {
   // Basis-Chip aus z.B. "M4 Pro" → "M4"
   const baseChip = chip.replace(/ (Pro|Max|Ultra)/i, "");
   const key = `${baseChip}-${cpuCores}-${gpuCores}`;
@@ -162,7 +162,7 @@ function lookupBenchmark(benchmarks, chip, cpuCores, gpuCores) {
 /**
  * Schließt den Cookie-Banner auf Idealo falls vorhanden.
  */
-async function closeCookieBanner(page) {
+export async function closeCookieBanner(page) {
   try {
     // Idealo nutzt einen "Zustimmen"-Button im Cookie-Banner
     const acceptBtn = page.locator(
@@ -181,7 +181,7 @@ async function closeCookieBanner(page) {
  * Extrahiert alle Varianten-URLs aus dem Produkt-Karussell der Einstiegs-Seite.
  * Idealo stellt Varianten über <a data-product-id="..."> bereit.
  */
-async function extractVariantUrls(page) {
+export async function extractVariantUrls(page) {
   // Warte bis das Karussell geladen ist
   await page.waitForSelector('[data-product-id]', { timeout: 15000 }).catch(() => {});
 
@@ -216,7 +216,7 @@ async function extractVariantUrls(page) {
  * Extrahiert das günstigste Angebot von der aktuell geladenen Produktseite.
  * Gibt null zurück wenn keine Angebote vorhanden.
  */
-async function extractCheapestOffer(page) {
+export async function extractCheapestOffer(page) {
   // Warte auf Angebotsliste
   const offerListLoaded = await page
     .waitForSelector('.productOffers-listItemOfferPrice, .productOffers-list', { timeout: 10000 })
@@ -269,7 +269,7 @@ async function extractCheapestOffer(page) {
  * Liest die Produktspezifikationen aus der Idealo-Speztabelle aus.
  * Gibt ein Objekt mit den gefundenen Specs zurück.
  */
-async function extractSpecsFromPage(page) {
+export async function extractSpecsFromPage(page) {
   return await page.evaluate(() => {
     const specs = {};
 
@@ -295,7 +295,7 @@ async function extractSpecsFromPage(page) {
 /**
  * Liest die Seitenüberschrift / Produkttitel aus.
  */
-async function extractPageTitle(page) {
+export async function extractPageTitle(page) {
   return await page.evaluate(() => {
     const h1 = document.querySelector('h1');
     return h1?.innerText?.trim() || document.title;
@@ -306,7 +306,7 @@ async function extractPageTitle(page) {
  * Scrapet eine einzelne Varianten-URL für einen gegebenen Zustand ("neu"/"gebraucht").
  * Gibt einen Eintrag im Zielformat zurück oder null.
  */
-async function scrapeVariant(page, variantUrl, product, condition, benchmarks) {
+export async function scrapeVariant(page, variantUrl, product, condition, benchmarks) {
   // Wechsel zu gebraucht falls nötig
   if (condition === "gebraucht") {
     const usedBtn = page.locator('#oopStage-conditionButton-used');

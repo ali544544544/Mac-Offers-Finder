@@ -6,6 +6,7 @@
   "scripts": {
     "scrape": "node scripts/scrape.mjs && node scrapers/idealo.js && node scripts/merge.mjs",
     "scrape:idealo": "node scrapers/idealo.js && node scripts/merge.mjs",
+    "test:idealo": "node scripts/test-idealo-diagnostics.js",
     "render:report": "node scripts/render-report.mjs",
     "serve": "python3 -m http.server 8080",
     "start": "npm run serve"
