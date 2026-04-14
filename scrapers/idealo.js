@@ -178,14 +178,84 @@ export async function closeCookieBanner(page) {
 }
 
 /**
- * Extrahiert alle Varianten-URLs aus dem Produkt-Karussell der Einstiegs-Seite.
- * Idealo stellt Varianten über <a data-product-id="..."> bereit.
+ * STRATEGIE 1: Extrahiert Varianten-URLs aus dem LD-JSON Block (ProductGroup.hasVariant).
+ * Dieser Block enthält ALLE Build-to-Order Konfigurationen inklusive BTO-Modelle.
+ * Gibt ein Array von { url, name } zurück oder ein leeres Array falls nicht gefunden.
  */
-export async function extractVariantUrls(page) {
-  // Warte bis das Karussell geladen ist
-  await page.waitForSelector('[data-product-id]', { timeout: 15000 }).catch(() => {});
+async function discoverVariantsViaLdJson(page) {
+  return await page.evaluate(() => {
+    const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+    for (const script of scripts) {
+      let data;
+      try { data = JSON.parse(script.textContent); } catch { continue; }
 
-  const variants = await page.evaluate(() => {
+      // Idealo bettet entweder ein einzelnes Objekt oder ein Array ein
+      const items = Array.isArray(data) ? data : [data];
+      for (const item of items) {
+        // Suche nach ProductGroup mit hasVariant
+        if (item['@type'] === 'ProductGroup' && Array.isArray(item.hasVariant)) {
+          return item.hasVariant
+            .map(v => ({ url: v.url || v['@id'] || null, name: v.name || null }))
+            .filter(v => v.url && v.url.includes('idealo.de'));
+        }
+        // Idealo schachtelt manchmal in @graph
+        if (Array.isArray(item['@graph'])) {
+          for (const node of item['@graph']) {
+            if (node['@type'] === 'ProductGroup' && Array.isArray(node.hasVariant)) {
+              return node.hasVariant
+                .map(v => ({ url: v.url || v['@id'] || null, name: v.name || null }))
+                .filter(v => v.url && v.url.includes('idealo.de'));
+            }
+          }
+        }
+      }
+    }
+    return [];
+  });
+}
+
+/**
+ * STRATEGIE 2: Extrahiert Varianten via Filter-Buttons mit data-async Links.
+ * Idealo's delta-filter Buttons enthalten per redirect die Ziel-Produkt-URL.
+ * Gibt ein Array von { url, productId } zurück.
+ */
+async function discoverVariantsViaFilterButtons(page) {
+  return await page.evaluate(() => {
+    const seen = new Set();
+    const results = [];
+
+    // Suche alle nicht-deaktivierten Filter-Buttons die auf eine andere Produkt-URL zeigen
+    const buttons = document.querySelectorAll(
+      '.async-delta-button:not(.deltaFilterButtonDisabled), [data-async-link]'
+    );
+
+    for (const btn of buttons) {
+      const asyncLink = btn.getAttribute('data-async-link') || '';
+      // Redirect-Buttons navigieren zu einer anderen Produkt-URL
+      if (asyncLink.includes('/deltafilter/redirect/')) {
+        const productIdMatch = asyncLink.match(/\/redirect\/(\d+)/);
+        if (productIdMatch) {
+          const pid = productIdMatch[1];
+          const url = `https://www.idealo.de/preisvergleich/OffersOfProduct/${pid}.html`;
+          if (!seen.has(pid)) {
+            seen.add(pid);
+            results.push({ url, productId: pid });
+          }
+        }
+      }
+    }
+    return results;
+  });
+}
+
+/**
+ * STRATEGIE 3: Extrahiert Varianten aus dem Produkt-Karussell (data-product-id).
+ * Zuverlässig für sichtbare Varianten, aber oft unvollständig.
+ */
+async function discoverVariantsViaCarousel(page) {
+  await page.waitForSelector('[data-product-id]', { timeout: 10000 }).catch(() => {});
+
+  return await page.evaluate(() => {
     const els = document.querySelectorAll('[data-product-id]');
     const seen = new Set();
     const results = [];
@@ -201,15 +271,56 @@ export async function extractVariantUrls(page) {
     }
     return results;
   });
+}
 
-  // Fallback: Wenn keine Karussell-Links gefunden, aktuelle URL nehmen
-  if (variants.length === 0) {
-    console.warn("[idealo] Keine Varianten im Karussell gefunden, nutze aktuelle URL als Fallback.");
-    return [{ url: page.url(), productId: null }];
+/**
+ * Hauptfunktion: Findet alle Varianten-URLs der aktuellen Produktseite.
+ * Probiert LD-JSON → Filter-Buttons → Karussell → Fallback (aktuelle URL).
+ */
+export async function extractVariantUrls(page) {
+  const currentUrl = page.url();
+
+  // Strategie 1: LD-JSON (vollständigste Quelle)
+  console.log("[idealo] Suche Varianten via LD-JSON...");
+  const ldJsonVariants = await discoverVariantsViaLdJson(page);
+  if (ldJsonVariants.length > 0) {
+    console.log(`[idealo] LD-JSON: ${ldJsonVariants.length} Varianten gefunden.`);
+    // Aktuelle URL immer dabei lassen (sie kann im LD-JSON fehlen oder abweichen)
+    const allUrls = new Map();
+    allUrls.set(currentUrl, { url: currentUrl, productId: null, name: null });
+    for (const v of ldJsonVariants) {
+      if (!allUrls.has(v.url)) allUrls.set(v.url, { url: v.url, productId: null, name: v.name });
+    }
+    const result = Array.from(allUrls.values());
+    console.log(`[idealo] Gesamt (inkl. aktuelle URL): ${result.length} Varianten.`);
+    return result;
   }
 
-  console.log(`[idealo] ${variants.length} Varianten gefunden.`);
-  return variants;
+  // Strategie 2: Filter-Buttons mit redirect-Links
+  console.log("[idealo] LD-JSON leer – suche via Filter-Buttons...");
+  const filterVariants = await discoverVariantsViaFilterButtons(page);
+  if (filterVariants.length > 0) {
+    console.log(`[idealo] Filter-Buttons: ${filterVariants.length} Redirect-Varianten gefunden.`);
+    const allUrls = new Map([[currentUrl, { url: currentUrl, productId: null }]]);
+    for (const v of filterVariants) {
+      if (!allUrls.has(v.url)) allUrls.set(v.url, v);
+    }
+    const result = Array.from(allUrls.values());
+    console.log(`[idealo] Gesamt (inkl. aktuelle URL): ${result.length} Varianten.`);
+    return result;
+  }
+
+  // Strategie 3: Karussell
+  console.log("[idealo] Filter-Buttons leer – suche via Karussell...");
+  const carouselVariants = await discoverVariantsViaCarousel(page);
+  if (carouselVariants.length > 0) {
+    console.log(`[idealo] Karussell: ${carouselVariants.length} Varianten gefunden.`);
+    return carouselVariants;
+  }
+
+  // Fallback: Nur aktuelle URL
+  console.warn("[idealo] Keine Varianten gefunden – nutze aktuelle URL als Fallback.");
+  return [{ url: currentUrl, productId: null, name: null }];
 }
 
 /**
