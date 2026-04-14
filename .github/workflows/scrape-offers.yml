@@ -2,6 +2,8 @@ name: Scrape live offers
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'  # täglich um 05:00 UTC
 
 permissions:
   contents: write
@@ -41,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/offers.json report.md
+          git add data/offers.json data/internal-raw.json data/idealo-raw.json report.md
           git diff --cached --quiet || git commit -m "chore: update offers data and report"
           git push
 

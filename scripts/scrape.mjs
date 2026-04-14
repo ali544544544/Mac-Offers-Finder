@@ -2,7 +2,6 @@ import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import { parseMacTradeListing, parseMacTradeDetail } from "./parse-mactrade.mjs";
 import { parseAppleListing, parseAppleDetail } from "./parse-apple.mjs";
-import { enrichOffers, pickBestOffers } from "./score.mjs";
 
 const SOURCES = [
   {
@@ -128,15 +127,14 @@ async function main() {
 
     try {
       const offers = await scrapeSource(browser, source);
-      const enriched = enrichOffers(offers);
 
-      allOffers.push(...enriched);
+      allOffers.push(...offers);
 
       sourceResults.push({
         key: source.key,
         url: source.url,
         type: source.type,
-        offerCount: enriched.length,
+        offerCount: offers.length,
         ok: true
       });
     } catch (error) {
@@ -153,17 +151,16 @@ async function main() {
     }
   }
 
-  const best = pickBestOffers(allOffers);
-
-  const result = {
-    updatedAt: new Date().toISOString(),
+  // Rohergebnisse in internal-raw.json speichern.
+  // Das finale Scoring und Merging übernimmt scripts/merge.mjs.
+  const rawResult = {
+    scrapedAt: new Date().toISOString(),
     sources: sourceResults,
     offers: allOffers,
-    bestOffers: best
   };
 
-  await fs.writeFile("data/offers.json", JSON.stringify(result, null, 2), "utf8");
-  console.log(`Fertig. ${allOffers.length} Angebote gespeichert.`);
+  await fs.writeFile("data/internal-raw.json", JSON.stringify(rawResult, null, 2), "utf8");
+  console.log(`Scraping abgeschlossen. ${allOffers.length} Roheinträge → data/internal-raw.json`);
 
   await browser.close();
 }
