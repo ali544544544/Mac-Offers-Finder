@@ -1,17 +1,15 @@
 # Aktuelle MacBook Pro Angebote
 
-Zuletzt aktualisiert: 14.4.2026, 21:57:38
+Zuletzt aktualisiert: 15.4.2026, 10:27:04
 
 | Modell | CPU/GPU | RAM | SSD | Preis | Händler | Link |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | MacBook Pro 14 | 14/32 | 36GB | 4000GB | 4.649 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003) |
 | MacBook Pro 14 | 10/10 | 32GB | 1000GB | 2.438 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-14-m5-10-core-cpu-10-core-gpu-silber-nanoglas-32gb-1tbssd-kein-netzteil/71776.0064) |
-| MacBook Pro 16 | 14/32 | 36GB | 1000GB | 3.429 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-max-14-core-cpu-32-core-gpu-1tb-36gb-silber-2024/69821.0001) |
+| MacBook Pro 16 | 14/32 | 36GB | 2000GB | 4.719 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.955 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-silber-2024/69811.0001) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.955 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-space-schwarz-2024/69810.0001) |
-| MacBook Pro 14 | 14/20 | 24GB | 1000GB | 2.389 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-silber-2024/69813.0001) |
 | MacBook Pro 14 | 14/20 | 24GB | 1000GB | 2.389 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69812.0001) |
-| MacBook Pro 16 | 14/32 | 36GB | 1000GB | 3.429 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-max-14-core-cpu-32-core-gpu-1tb-36gb-space-schwarz-2024/69820.0001) |
 | MacBook Pro 16 | 14/20 | 24GB | 512GB | 2.399 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-silber-2024/69817.0001) |
 | MacBook Pro 16 | 14/20 | 24GB | 512GB | 2.399 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-space-schwarz-2024/69816.0001) |
 | MacBook Pro 16 | 14/20 | 48GB | 512GB | 2.921,15 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006) |
@@ -22,21 +20,17 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 14 | 16/40 | 64GB | 2000GB | 4.439 € | Apple | [Link](https://www.mactrade.de/rp-2387-cto-apple-macbook-pro-14-silber-nanoglas-m4max-16-40-64gb-2tbssd/72129) |
 | MacBook Pro 14 | 14/32 | 36GB | 4000GB | 4.649 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003) |
 | MacBook Pro 14 | 10/10 | 32GB | 1000GB | 2.438 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-14-m5-10-core-cpu-10-core-gpu-silber-nanoglas-32gb-1tbssd-kein-netzteil/71776.0064) |
-| MacBook Pro 16 | 14/32 | 36GB | 1000GB | 3.429 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-max-14-core-cpu-32-core-gpu-1tb-36gb-silber-2024/69821.0001) |
+| MacBook Pro 16 | 14/32 | 36GB | 2000GB | 4.719 € | Apple | [Link](https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.955 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-silber-2024/69811.0001) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.955 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-space-schwarz-2024/69810.0001) |
-| MacBook Pro 14 | 14/20 | 24GB | 1000GB | 2.389 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-silber-2024/69813.0001) |
 | MacBook Pro 14 | 14/20 | 24GB | 1000GB | 2.389 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69812.0001) |
-| MacBook Pro 16 | 14/32 | 36GB | 1000GB | 3.429 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-max-14-core-cpu-32-core-gpu-1tb-36gb-space-schwarz-2024/69820.0001) |
 | MacBook Pro 16 | 14/20 | 24GB | 512GB | 2.399 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-silber-2024/69817.0001) |
 | MacBook Pro 16 | 14/20 | 24GB | 512GB | 2.399 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-space-schwarz-2024/69816.0001) |
 | MacBook Pro 16 | 14/20 | 48GB | 512GB | 2.921,15 € | Apple | [Link](https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006) |
-| MacBook Pro 14 | 8/10 | 8GB | 1000GB | 1.389 € | Apple | [Link](https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
 | MacBook Pro 14 | 8/10 | 24GB | 512GB | 1.499 € | Apple | [Link](https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.679 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
@@ -48,7 +42,6 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 24GB | 1000GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kl3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.929 € | Apple | [Link](https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 11/14 | 18GB | 1000GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz) |
 | MacBook Pro 14 | 12/18 | 18GB | 512GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
@@ -61,12 +54,13 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau) |
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 2.089 € | Apple | [Link](https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
-| MacBook Pro 14 | 8/10 | 8GB | 1000GB | 1.389 € | Apple | [Link](https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
+| MacBook Pro 14 | 10/10 | 16GB | 256GB | 2.099 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh4d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx73d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber) |
 | MacBook Pro 14 | 8/10 | 24GB | 512GB | 1.499 € | Apple | [Link](https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.679 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
@@ -78,7 +72,6 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 24GB | 1000GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kl3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.929 € | Apple | [Link](https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 11/14 | 18GB | 1000GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz) |
 | MacBook Pro 14 | 12/18 | 18GB | 512GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
@@ -91,12 +84,13 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau) |
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 2.089 € | Apple | [Link](https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
-| MacBook Pro 14 | 8/10 | 8GB | 1000GB | 1.389 € | Apple | [Link](https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
+| MacBook Pro 14 | 10/10 | 16GB | 256GB | 2.099 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh4d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx73d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber) |
 | MacBook Pro 14 | 8/10 | 24GB | 512GB | 1.499 € | Apple | [Link](https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.519 € | Apple | [Link](https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.629 € | Apple | [Link](https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau) |
 | MacBook Pro 14 | 10/16 | 16GB | 512GB | 1.639 € | Apple | [Link](https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.679 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
@@ -108,7 +102,6 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 10/10 | 24GB | 1000GB | 1.839 € | Apple | [Link](https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.889 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kl3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 1.929 € | Apple | [Link](https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz) |
 | MacBook Pro 14 | 11/14 | 18GB | 1000GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz) |
 | MacBook Pro 14 | 12/18 | 18GB | 512GB | 1.949 € | Apple | [Link](https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
@@ -121,25 +114,29 @@ Zuletzt aktualisiert: 14.4.2026, 21:57:38
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau) |
 | MacBook Pro 16 | 12/19 | 16GB | 512GB | 2.079 € | Apple | [Link](https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber) |
 | MacBook Pro 14 | 12/16 | 24GB | 512GB | 2.089 € | Apple | [Link](https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
+| MacBook Pro 14 | 10/10 | 16GB | 256GB | 2.099 € | Apple | [Link](https://www.apple.com/de/shop/product/g1kh4d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz) |
+| MacBook Pro 14 | 12/18 | 18GB | 1000GB | 2.139 € | Apple | [Link](https://www.apple.com/de/shop/product/frx73d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber) |
 | MacBook Pro 14 | 10/10 | 16GB | 16GB | 1.568 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2fcb094e8056a569e808aa6734aa048d&pos=1&price=1567.91&productid=205027047&sid=5300&type=offer) |
-| MacBook Pro 14 | 10/10 | 24GB | 24GB | 1.789 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2586daac26d5bbff7bd3caef8e9a1bcd&pos=1&price=1789.00&productid=205028676&sid=9701&type=offer) |
+| MacBook Pro 14 | 10/10 | 24GB | 24GB | 1.799 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=8799478f735b4eabff647b25835a2a9f&pos=1&price=1799.00&productid=205089382&sid=326031&type=offer) |
 | MacBook Pro 14 | 10/10 | 24GB | 1000GB | 2.299 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=6c2896b308e166c2fa4241225c868c30&pos=1&price=2299.00&productid=205028674&sid=326031&type=offer) |
+| MacBook Pro 14 | 10/10 | 16GB | 1024GB | 1.599 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5e387028c77d22fdda2c807764812f2d&pos=1&price=1599.00&productid=205028678&sid=329293&type=offer) |
 | MacBook Pro 14 | 12/16 | 24GB | 24GB | 1.899 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=98ae7a6d86531c1c1e09299d2dd402dd&pos=1&price=1899.00&productid=205028675&sid=4640&type=offer) |
-| MacBook Pro 14 | 10/10 | 16GB | 1024GB | 1.669 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=f54d578415daf0d87182038cf11dfec9&pos=1&price=1669.00&productid=205028678&sid=289287&type=offer) |
 | MacBook Pro 14 | 10/10 | 16GB | 16GB | 1.568 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2fcb094e8056a569e808aa6734aa048d&pos=1&price=1567.91&productid=206760125&sid=5300&type=offer) |
 | MacBook Pro 14 | 14/20 | 24GB | 1024GB | 2.389 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=8c51def5dcf5e1c510357c0699351aeb&pos=1&price=2389.00&productid=205028673&sid=279743&type=offer) |
+| MacBook Pro 14 | 10/10 | 16GB | 1024GB | 1.599 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2d79f747ddc9447fe4b03114d3fbb937&pos=1&price=1599.00&productid=205028677&sid=329293&type=offer) |
 | MacBook Pro 14 | 10/10 | 24GB | 1024GB | 2.206 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=7f5d26f383d0ecd5c05a02f19bb7255b&pos=1&price=2205.97&productid=206170469&sid=5300&type=offer) |
-| MacBook Pro 14 | 10/10 | 16GB | 16GB | 1.699 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=47719659a117f6891f6e5abd9ee96590&pos=1&price=1699.00&productid=205028680&sid=24111&type=offer) |
-| MacBook Pro 14 | 10/10 | 16GB | 256GB | 1.721 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=a03f2227ba2554eb40aa2a943dc68fda&pos=1&price=1721.00&productid=205028677&sid=314105&type=offer) |
+| MacBook Pro 14 | 10/10 | 16GB | 16GB | 1.600 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=34287f2ada37fdaef8810ef5db138999&pos=1&price=1599.96&productid=205028680&sid=286835&type=offer) |
 | MacBook Pro 14 | 10/10 | 16GB | 1024GB | 2.199 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1b74f8c627a5d6c11bc500f90d823c7c&pos=1&price=2199.00&productid=205089690&sid=2400&type=offer) |
-| MacBook Pro 14 | 10/10 | 24GB | 1024GB | 2.100 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fff16c4993ca10fd5f1339352b99dbea&pos=1&price=2099.99&productid=209562388&sid=9701&type=offer) |
-| MacBook Pro 14 | 10/10 | 16GB | 1024GB | 2.105 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5b8c24fda06b0d03e1563a6a8d4f9d24&pos=1&price=2105.00&productid=209597264&sid=277092&type=offer) |
-| MacBook Pro 14 | 10/10 | 32GB | 1024GB | 2.129 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209597268&sid=279743&type=offer) |
-| MacBook Pro 14 | 10/10 | 24GB | 2048GB | 2.699 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=ffbc64fa5e2d42babde471e2def159fb&pos=1&price=2698.99&productid=209598898&sid=29203&type=offer) |
-| MacBook Pro 14 | 15/16 | 24GB | 2048GB | 2.699 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.95&productid=209598905&sid=20481&type=offer) |
-| MacBook Pro 14 | 10/10 | 32GB | 1024GB | 2.136 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=b3a080b7e4fcce0bf1ba53961f1948b2&pos=1&price=2136.47&productid=209597267&sid=20481&type=offer) |
-| MacBook Pro 14 | 18/32 | 36GB | 2048GB | 3.736 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4f150fa046a2a72b7bc1de2de61a783f&pos=1&price=3736.44&productid=209597266&sid=295945&type=offer) |
-| MacBook Pro 14 | 10/10 | 36GB | 2048GB | 3.726 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5f6150eaa03aec165b585fd8a813f33a&pos=1&price=3725.66&productid=209597263&sid=5300&type=offer) |
+| MacBook Pro 14 | 10/10 | 32GB | 1024GB | 2.129 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209562388&sid=279743&type=offer) |
+| MacBook Pro 14 | 10/10 | 24GB | 1024GB | 2.130 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=831aeea0fdddd85364587bec0a3b3818&pos=1&price=2129.99&productid=209597264&sid=26895&type=offer) |
+| MacBook Pro 14 | 10/10 | 24GB | 1024GB | 2.196 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=c08a1f7f81addb0c166c81a87666d526&pos=1&price=2195.94&productid=209597261&sid=5300&type=offer) |
+| MacBook Pro 14 | 10/10 | 24GB | 2048GB | 2.819 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=0f2bc30cf675c79afc3699bb08474ba1&pos=1&price=2818.96&productid=209597265&sid=5300&type=offer) |
+| MacBook Pro 14 | 15/16 | 24GB | 2048GB | 2.699 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.90&productid=209598905&sid=20481&type=offer) |
+| MacBook Pro 14 | 10/10 | 32GB | 1024GB | 2.136 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=b3a080b7e4fcce0bf1ba53961f1948b2&pos=1&price=2136.41&productid=209597267&sid=20481&type=offer) |
+| MacBook Pro 14 | 10/10 | 16GB | 256GB | 2.698 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=8afd857734ddaf4629fcecb781eafd86&pos=1&price=2697.99&productid=209598898&sid=243147&type=offer) |
+| MacBook Pro 14 | 18/32 | 36GB | 2048GB | 3.736 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4f150fa046a2a72b7bc1de2de61a783f&pos=1&price=3736.43&productid=209597266&sid=295945&type=offer) |
+| MacBook Pro 14 | 18/32 | 36GB | 2048GB | 3.726 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.62&productid=209597263&sid=20481&type=offer) |
 | MacBook Pro 14 | 10/10 | 48GB | 1024GB | 2.749 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=61970231426497d53e6e0f31a38cb1e2&pos=1&price=2749.00&productid=209673525&sid=6980&type=offer) |
 | MacBook Pro 14 | 10/10 | 64GB | 1024GB | 3.329 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fa1cec5748e612a33dc189c48cc326be&pos=1&price=3329.00&productid=209673534&sid=6980&type=offer) |
 | MacBook Pro 14 | 10/10 | 48GB | 1024GB | 2.914 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fe051b7920d375faa754b63a136382bd&pos=1&price=2914.00&productid=209850409&sid=6980&type=offer) |
