@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15T10:27:04.527Z",
+  "updatedAt": "2026-04-16T10:18:10.662Z",
   "sources": [
     {
       "key": "mactrade-vorgaenger",
@@ -33,7 +33,7 @@
       "key": "idealo",
       "url": "https://www.idealo.de",
       "type": "idealo",
-      "offerCount": 23,
+      "offerCount": 24,
       "ok": true
     }
   ],
@@ -800,6 +800,34 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": 16,
+      "storageGb": 256,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE54D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 64.53,
+      "valueScore": 64.53
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -823,7 +851,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -851,7 +879,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -879,7 +907,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -907,7 +935,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -935,7 +963,7 @@
       "valueScore": 60.8
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-11",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -963,7 +991,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -991,7 +1019,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1019,7 +1047,7 @@
       "valueScore": 58.76
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1047,7 +1075,7 @@
       "valueScore": 57.16
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1075,7 +1103,7 @@
       "valueScore": 71.78
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1103,7 +1131,7 @@
       "valueScore": 55.65
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1131,7 +1159,7 @@
       "valueScore": 70.11
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1159,7 +1187,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-18",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1187,7 +1215,7 @@
       "valueScore": 53.74
     },
     {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1215,7 +1243,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1241,34 +1269,6 @@
       "metal_gpu": 52000,
       "resolveScore": 53.74,
       "valueScore": 53.74
-    },
-    {
-      "id": "apple-refurbished-mbp-21",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 1999,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK5D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kk5d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 52.59,
-      "valueScore": 52.59
     },
     {
       "id": "apple-refurbished-mbp-22",
@@ -1332,34 +1332,6 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 51.3,
-      "valueScore": 51.3
-    },
-    {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
       "title": "Refurbished 16\" MacBook Pro mit Apple M2 Pro Chip, 12-Core CPU und 19-Core GPU - Space Grau",
       "variant": "",
       "model": "MacBook Pro 16",
@@ -1383,7 +1355,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1411,7 +1383,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1439,7 +1411,7 @@
       "valueScore": 64.74
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1467,7 +1439,7 @@
       "valueScore": 50.08
     },
     {
-      "id": "apple-refurbished-mbp-29",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1495,7 +1467,7 @@
       "valueScore": 53.53
     },
     {
-      "id": "apple-refurbished-mbp-30",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1521,6 +1493,34 @@
       "metal_gpu": 52000,
       "resolveScore": 53.53,
       "valueScore": 53.53
+    },
+    {
+      "id": "apple-refurbished-mbp-30",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M3 Pro Chip, 11-Core CPU und 14-Core GPU - Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M3 Pro",
+      "year": 2023,
+      "condition": "refurbished",
+      "price": 2159,
+      "currency": "EUR",
+      "ramGb": 36,
+      "storageGb": 512,
+      "cpuCores": 11,
+      "gpuCores": 14,
+      "screenInches": 14,
+      "productId": "G1AU3D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1au3d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
+      "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 36 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
+      "resolveScore": 58.93,
+      "valueScore": 58.93
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -1640,6 +1640,34 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": 16,
+      "storageGb": 256,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE54D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 64.53,
+      "valueScore": 64.53
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -1663,7 +1691,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1691,7 +1719,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1719,7 +1747,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1747,7 +1775,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1775,7 +1803,7 @@
       "valueScore": 60.8
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-11",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1803,7 +1831,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1831,7 +1859,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1859,7 +1887,7 @@
       "valueScore": 58.76
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1887,7 +1915,7 @@
       "valueScore": 57.16
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1915,7 +1943,7 @@
       "valueScore": 71.78
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1943,7 +1971,7 @@
       "valueScore": 55.65
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1971,7 +1999,7 @@
       "valueScore": 70.11
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1999,7 +2027,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-18",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2027,7 +2055,7 @@
       "valueScore": 53.74
     },
     {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2055,7 +2083,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2081,34 +2109,6 @@
       "metal_gpu": 52000,
       "resolveScore": 53.74,
       "valueScore": 53.74
-    },
-    {
-      "id": "apple-refurbished-mbp-21",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 1999,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK5D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kk5d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 52.59,
-      "valueScore": 52.59
     },
     {
       "id": "apple-refurbished-mbp-22",
@@ -2172,34 +2172,6 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 51.3,
-      "valueScore": 51.3
-    },
-    {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
       "title": "Refurbished 16\" MacBook Pro mit Apple M2 Pro Chip, 12-Core CPU und 19-Core GPU - Space Grau",
       "variant": "",
       "model": "MacBook Pro 16",
@@ -2223,7 +2195,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2251,7 +2223,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2279,7 +2251,7 @@
       "valueScore": 64.74
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2307,7 +2279,7 @@
       "valueScore": 50.08
     },
     {
-      "id": "apple-refurbished-mbp-29",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2335,7 +2307,7 @@
       "valueScore": 53.53
     },
     {
-      "id": "apple-refurbished-mbp-30",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2361,6 +2333,34 @@
       "metal_gpu": 52000,
       "resolveScore": 53.53,
       "valueScore": 53.53
+    },
+    {
+      "id": "apple-refurbished-mbp-30",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M3 Pro Chip, 11-Core CPU und 14-Core GPU - Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M3 Pro",
+      "year": 2023,
+      "condition": "refurbished",
+      "price": 2159,
+      "currency": "EUR",
+      "ramGb": 36,
+      "storageGb": 512,
+      "cpuCores": 11,
+      "gpuCores": 14,
+      "screenInches": 14,
+      "productId": "G1AU3D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1au3d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
+      "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 36 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
+      "resolveScore": 58.93,
+      "valueScore": 58.93
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -2480,6 +2480,34 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": 16,
+      "storageGb": 256,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE54D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 64.53,
+      "valueScore": 64.53
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -2503,7 +2531,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2531,7 +2559,7 @@
       "valueScore": 58.72
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2559,7 +2587,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2587,7 +2615,7 @@
       "valueScore": 62.61
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2615,7 +2643,7 @@
       "valueScore": 60.8
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-11",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2643,7 +2671,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2671,7 +2699,7 @@
       "valueScore": 57.64
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2699,7 +2727,7 @@
       "valueScore": 58.76
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2727,7 +2755,7 @@
       "valueScore": 57.16
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2755,7 +2783,7 @@
       "valueScore": 71.78
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2783,7 +2811,7 @@
       "valueScore": 55.65
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2811,7 +2839,7 @@
       "valueScore": 70.11
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2839,7 +2867,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-18",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2867,7 +2895,7 @@
       "valueScore": 53.74
     },
     {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2895,7 +2923,7 @@
       "valueScore": 56.44
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2921,34 +2949,6 @@
       "metal_gpu": 52000,
       "resolveScore": 53.74,
       "valueScore": 53.74
-    },
-    {
-      "id": "apple-refurbished-mbp-21",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 1999,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK5D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kk5d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 52.59,
-      "valueScore": 52.59
     },
     {
       "id": "apple-refurbished-mbp-22",
@@ -3012,34 +3012,6 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 256,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 51.3,
-      "valueScore": 51.3
-    },
-    {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
       "title": "Refurbished 16\" MacBook Pro mit Apple M2 Pro Chip, 12-Core CPU und 19-Core GPU - Space Grau",
       "variant": "",
       "model": "MacBook Pro 16",
@@ -3063,7 +3035,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3091,7 +3063,7 @@
       "valueScore": 48.22
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3119,7 +3091,7 @@
       "valueScore": 64.74
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3147,7 +3119,7 @@
       "valueScore": 50.08
     },
     {
-      "id": "apple-refurbished-mbp-29",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3175,7 +3147,7 @@
       "valueScore": 53.53
     },
     {
-      "id": "apple-refurbished-mbp-30",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3201,6 +3173,34 @@
       "metal_gpu": 52000,
       "resolveScore": 53.53,
       "valueScore": 53.53
+    },
+    {
+      "id": "apple-refurbished-mbp-30",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M3 Pro Chip, 11-Core CPU und 14-Core GPU - Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M3 Pro",
+      "year": 2023,
+      "condition": "refurbished",
+      "price": 2159,
+      "currency": "EUR",
+      "ramGb": 36,
+      "storageGb": 512,
+      "cpuCores": 11,
+      "gpuCores": 14,
+      "screenInches": 14,
+      "productId": "G1AU3D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1au3d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
+      "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 36 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
+      "resolveScore": 58.93,
+      "valueScore": 58.93
     },
     {
       "id": "idealo-m4-16gb-16gb-unbekannt-neu",
@@ -3278,6 +3278,31 @@
       "valueScore": 54.59
     },
     {
+      "id": "idealo-m4-24gb-24gb-silber-neu",
+      "sourceKey": "idealo-m4-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/205028675_-macbook-pro-14-m4-silber-mx2e3d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M4 – 24 GB, 24 GB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M4",
+      "year": 2024,
+      "condition": "neu",
+      "price": 1899,
+      "currency": "EUR",
+      "ramGb": 24,
+      "storageGb": 24,
+      "cpuCores": 12,
+      "gpuCores": 16,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=98ae7a6d86531c1c1e09299d2dd402dd&pos=1&price=1899.00&productid=205028675&sid=4640&type=offer",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
+      "resolveScore": 66.08,
+      "valueScore": 66.08
+    },
+    {
       "id": "idealo-m4-16gb-1024gb-space-schwarz-neu",
       "sourceKey": "idealo-m4-14",
       "sourceType": "idealo",
@@ -3303,29 +3328,29 @@
       "valueScore": 71.28
     },
     {
-      "id": "idealo-m4-24gb-24gb-silber-neu",
+      "id": "idealo-m4-16gb-1024gb-silber-neu",
       "sourceKey": "idealo-m4-14",
       "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/205028675_-macbook-pro-14-m4-silber-mx2e3d-a-apple.html",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/205028677_-macbook-pro-14-m4-silber-mw2x3d-a-apple.html",
       "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M4 – 24 GB, 24 GB, Silber",
+      "title": "Apple MacBook Pro 14 M4 – 16 GB, 1 TB, Silber",
       "model": "MacBook Pro 14",
       "chip": "M4",
       "year": 2024,
       "condition": "neu",
-      "price": 1899,
+      "price": 1599,
       "currency": "EUR",
-      "ramGb": 24,
-      "storageGb": 24,
-      "cpuCores": 12,
-      "gpuCores": 16,
+      "ramGb": 16,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=98ae7a6d86531c1c1e09299d2dd402dd&pos=1&price=1899.00&productid=205028675&sid=4640&type=offer",
-      "gb6_mc": 19000,
-      "metal_gpu": 70000,
-      "resolveScore": 66.08,
-      "valueScore": 66.08
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2d79f747ddc9447fe4b03114d3fbb937&pos=1&price=1599.00&productid=205028677&sid=329293&type=offer",
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "resolveScore": 71.28,
+      "valueScore": 71.28
     },
     {
       "id": "idealo-m4-16gb-16gb-silber-neu",
@@ -3363,7 +3388,7 @@
       "chip": "M4",
       "year": 2024,
       "condition": "neu",
-      "price": 2389,
+      "price": 2470,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 1024,
@@ -3371,36 +3396,11 @@
       "gpuCores": 20,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=8c51def5dcf5e1c510357c0699351aeb&pos=1&price=2389.00&productid=205028673&sid=279743&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=bb158add7a7949fcc991bb033666a084&pos=1&price=2469.95&productid=205028673&sid=20481&type=offer",
       "gb6_mc": 22000,
       "metal_gpu": 80000,
-      "resolveScore": 66.34,
-      "valueScore": 66.34
-    },
-    {
-      "id": "idealo-m4-16gb-1024gb-silber-neu",
-      "sourceKey": "idealo-m4-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/205028677_-macbook-pro-14-m4-silber-mw2x3d-a-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M4 – 16 GB, 1 TB, Silber",
-      "model": "MacBook Pro 14",
-      "chip": "M4",
-      "year": 2024,
-      "condition": "neu",
-      "price": 1599,
-      "currency": "EUR",
-      "ramGb": 16,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2d79f747ddc9447fe4b03114d3fbb937&pos=1&price=1599.00&productid=205028677&sid=329293&type=offer",
-      "gb6_mc": 14500,
-      "metal_gpu": 55000,
-      "resolveScore": 71.28,
-      "valueScore": 71.28
+      "resolveScore": 64.16,
+      "valueScore": 64.16
     },
     {
       "id": "idealo-m4-24gb-1024gb-space-schwarz-neu",
@@ -3478,29 +3478,29 @@
       "valueScore": 51.83
     },
     {
-      "id": "idealo-m5-32gb-1024gb-silber-neu",
+      "id": "idealo-m5-24gb-1024gb-unbekannt-neu",
       "sourceKey": "idealo-m5-14",
       "sourceType": "idealo",
       "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209562388_-macbook-pro-14-m5-2026-apple.html",
       "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Silber",
+      "title": "Apple MacBook Pro 14 M5 – 24 GB, 1 TB",
       "model": "MacBook Pro 14",
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2129,
+      "price": 2105,
       "currency": "EUR",
-      "ramGb": 32,
+      "ramGb": 24,
       "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
+      "cpuCores": 15,
+      "gpuCores": 16,
       "screenInches": 14,
-      "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209562388&sid=279743&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 67.86,
-      "valueScore": 67.86
+      "color": null,
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=7ee40dea795890c0cf3fe147af2953f5&pos=1&price=2104.95&productid=209562388&sid=295945&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 26.83,
+      "valueScore": 26.83
     },
     {
       "id": "idealo-m5-24gb-1024gb-space-schwarz-neu",
@@ -3513,19 +3513,19 @@
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2130,
+      "price": 2105,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
+      "cpuCores": 15,
+      "gpuCores": 16,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=831aeea0fdddd85364587bec0a3b3818&pos=1&price=2129.99&productid=209597264&sid=26895&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 62.2,
-      "valueScore": 62.2
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=7ee40dea795890c0cf3fe147af2953f5&pos=1&price=2104.95&productid=209597264&sid=295945&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 26.83,
+      "valueScore": 26.83
     },
     {
       "id": "idealo-m5-24gb-1024gb-silber-neu",
@@ -3553,6 +3553,56 @@
       "valueScore": 60.33
     },
     {
+      "id": "idealo-m5-xgb-1024gb-space-schwarz-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597267_-macbook-pro-14-m5-2026-space-schwarz-mj3d4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – ? GB, 1 TB, Space Schwarz",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2130,
+      "currency": "EUR",
+      "ramGb": 16,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=a0cba3e4a3f239fe2743de0e60463a33&pos=1&price=2130.23&productid=209597267&sid=9701&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 56.56,
+      "valueScore": 56.56
+    },
+    {
+      "id": "idealo-m5-32gb-1024gb-silber-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597268_-macbook-pro-14-m5-2026-silber-mj3e4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2129,
+      "currency": "EUR",
+      "ramGb": 32,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209597268&sid=279743&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 67.86,
+      "valueScore": 67.86
+    },
+    {
       "id": "idealo-m5-24gb-2048gb-space-schwarz-neu",
       "sourceKey": "idealo-m5-14",
       "sourceType": "idealo",
@@ -3563,7 +3613,7 @@
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2819,
+      "price": 2805,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 2048,
@@ -3571,11 +3621,11 @@
       "gpuCores": 10,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=0f2bc30cf675c79afc3699bb08474ba1&pos=1&price=2818.96&productid=209597265&sid=5300&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=0f2bc30cf675c79afc3699bb08474ba1&pos=1&price=2804.89&productid=209597265&sid=5300&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 54.26,
-      "valueScore": 54.26
+      "resolveScore": 54.53,
+      "valueScore": 54.53
     },
     {
       "id": "idealo-m5-24gb-2048gb-silber-neu",
@@ -3596,61 +3646,36 @@
       "gpuCores": 16,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.90&productid=209598905&sid=20481&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.81&productid=209598905&sid=20481&type=offer",
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 28.51,
       "valueScore": 28.51
     },
     {
-      "id": "idealo-m5-32gb-1024gb-space-schwarz-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597267_-macbook-pro-14-m5-2026-space-schwarz-mj3d4d-a-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 2136,
-      "currency": "EUR",
-      "ramGb": 32,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=b3a080b7e4fcce0bf1ba53961f1948b2&pos=1&price=2136.41&productid=209597267&sid=20481&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 67.64,
-      "valueScore": 67.64
-    },
-    {
-      "id": "idealo-m5-xgb-xgb-space-schwarz-neu",
+      "id": "idealo-m5-xgb-2048gb-space-schwarz-neu",
       "sourceKey": "idealo-m5-14",
       "sourceType": "idealo",
       "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209598898_-macbook-pro-14-m5-2026-space-schwarz-mjlw4d-a-apple.html",
       "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – ? GB, ? GB, Space Schwarz",
+      "title": "Apple MacBook Pro 14 M5 – ? GB, 2 TB, Space Schwarz",
       "model": "MacBook Pro 14",
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2698,
+      "price": 2697,
       "currency": "EUR",
       "ramGb": 16,
-      "storageGb": 256,
+      "storageGb": 2048,
       "cpuCores": 10,
       "gpuCores": 10,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=8afd857734ddaf4629fcecb781eafd86&pos=1&price=2697.99&productid=209598898&sid=243147&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=aa66c9c50341d632c8e22e0424ac1316&pos=1&price=2697.00&productid=209598898&sid=9701&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 38.96,
-      "valueScore": 38.96
+      "resolveScore": 52.27,
+      "valueScore": 52.27
     },
     {
       "id": "idealo-m5-36gb-2048gb-space-schwarz-neu",
@@ -3671,7 +3696,7 @@
       "gpuCores": 32,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4f150fa046a2a72b7bc1de2de61a783f&pos=1&price=3736.43&productid=209597266&sid=295945&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4f150fa046a2a72b7bc1de2de61a783f&pos=1&price=3736.44&productid=209597266&sid=295945&type=offer",
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 25.42,
@@ -3696,7 +3721,7 @@
       "gpuCores": 32,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.62&productid=209597263&sid=20481&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.53&productid=209597263&sid=20481&type=offer",
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 25.49,
@@ -3780,7 +3805,7 @@
   ],
   "bestOffers": [
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3808,7 +3833,7 @@
       "valueScore": 71.78
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3836,7 +3861,7 @@
       "valueScore": 71.78
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-15",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3914,7 +3939,7 @@
       "valueScore": 71.28
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3942,7 +3967,7 @@
       "valueScore": 70.11
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3970,7 +3995,7 @@
       "valueScore": 70.11
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
