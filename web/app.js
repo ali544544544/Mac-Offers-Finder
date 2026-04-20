@@ -118,8 +118,20 @@ function formatStorage(gb) {
 
 function renderOfferCard(offer, isBest = false, index = 0) {
   const delay = Math.min(index * 0.05, 0.5);
-  const score = (offer.resolveScore || 0).toFixed(1);
-  const value = offer.valueScore ? Math.round(offer.valueScore) : 0;
+  const score = (offer.resolveScore || offer.workflowScore || 0).toFixed(1);
+  
+  // Detect old vs new data format:
+  // OLD format: valueScore is a raw ratio like 0.0183 (workflowScore / price)
+  // NEW format: valueScore is 0-100% percentage from the new scoring system
+  const rawValue = offer.valueScore ?? 0;
+  let value = 0;
+  if (rawValue > 1) {
+    // New format: already a percentage
+    value = Math.round(rawValue);
+  } else if (rawValue > 0 && offer.resolveScore) {
+    // Old format: raw ratio. Best old ratio observed ≈ 0.04 → normalize to %
+    value = Math.min(100, Math.round((rawValue / 0.04) * 100));
+  }
   
   const scoreClass = score >= 50 ? "score-high" : score >= 25 ? "score-mid" : "score-low";
   const valueBadge = value >= 80 ? `<div class="best-badge">Super Deal (${value}%)</div>` : 
@@ -191,7 +203,14 @@ function renderScoringDetails(offer) {
   const warns = offer.warnings || [];
   const confidence = offer.scoreConfidence ?? 1.0;
   const status = offer.scoreStatus || "ok";
-  const valueScore = offer.valueScore ?? 0;
+  
+  // Same old/new format detection as renderOfferCard
+  const rawValue = offer.valueScore ?? 0;
+  const valueScore = rawValue > 1
+    ? Math.round(rawValue)
+    : rawValue > 0 && offer.resolveScore
+      ? Math.min(100, Math.round((rawValue / 0.04) * 100))
+      : 0;
 
   // Only show if we actually have something to render
   if (!offer.scoreBreakdown && !reds.length && !warns.length) return "";
@@ -448,8 +467,14 @@ function render() {
     // Sort by absolute Resolve Performance (workflowScore)
     offers.sort((a, b) => Number(b.resolveScore ?? b.workflowScore ?? 0) - Number(a.resolveScore ?? a.workflowScore ?? 0));
   } else if (sortMode === "value") {
-    // Sort by Price/Performance ratio (valueIndex = 0-100%)
-    offers.sort((a, b) => Number(b.valueScore ?? 0) - Number(a.valueScore ?? 0));
+    // Sort by Price/Performance ratio — normalize old (raw ratio) and new (%) formats
+    const normalize = (o) => {
+      const v = o.valueScore ?? 0;
+      if (v > 1) return v; // new format: already %
+      if (v > 0 && o.resolveScore) return Math.min(100, (v / 0.04) * 100); // old format
+      return 0;
+    };
+    offers.sort((a, b) => normalize(b) - normalize(a));
   } else if (sortMode === "priceAsc") {
     offers.sort((a, b) => Number(a.price || 0) - Number(b.price || 0));
   } else if (sortMode === "priceDesc") {
