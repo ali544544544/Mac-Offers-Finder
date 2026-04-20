@@ -1,18 +1,22 @@
 // scripts/scoring/ssdScore.js
 
 /**
- * Calculates SSD score (max 10).
+ * Calculates SSD multiplier (storage bottleneck for video editing).
  * @param {number|undefined} ssdGb
- * @returns {{ score: number, source: "explicit"|"insufficient_data", warnings: string[] }}
+ * @returns {{ multiplier: number, label: string, source: "explicit"|"insufficient_data", warnings: string[] }}
  */
 export function ssdScore(ssdGb) {
   if (ssdGb === undefined) {
-    return { score: 0, source: "insufficient_data", warnings: ["SSD-Größe fehlt – Score 0 angenommen"] };
+    return { multiplier: 0.8, label: "? GB", source: "insufficient_data", warnings: ["SSD-Größe fehlt – Fallback (0.8x)"] };
   }
-  const score =
-    ssdGb >= 4000 ? 10 :
-    ssdGb >= 2000 ?  9 :
-    ssdGb >= 1000 ?  7 :
-    ssdGb >= 512  ?  4 : 0;
-  return { score, source: "explicit", warnings: [] };
+  
+  let multiplier = 0.5;
+  let label = `${ssdGb} GB (Unusable)`;
+
+  if (ssdGb >= 4000) { multiplier = 1.05; label = `${ssdGb} GB (Convenient)`; }
+  else if (ssdGb >= 2000) { multiplier = 1.0; label = `${ssdGb} GB (Sweet Spot)`; }
+  else if (ssdGb >= 1000) { multiplier = 0.95; label = `${ssdGb} GB (Workable)`; }
+  else if (ssdGb >= 512) { multiplier = 0.8; label = `${ssdGb} GB (External SSD required)`; }
+
+  return { multiplier, label, source: "explicit", warnings: [] };
 }

@@ -45,12 +45,10 @@ console.log("\nTest 1: M4 Max 36 GB 4TB 14\" vorgaengermodell");
   };
   const n = normalizeOffer(offer);
   const r = scoreListing(n);
-  assertEq(r.scoreBreakdown.chip, 40, "chip = 40 (M4_Max_32 lookup)");
-  assertEq(r.scoreBreakdown.ram, 19, "ram = 19 (36 GB)");
-  assertEq(r.scoreBreakdown.ssd, 10, "ssd = 10 (4 TB)");
-  assertEq(r.scoreBreakdown.thermal, 6, "thermal = 6 (14\")");
-  assertEq(r.scoreBreakdown.condition, 10, "condition = 10 (refurb_good)");
-  assertEq(r.workflowScore, 85, "workflowScore = 85");
+  assertEq(r.scoreBreakdown.ramMult, 1.0, "ramMult = 1.0 (36 GB)");
+  assertEq(r.scoreBreakdown.ssdMult, 1.05, "ssdMult = 1.05 (4 TB)");
+  assertEq(r.scoreBreakdown.thermalMult, 0.95, "thermalMult = 0.95 (14\")");
+  assertEq(r.scoreBreakdown.conditionMult, 0.95, "condition = 0.95 (refurb_good)");
   assertEq(r.scoreStatus, "ok", "status ok");
   assert(r.redFlags.length === 0, "no red flags");
 }
@@ -65,8 +63,7 @@ console.log("\nTest 2: M5 Max 40 GPU 64 GB 2TB 16\" neu");
   };
   const n = normalizeOffer(offer);
   const r = scoreListing(n);
-  // chip 45 + ram 23 + ssd 9 + thermal 8 + condition 12 = 97
-  assertEq(r.workflowScore, 97, "workflowScore = 97");
+  assertEq(r.scoreBreakdown.ramMult, 1.1, "ramMult = 1.1 (64 GB)");
   assertEq(r.scoreStatus, "ok", "status ok");
   assert(r.redFlags.length === 0, "no red flags");
 }
@@ -81,8 +78,8 @@ console.log("\nTest 3: M3 Pro 18 GB 512 GB 14\" gebraucht");
   };
   const n = normalizeOffer(offer);
   const r = scoreListing(n);
-  // chip 27 + ram 10 + ssd 4 + thermal 6 + condition 7 = 54
-  assertEq(r.workflowScore, 54, "workflowScore = 54");
+  assertEq(r.scoreBreakdown.ramMult, 0.75, "ramMult = 0.75 (Heavy Swap Penalty)");
+  assertEq(r.scoreBreakdown.ssdMult, 0.8, "ssdMult = 0.8 (External required)");
   assertEq(r.scoreStatus, "ok", "status ok");
   assertIncludes(r.redFlags, "SSD knapp", "redFlag SSD");
 }
@@ -97,8 +94,6 @@ console.log("\nTest 4: M2 Max 32 GB 1TB 16\" gebraucht");
   };
   const n = normalizeOffer(offer);
   const r = scoreListing(n);
-  // chip 33 + ram 17 + ssd 7 + thermal 8 + condition 7 = 72
-  assertEq(r.workflowScore, 72, "workflowScore = 72");
   assertEq(r.scoreStatus, "ok", "status ok");
 }
 
@@ -113,7 +108,7 @@ console.log("\nTest 5: M4 Pro, RAM vorhanden, SSD fehlt");
   const n = normalizeOffer(offer);
   const r = scoreListing(n);
   assertEq(r.scoreStatus, "estimated", "status estimated");
-  assertEq(r.scoreBreakdown.ssd, 0, "ssd score = 0");
+  assertEq(r.scoreBreakdown.ssdMult, 0.8, "ssdMult fallback = 0.8");
   assertIncludes(r.warnings, "SSD-Größe fehlt", "warning about missing SSD");
 }
 

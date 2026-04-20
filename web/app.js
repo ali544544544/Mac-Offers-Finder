@@ -118,17 +118,21 @@ function formatStorage(gb) {
 
 function renderOfferCard(offer, isBest = false, index = 0) {
   const delay = Math.min(index * 0.05, 0.5);
-  const score = (offer.resolveScore || offer.valueScore || 0).toFixed(2);
+  const score = (offer.resolveScore || 0).toFixed(1);
+  const value = offer.valueScore ? Math.round(offer.valueScore) : 0;
+  
   const scoreClass = score >= 50 ? "score-high" : score >= 25 ? "score-mid" : "score-low";
+  const valueBadge = value >= 80 ? `<div class="best-badge">Super Deal (${value}%)</div>` : 
+                     value >= 60 ? `<div class="best-badge" style="background:var(--accent);color:#fff">Fairer Deal (${value}%)</div>` : "";
 
   return `
-    <article class="offer-card ${isBest ? "best-card" : ""}" style="animation-delay: ${delay}s">
+    <article class="offer-card ${isBest || value >= 80 ? "best-card" : ""}" style="animation-delay: ${delay}s">
 
       <div class="offer-card-top">
         <div class="offer-price">${euro(offer.price)}</div>
         <div class="offer-card-top-right">
-          ${isBest ? `<div class="best-badge">Top Deal</div>` : ""}
-          <div class="offer-score-pill ${scoreClass}">
+          ${valueBadge}
+          <div class="offer-score-pill ${scoreClass}" title="Resolve Performance (Score / 100)">
             <span class="score-label">Resolve</span>
             <span class="score-value">${score}</span>
           </div>
@@ -200,22 +204,26 @@ function renderScoringDetails(offer) {
   
   // Breakdown
   html += `
-    <div class="breakdown-grid">
-      <div class="breakdown-item" title="Chip Score">
-        <span class="breakdown-label">Chip</span>
-        <span class="breakdown-value">${b.chip ?? 0}</span>
+    <div class="breakdown-grid" style="grid-template-columns: repeat(5, 1fr) !important;">
+      <div class="breakdown-item" title="Basis-Leistung (Metal + Geekbench)">
+        <span class="breakdown-label">Raw</span>
+        <span class="breakdown-value" style="font-size:0.85em">${b.rawCompute ? (b.rawCompute/1000).toFixed(1) + "k" : 0}</span>
       </div>
-      <div class="breakdown-item" title="RAM Score">
+      <div class="breakdown-item" title="RAM Multiplikator">
         <span class="breakdown-label">RAM</span>
-        <span class="breakdown-value">${b.ram ?? 0}</span>
+        <span class="breakdown-value">${b.ramMult ?? 1}x</span>
       </div>
-      <div class="breakdown-item" title="SSD Score">
+      <div class="breakdown-item" title="SSD Multiplikator">
         <span class="breakdown-label">SSD</span>
-        <span class="breakdown-value">${b.ssd ?? 0}</span>
+        <span class="breakdown-value">${b.ssdMult ?? 1}x</span>
       </div>
-      <div class="breakdown-item" title="Zustand Score">
-        <span class="breakdown-label">Zustand</span>
-        <span class="breakdown-value">${b.condition ?? 0}</span>
+      <div class="breakdown-item" title="Thermischer Multiplikator">
+        <span class="breakdown-label">Thermal</span>
+        <span class="breakdown-value">${b.thermalMult ?? 1}x</span>
+      </div>
+      <div class="breakdown-item" title="Zustand Risikofaktor">
+        <span class="breakdown-label">Risk</span>
+        <span class="breakdown-value">${b.conditionMult ?? 1}x</span>
       </div>
     </div>
   `;

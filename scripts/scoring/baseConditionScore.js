@@ -1,27 +1,28 @@
 // scripts/scoring/baseConditionScore.js
 
 /**
- * Condition score lookup (max 12).
- * Scaled to full 12 points since battery/warranty data is not available.
+ * Condition condition multiplier lookup.
+ * Reflects wear and tear risk (battery, keyboard, warranty).
  */
-const CONDITION_SCORE = {
-  "new_sealed":     12,
-  "apple_refurb":   11,
-  "refurb_good":    10,
-  "used_excellent":  9,
-  "used_good":       7,
-  "used_fair":       4,
-  "used_poor":       1,
+const CONDITION_MULTIPLIER = {
+  "new_sealed":     { multiplier: 1.0, label: "Neu / Versiegelt" },
+  "apple_refurb":   { multiplier: 1.0, label: "Apple Refurbished" },
+  "refurb_good":    { multiplier: 0.95, label: "Refurbished / Sehr Gut" },
+  "used_excellent": { multiplier: 0.95, label: "Gebraucht - Hervorragend" },
+  "used_good":      { multiplier: 0.90, label: "Gebraucht - Gut" },
+  "used_fair":      { multiplier: 0.85, label: "Gebraucht - Akzeptabel" },
+  "used_poor":      { multiplier: 0.80, label: "Gebraucht - Schlecht" },
 };
 
 /**
- * Calculates condition score (max 12).
+ * Calculates condition multiplier.
  * @param {string|undefined} conditionGrade
- * @returns {{ score: number, source: "explicit"|"fallback", warnings: string[] }}
+ * @returns {{ multiplier: number, label: string, source: "explicit"|"fallback", warnings: string[] }}
  */
 export function baseConditionScore(conditionGrade) {
-  if (conditionGrade === undefined) {
-    return { score: 5, source: "fallback", warnings: ["Zustand unbekannt – Fallback 5/12"] };
+  if (conditionGrade === undefined || !CONDITION_MULTIPLIER[conditionGrade]) {
+    return { multiplier: 0.85, label: "Unbekannt", source: "fallback", warnings: ["Zustand unbekannt – Fallback (0.85x)"] };
   }
-  return { score: CONDITION_SCORE[conditionGrade], source: "explicit", warnings: [] };
+  const entry = CONDITION_MULTIPLIER[conditionGrade];
+  return { multiplier: entry.multiplier, label: entry.label, source: "explicit", warnings: [] };
 }
