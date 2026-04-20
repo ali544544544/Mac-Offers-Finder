@@ -162,20 +162,22 @@ function renderOfferCard(offer, isBest = false, index = 0) {
     value = Math.min(100, Math.round((rawValue / 0.04) * 100));
   }
   
-  const scoreClass = score >= 50 ? "score-high" : score >= 25 ? "score-mid" : "score-low";
-  const valueBadge = value >= 80 ? `<div class="best-badge">Super Deal (${value}%)</div>` : 
-                     value >= 60 ? `<div class="best-badge" style="background:var(--accent);color:#fff">Fairer Deal (${value}%)</div>` : "";
+  const allround   = computeAllroundScore(offer);
+  const allroundDisplay = allround.toFixed(1);
+  const scoreClass = allround >= 65 ? "score-high" : allround >= 45 ? "score-mid" : "score-low";
+  const valueBadge = allround >= 72 ? `<div class="best-badge">🏆 Allround-Sieger (${allroundDisplay})</div>` :
+                     allround >= 60 ? `<div class="best-badge" style="background:var(--accent);color:#fff">⭐ Starkes Angebot (${allroundDisplay})</div>` : "";
 
   return `
-    <article class="offer-card ${isBest || value >= 80 ? "best-card" : ""}" style="animation-delay: ${delay}s">
+    <article class="offer-card ${(isBest || allround >= 72) ? "best-card" : ""}" style="animation-delay: ${delay}s">
 
       <div class="offer-card-top">
         <div class="offer-price">${euro(offer.price)}</div>
         <div class="offer-card-top-right">
           ${valueBadge}
-          <div class="offer-score-pill ${scoreClass}" title="Resolve Performance (Score / 100)">
-            <span class="score-label">Resolve</span>
-            <span class="score-value">${score}</span>
+          <div class="offer-score-pill ${scoreClass}" title="Allround-Score: Geometrisches Mittel aus Leistung und Preis-Leistung">
+            <span class="score-label">Allround</span>
+            <span class="score-value">${allroundDisplay}</span>
           </div>
         </div>
       </div>
