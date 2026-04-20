@@ -28,8 +28,9 @@ export const CHIP_SCORE = {
   "M4_Max_40":  44,
 
   "M5_Base_10": 24,
+  "M5_Pro_10":  30, // Konservative Schätzung für Low-Bin Pro
   "M5_Pro_16":  35,
   "M5_Pro_20":  38,
+  "M5_Max_32":  42, // Konservative Schätzung, falls dieser Bin existiert
   "M5_Max_40":  45,
-  // M5_Max_32 existiert nicht — Apple bietet diesen Bin nicht an
 };

@@ -7,9 +7,12 @@
  */
 function extractChipTier(offer) {
   const text = ((offer.title ?? "") + " " + (offer.variant ?? "")).toLowerCase();
-  if (text.includes("max")) return "max";
-  if (text.includes(" pro")) return "pro";
-  if (offer.chip && !text.includes("max") && !text.includes("pro")) return "base";
+  // "MacBook Pro" aus dem Text entfernen, um Fehl-Matches mit dem Chip-Tier "Pro" zu verhindern
+  const cleanedText = text.replace(/macbook pro/ig, "");
+
+  if (cleanedText.includes("max")) return "max";
+  if (cleanedText.includes("pro")) return "pro";
+  if (offer.chip && !cleanedText.includes("max") && !cleanedText.includes("pro")) return "base";
   return undefined;
 }
 
