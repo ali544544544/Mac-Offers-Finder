@@ -1,80 +1,99 @@
 // scripts/scoring/scoreListing.js
-
-import { chipScore } from "./chipScore.js";
-import { ramScore } from "./ramScore.js";
-import { ssdScore } from "./ssdScore.js";
-import { thermalScore } from "./thermalScore.js";
-import { conditionScore } from "./conditionScore.js";
-import { effectivePrice } from "./effectivePrice.js";
-import { redFlags } from "./redFlags.js";
-import { computeConfidence } from "./computeConfidence.js";
+// Multiplicative Bottleneck Scoring System for DaVinci Resolve Workloads
 
 import { lookupBenchmarks } from "./benchmarks.js";
-import { ramScore } from "./ramScore.js";
-import { ssdScore } from "./ssdScore.js";
-import { thermalScore } from "./thermalScore.js";
-import { conditionScore } from "./conditionScore.js";
-import { effectivePrice } from "./effectivePrice.js";
-import { redFlags } from "./redFlags.js";
+import { ramScore }         from "./ramScore.js";
+import { ssdScore }         from "./ssdScore.js";
+import { thermalScore }     from "./thermalScore.js";
+import { conditionScore }   from "./conditionScore.js";
+import { effectivePrice }   from "./effectivePrice.js";
+import { redFlags }         from "./redFlags.js";
 import { computeConfidence } from "./computeConfidence.js";
 
+// ─── Value Normalization Calibration ──────────────────────────────────────────
+// Reference point: M1 Max (65k metal, 12.5k gb6), 64 GB, 2TB, 16", used_good
+// at €1700 is the historic "sweet spot" — it scores ~48.7 workflow points and
+// achieves ~0.0287 pts/€ which we define as 100% value efficiency.
+// Tier reference values:
+//   M4 Max 36GB, 4TB, 14", vorgaengermodell at €4649 → ~80 wf score → 61% value
+//   M4 Pro 24GB, 512GB, 14", vorgaengermodell at €1955 → ~34 wf score → 62% value
+//   M3 8GB, 512GB Apple refurb at €1179 → ~11 wf score → 36% value
+const VALUE_NORMALIZATION_FACTOR = 0.0287; // pts/€ = 100% value
+
+
+
 /**
- * Determines the overall score status.
+ * Determines data completeness for score reliability status.
  */
 function computeScoreStatus(input) {
   if (!input.chipFamily || input.ramGb === undefined) return "insufficient_data";
   const allClear =
-    input.chipTier !== undefined &&
-    input.gpuCores !== undefined &&
-    input.ssdGb !== undefined &&
-    input.screenSize !== undefined &&
+    input.chipTier    !== undefined &&
+    input.gpuCores    !== undefined &&
+    input.ssdGb       !== undefined &&
+    input.screenSize  !== undefined &&
     input.conditionGrade !== undefined &&
-    input.priceEur !== undefined;
+    input.priceEur    !== undefined;
   return allClear ? "ok" : "estimated";
 }
 
+/**
+ * Computes the raw compute power using real benchmark data.
+ * Formula: (Metal_GPU * 0.70) + (Geekbench_MC * 0.30)
+ *
+ * Why 70/30? DaVinci Resolve is heavily GPU-bound for transcoding,
+ * colour grading, and effects rendering; CPU matters for export & codec decode.
+ *
+ * Returns isFallback=true when we had to estimate from chip family/tier.
+ */
 function computeRawPower(input) {
-  let metal = input.metalGpu;
-  let gb6 = input.gb6mc;
+  // Prefer raw offer benchmarks; fall back to lookup table
+  let metal = (input.metalGpu && input.metalGpu > 0) ? input.metalGpu : 0;
+  let gb6   = (input.gb6mc   && input.gb6mc   > 0) ? input.gb6mc   : 0;
   let isFallback = false;
 
-  // Utilize external benchmarks module if missing
-  if (!metal || !gb6 || metal === 0 || gb6 === 0) {
-    const benches = lookupBenchmarks(input.chipFamily, input.cpuCores, input.gpuCores);
-    if (!metal || metal === 0) metal = benches.metal_gpu;
-    if (!gb6 || gb6 === 0) gb6 = benches.gb6_mc;
+  if (metal === 0 || gb6 === 0) {
+    const bench = lookupBenchmarks(input.chipFamily, input.cpuCores, input.gpuCores);
+    if (metal === 0) metal = bench.metal_gpu;
+    if (gb6   === 0) gb6   = bench.gb6_mc;
   }
 
-  // Hard fallback if completely unknown
-  if (!metal || metal === 0) {
-    const tierMult = input.chipTier === "max" ? 2.0 : input.chipTier === "pro" ? 1.5 : 1.0;
-    const genBase = { "M1": 30000, "M2": 40000, "M3": 50000, "M4": 65000, "M5": 75000 };
-    metal = (genBase[input.chipFamily] || 35000) * tierMult;
+  // Last-resort statistical fallback by chip generation + tier
+  if (metal === 0) {
+    const base = { M1: 35000, M2: 45000, M3: 55000, M4: 68000, M5: 78000 };
+    const tier = { base: 1.0, pro: 1.5, max: 2.0 };
+    metal = (base[input.chipFamily] ?? 40000) * (tier[input.chipTier] ?? 1.0);
     isFallback = true;
   }
-  if (!gb6 || gb6 === 0) {
-    const tierMult = input.chipTier === "max" ? 1.5 : input.chipTier === "pro" ? 1.3 : 1.0;
-    const genBase = { "M1": 8000, "M2": 10000, "M3": 12000, "M4": 15000, "M5": 17000 };
-    gb6 = (genBase[input.chipFamily] || 9000) * tierMult;
+  if (gb6 === 0) {
+    const base = { M1: 8500, M2: 10500, M3: 12500, M4: 16000, M5: 18000 };
+    const tier = { base: 1.0, pro: 1.3, max: 1.5 };
+    gb6 = (base[input.chipFamily] ?? 9000) * (tier[input.chipTier] ?? 1.0);
     isFallback = true;
   }
 
-  // Engine Formula for Resolve
   const power = (metal * 0.70) + (gb6 * 0.30);
   return { power, metal, gb6, isFallback };
 }
 
+/**
+ * Core scoring function.
+ * Returns an absolute Resolve Performance Score (workflowScore) and a
+ * normalized Value Index (valueIndex) representing price efficiency in %.
+ *
+ * @param {Object} input - Normalized ListingForScoring
+ * @returns {Object} ScoringResult
+ */
 export function scoreListing(input) {
   const ram       = ramScore(input.ramGb);
   const ssd       = ssdScore(input.ssdGb);
   const thermal   = thermalScore(input.screenSize);
   const condition = conditionScore(input);
   const price     = effectivePrice(input);
-
-  const raw = computeRawPower(input);
+  const raw       = computeRawPower(input);
 
   const warnings = [
-    ...(raw.isFallback ? ["Synthetische Benchmarks geschätzt (Flaschenhals-Index ungenau)"] : []),
+    ...(raw.isFallback ? ["Benchmarks geschätzt – Score weniger präzise"] : []),
     ...ram.warnings,
     ...ssd.warnings,
     ...thermal.warnings,
@@ -88,18 +107,19 @@ export function scoreListing(input) {
   let valueIndex    = undefined;
 
   if (status !== "insufficient_data") {
-    const rawPower = raw.power;
-    const mults = ram.multiplier * ssd.multiplier * thermal.multiplier * condition.multiplier;
-    const finalCompute = rawPower * mults;
+    // Combined bottleneck multiplier
+    const botMult = ram.multiplier * ssd.multiplier * thermal.multiplier * condition.multiplier;
 
-    // Scale to 0-100+ (Baseline is roughly 100k points for an M4 Max)
-    workflowScore = +(finalCompute / 1000).toFixed(2);
+    // Final effective compute, scaled to a human-readable 0–120 range
+    // (M4 Max with perfect config ≈ 100, M1 Base ≈ 12, M5 Max theoretical peak ~120)
+    const finalCompute = raw.power * botMult;
+    workflowScore = +(finalCompute / 1000).toFixed(1);
 
     if (price.value) {
-      // Normalize Value Index (Points per Euro). 
-      // 28 Points/Euro = 100% Value Rating (Historic sweet spot, e.g. Used M1 Max for 1600€)
-      const rawValue = workflowScore / price.value; 
-      valueIndex = Math.min(100, Math.round((rawValue / 0.028) * 100));
+      // Value Index: pts/€ normalized to 0-100%.
+      // 100% = M1 Max 64GB 2TB used @ ~€1700 (best historically recorded deal).
+      const ptsPerEuro = workflowScore / price.value;
+      valueIndex = +Math.min(100, (ptsPerEuro / VALUE_NORMALIZATION_FACTOR) * 100).toFixed(1);
     }
   }
 
@@ -109,15 +129,21 @@ export function scoreListing(input) {
     effectivePriceEur: price.value,
     valueIndex,
     scoreBreakdown: {
-      rawCompute: Math.round(raw.power),
-      ramMult: ram.multiplier,
-      ssdMult: ssd.multiplier,
-      thermalMult: thermal.multiplier,
+      rawComputePts: Math.round(raw.power / 1000),
+      metalBench:    Math.round(raw.metal),
+      gb6Bench:      Math.round(raw.gb6),
+      ramMult:       ram.multiplier,
+      ramLabel:      ram.label,
+      ssdMult:       ssd.multiplier,
+      ssdLabel:      ssd.label,
+      thermalMult:   thermal.multiplier,
+      thermalLabel:  thermal.label,
       conditionMult: condition.multiplier,
-      total: workflowScore,
+      conditionLabel: condition.label,
+      total:         workflowScore,
     },
     confidence: computeConfidence(input),
     warnings,
-    redFlags: redFlags(input),
+    redFlags:   redFlags(input),
   };
 }

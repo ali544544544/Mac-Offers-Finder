@@ -20,7 +20,7 @@ let priceSliderInstance = null;
 // State
 const filterState = {
   search: "",
-  sort: "score",
+  sort: "value",
   vendors: new Set(),
   model: "",
   colors: new Set(),
@@ -186,49 +186,67 @@ function renderOfferCard(offer, isBest = false, index = 0) {
 }
 
 function renderScoringDetails(offer) {
-  if (!offer.scoreBreakdown && !offer.redFlags?.length && !offer.warnings?.length) {
-    return "";
-  }
-
   const b = offer.scoreBreakdown || {};
   const reds = offer.redFlags || [];
   const warns = offer.warnings || [];
   const confidence = offer.scoreConfidence ?? 1.0;
   const status = offer.scoreStatus || "ok";
+  const valueScore = offer.valueScore ?? 0;
+
+  // Only show if we actually have something to render
+  if (!offer.scoreBreakdown && !reds.length && !warns.length) return "";
 
   let html = `<div class="scoring-details">`;
 
-  // Status Badge
+  // Status Badge + Value bar header
   const statusClass = status === "ok" ? "status-ok" : "status-estimated";
-  const statusLabel = status === "ok" ? "Geprüft" : status === "estimated" ? "Geschätzt" : "Unvollständig";
-  
-  // Breakdown
+  const statusLabel = status === "ok" ? "✅ Daten vollständig" : status === "estimated" ? "⚠️ Geschätzt" : "❌ Unvollständig";
+
+  // Value Score bar (0-100%)
+  const valueBarColor = valueScore >= 80 ? "#22c55e" : valueScore >= 60 ? "var(--accent)" : valueScore >= 40 ? "#f59e0b" : "#ef4444";
+  const valueLabel = valueScore >= 80 ? "Sehr stark" : valueScore >= 60 ? "Gut" : valueScore >= 40 ? "Durchschnittlich" : "Schwach";
   html += `
-    <div class="breakdown-grid" style="grid-template-columns: repeat(5, 1fr) !important;">
-      <div class="breakdown-item" title="Basis-Leistung (Metal + Geekbench)">
-        <span class="breakdown-label">Raw</span>
-        <span class="breakdown-value" style="font-size:0.85em">${b.rawCompute ? (b.rawCompute/1000).toFixed(1) + "k" : 0}</span>
+    <div style="margin-bottom:10px">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px">
+        <span style="font-size:11px; font-weight:600; opacity:0.7;">Preis-Leistung</span>
+        <span style="font-size:12px; font-weight:700; color:${valueBarColor}">${valueScore.toFixed(1)}% &mdash; ${esc(valueLabel)}</span>
       </div>
-      <div class="breakdown-item" title="RAM Multiplikator">
-        <span class="breakdown-label">RAM</span>
-        <span class="breakdown-value">${b.ramMult ?? 1}x</span>
-      </div>
-      <div class="breakdown-item" title="SSD Multiplikator">
-        <span class="breakdown-label">SSD</span>
-        <span class="breakdown-value">${b.ssdMult ?? 1}x</span>
-      </div>
-      <div class="breakdown-item" title="Thermischer Multiplikator">
-        <span class="breakdown-label">Thermal</span>
-        <span class="breakdown-value">${b.thermalMult ?? 1}x</span>
-      </div>
-      <div class="breakdown-item" title="Zustand Risikofaktor">
-        <span class="breakdown-label">Risk</span>
-        <span class="breakdown-value">${b.conditionMult ?? 1}x</span>
+      <div style="background:rgba(128,128,128,0.2); border-radius:8px; height:6px; overflow:hidden">
+        <div style="background:${valueBarColor}; height:6px; width:${Math.min(100, valueScore)}%; border-radius:8px; transition:width 0.6s ease;"></div>
       </div>
     </div>
   `;
 
-  // Alerts
+  // Breakdown grid — new format uses labels
+  const hasNewBreakdown = b.rawComputePts !== undefined;
+  if (hasNewBreakdown) {
+    html += `
+      <div class="breakdown-grid" style="grid-template-columns: repeat(5, 1fr) !important;">
+        <div class="breakdown-item" title="Rohe GPU+CPU Leistung aus Benchmarks">
+          <span class="breakdown-label">Compute</span>
+          <span class="breakdown-value" style="font-size:0.85em">${b.rawComputePts ?? 0}k</span>
+        </div>
+        <div class="breakdown-item" title="${esc(b.ramLabel ?? 'RAM')}">
+          <span class="breakdown-label">RAM</span>
+          <span class="breakdown-value" style="color:${(b.ramMult ?? 1) < 0.9 ? '#ef4444' : (b.ramMult ?? 1) >= 1.0 ? '#22c55e' : '#f59e0b'}">${b.ramMult ?? 1}x</span>
+        </div>
+        <div class="breakdown-item" title="${esc(b.ssdLabel ?? 'SSD')}">
+          <span class="breakdown-label">SSD</span>
+          <span class="breakdown-value" style="color:${(b.ssdMult ?? 1) < 0.9 ? '#ef4444' : (b.ssdMult ?? 1) >= 1.0 ? '#22c55e' : '#f59e0b'}">${b.ssdMult ?? 1}x</span>
+        </div>
+        <div class="breakdown-item" title="${esc(b.thermalLabel ?? 'Chassis')}">
+          <span class="breakdown-label">Chassis</span>
+          <span class="breakdown-value">${b.thermalMult ?? 1}x</span>
+        </div>
+        <div class="breakdown-item" title="${esc(b.conditionLabel ?? 'Zustand')}">
+          <span class="breakdown-label">Zustand</span>
+          <span class="breakdown-value" style="color:${(b.conditionMult ?? 1) < 0.9 ? '#f59e0b' : '#22c55e'}">${b.conditionMult ?? 1}x</span>
+        </div>
+      </div>
+    `;
+  }
+
+  // Red flags and warnings
   if (reds.length || warns.length) {
     html += `<div class="alerts-zone">`;
     reds.forEach(r => {
@@ -240,11 +258,11 @@ function renderScoringDetails(offer) {
     html += `</div>`;
   }
 
-  // Footer: Confidence & Status
+  // Footer: Status + Confidence
   html += `
-    <div style="display:flex; justify-content: space-between; align-items: center;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px">
       <span class="status-badge ${statusClass}">${statusLabel}</span>
-      <div class="confidence-info">Vertrauen: ${Math.round(confidence * 100)}%</div>
+      <div class="confidence-info">Datenqualität: ${Math.round(confidence * 100)}%</div>
     </div>
   `;
 
@@ -427,7 +445,11 @@ function render() {
   // Sorting logic
   const sortMode = sortFilterEl.value;
   if (sortMode === "score") {
-    offers.sort((a, b) => Number(b.resolveScore || b.valueScore || 0) - Number(a.resolveScore || a.valueScore || 0));
+    // Sort by absolute Resolve Performance (workflowScore)
+    offers.sort((a, b) => Number(b.resolveScore ?? b.workflowScore ?? 0) - Number(a.resolveScore ?? a.workflowScore ?? 0));
+  } else if (sortMode === "value") {
+    // Sort by Price/Performance ratio (valueIndex = 0-100%)
+    offers.sort((a, b) => Number(b.valueScore ?? 0) - Number(a.valueScore ?? 0));
   } else if (sortMode === "priceAsc") {
     offers.sort((a, b) => Number(a.price || 0) - Number(b.price || 0));
   } else if (sortMode === "priceDesc") {
