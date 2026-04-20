@@ -26,15 +26,17 @@ export function scoreOffer(offer) {
 
     workflowScore:    result.workflowScore,
     valueIndex:       result.valueIndex,
+    combinedScore:    result.combinedScore,
     effectivePrice:   result.effectivePriceEur,
     scoreBreakdown:   result.scoreBreakdown,
     scoreConfidence:  result.confidence.overall,
     scoreStatus:      result.scoreStatus,
     redFlags:         result.redFlags,
     warnings:         result.warnings,
-    // Alte Felder überschreiben für Rückwärtskompatibilität:
-    resolveScore:     result.workflowScore,
-    valueScore:       result.valueIndex,
+    // Backward-compat fields:
+    resolveScore:     result.workflowScore,   // absolute performance
+    valueScore:       result.valueIndex,       // 0-100% price efficiency
+    allroundScore:    result.combinedScore,    // ← the ONE true winner metric
   };
 }
 

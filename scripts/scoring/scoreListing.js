@@ -103,8 +103,9 @@ export function scoreListing(input) {
 
   const status = computeScoreStatus(input);
 
-  let workflowScore = undefined;
-  let valueIndex    = undefined;
+  let workflowScore  = undefined;
+  let valueIndex     = undefined;
+  let combinedScore  = undefined;
 
   if (status !== "insufficient_data") {
     // Combined bottleneck multiplier
@@ -120,6 +121,14 @@ export function scoreListing(input) {
       // 100% = M1 Max 64GB 2TB used @ ~€1700 (best historically recorded deal).
       const ptsPerEuro = workflowScore / price.value;
       valueIndex = +Math.min(100, (ptsPerEuro / VALUE_NORMALIZATION_FACTOR) * 100).toFixed(1);
+
+      // ─── Combined Allround Score ─────────────────────────────────────────────
+      // Geometric mean of normalized Performance and Value.
+      // Requires BOTH to be strong — a cheap weak machine and an expensive
+      // powerful machine are both penalized. Only the true dual winner scores high.
+      // Performance is normalized against our theoretical peak (~120 pts → 100%).
+      const perfPct = Math.min(100, (workflowScore / 120) * 100);
+      combinedScore = +Math.sqrt(perfPct * valueIndex).toFixed(1);
     }
   }
 
@@ -128,6 +137,7 @@ export function scoreListing(input) {
     workflowScore,
     effectivePriceEur: price.value,
     valueIndex,
+    combinedScore,
     scoreBreakdown: {
       rawComputePts: Math.round(raw.power / 1000),
       metalBench:    Math.round(raw.metal),

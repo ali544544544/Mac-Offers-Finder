@@ -20,7 +20,7 @@ let priceSliderInstance = null;
 // State
 const filterState = {
   search: "",
-  sort: "value",
+  sort: "allround",
   vendors: new Set(),
   model: "",
   colors: new Set(),
@@ -114,6 +114,35 @@ function formatStorage(gb) {
   if (!gb) return "-";
   if (gb >= 1000) return (gb / 1000) % 1 === 0 ? `${gb/1000} TB` : `${(gb/1000).toFixed(1)} TB`;
   return `${gb} GB`;
+}
+
+/**
+ * Computes the combined allround score for an offer.
+ * Works with both old (raw ratio) and new (%) data formats.
+ * Formula: geometric mean of normalized Performance% and Value%
+ * → Requires BOTH to be strong. Pure cheap-and-weak OR pure powerhouse-overpriced = penalized.
+ */
+function computeAllroundScore(offer) {
+  // Performance: 0-100 scale (old resolveScore was already ~50-100, new is 0-120)
+  const rawPerf = offer.resolveScore ?? offer.workflowScore ?? 0;
+  const perfPct = Math.min(100, (rawPerf / 120) * 100);
+
+  // Value: detect old (ratio) vs new (%) format
+  const rawValue = offer.valueScore ?? 0;
+  let valuePct = 0;
+  if (rawValue > 1) {
+    valuePct = Math.min(100, rawValue); // new format
+  } else if (rawValue > 0 && offer.resolveScore) {
+    valuePct = Math.min(100, (rawValue / 0.04) * 100); // old format
+  }
+
+  // Use precomputed allroundScore if present (new format)
+  if (offer.allroundScore != null && offer.allroundScore > 0) {
+    return offer.allroundScore;
+  }
+
+  // Geometric mean
+  return perfPct > 0 && valuePct > 0 ? Math.sqrt(perfPct * valuePct) : 0;
 }
 
 function renderOfferCard(offer, isBest = false, index = 0) {
@@ -463,7 +492,10 @@ function render() {
   
   // Sorting logic
   const sortMode = sortFilterEl.value;
-  if (sortMode === "score") {
+  if (sortMode === "allround") {
+    // THE recommended sort: geometric mean of Performance and Value
+    offers.sort((a, b) => computeAllroundScore(b) - computeAllroundScore(a));
+  } else if (sortMode === "score") {
     // Sort by absolute Resolve Performance (workflowScore)
     offers.sort((a, b) => Number(b.resolveScore ?? b.workflowScore ?? 0) - Number(a.resolveScore ?? a.workflowScore ?? 0));
   } else if (sortMode === "value") {
