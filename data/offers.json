@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T09:19:01.489Z",
+  "updatedAt": "2026-04-20T11:16:32.994Z",
   "sources": [
     {
       "key": "mactrade-vorgaenger",
@@ -33,7 +33,7 @@
       "key": "idealo",
       "url": "https://www.idealo.de",
       "type": "idealo",
-      "offerCount": 21,
+      "offerCount": 24,
       "ok": true
     }
   ],
@@ -61,6 +61,8 @@
       "productId": "69814.0003",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 85,
       "valueIndex": 0.0183,
       "effectivePrice": 4649,
@@ -102,25 +104,27 @@
       "productId": "71776.0064",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m5-10-core-cpu-10-core-gpu-silber-nanoglas-32gb-1tbssd-kein-netzteil/71776.0064",
       "description": "14'' MacBook Pro. Mit der Power des M5. Das 14'' MacBook Pro mit M5 bringt dir unglaubliche Geschwindigkeit und leistungsstarke OnDevice KI für alle deine persönlichen, beruflichen und kreativen Aufgaben. Mit bis zu 24 Stunden Batterielaufzeit und einem Liquid Retina XDR Display.1 Wichtige Features • MIT DER POWER DES M5 – Neben einer schnelleren CPU und einem gemeinsamen Arbeitsspeicher hat der M5 eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern für schnellere KI Performance. So erledigst du anspruchsvolle Workloads mit unfassbarer Geschwindigkeit. • ENTWICKELT FÜR APPLE INTELLIGENCE – Apple Intelligence ist dein persönliches Intelligenz System. Es hilft dir, etwas zu schreiben, dich auszudrücken und Dinge mühelos zu erledigen. Und mit revolutionärem Datenschutz kannst du ganz beruhigt sein, dass niemand auf deine Daten zugreifen kann − nicht einmal Apple.2 • BIS ZU 24 STUNDEN BATTERIELAUFZEIT – Das 14'' MacBook Pro liefert die gleiche außergewöhnliche Performance, egal ob es mit Batterie läuft oder am Strom angeschlossen ist.1 • SUPERSCHNELLE APPS DANK APPLE CHIPS – Alle deine wichtigsten Apps, inklusive Microsoft 365 und Adobe Creative Cloud, laufen auf macOS blitzschnell.3 • DU LIEBST DEIN IPHONE? DU WIRST DEN MAC LIEBEN. – Der Mac funktioniert großartig mit deinen anderen Apple Geräten. Kopiere Inhalte auf dem iPhone und setze sie auf dem Mac ein. Sende mit der Nachrichten App Textnachrichten oder mach mit deinem Mac FaceTime Anrufe und beantworte sie.4 • BRILLANTES PRO DISPLAY – Das 14,2'' Liquid Retina XDR Display5 hat 1.600 Nits Spitzenhelligkeit,6 bis zu 1.000 Nits durchgehende Helligkeit und ein Kontrastverhältnis von 1.000.000:1. • FORTSCHRITTLICH BEI KAMERA UND SOUND – Mit einer 12MP Center Stage Kamera, drei Mikrofonen in Studioqualität und sechs Lautsprechern mit 3D Audio und Unterstützung für Dolby Atmos bleibst du immer in der Bildmitte und klingst großartig. • VERBINDE ALLES – Dieses MacBook Pro hat drei Thunderbolt 4 Anschlüsse und einen MagSafe 3 Ladeanschluss, einen SDXC Kartensteckplatz, einen HDMI Anschluss und einen Kopfhöreranschluss. Und es unterstützt bis zu zwei externe Displays. • DATENSCHUTZ UND SICHERHEIT SIND DIREKT MIT EINGEBAUT − Jeder Mac kommt mit zuverlässigem Schutz vor Malware und Viren. Bei Verlust oder Diebstahl des Mac kann „Wo ist?“ helfen, ihn wiederzufinden. FileVault sorgt dafür, dass die Dateien verschlüsselt sind, damit niemand darauf zugreifen kann. Und mit kostenlosen Sicherheitsupdates bleibt der Mac immer geschützt. Rechtliche Hinweise Es sind konfigurierbare Optionen verfügbar. 1 Die Batterielaufzeit variiert abhängig von Verwendung und Konfiguration. Weitere Infos unter apple.com/de/batteries. 2 Apple Intelligence ist in der Betaversion verfügbar. Einige Features sind u. U. nicht in allen Regionen oder Sprachen verfügbar. Informationen zur Verfügbarkeit von Features und Sprachen und zu den Systemanforderungen gibt es unter support.apple.com/de-de/121115. 3 Apps sind im App Store erhältlich. Software und Inhalte sind möglicherweise separat erhältlich. Änderungen an der Titelverfügbarkeit vorbehalten. 4 FaceTime ist nicht in allen Ländern oder Regionen verfügbar. 5 Das Display des 14'' MacBook Pro hat oben gerundete Ecken. Als Standard-Rechteck gemessen hat das Display eine Diagonale von 14,2'' (35,97 cm). Der tatsächlich sichtbare Displaybereich ist kleiner. 6 Bis zu 1.600 Nits Spitzenhelligkeit bei Temperaturen unter 25 °C. Technische Daten Eine vollständige Liste gibt es auf apple.com/de/macbook-pro-/specs.",
-      "workflowScore": 81,
-      "valueIndex": 0.0332,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 64,
+      "valueIndex": 0.0263,
       "effectivePrice": 2438,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 17,
         "ssd": 7,
         "thermal": 6,
         "condition": 10,
-        "total": 81
+        "total": 64
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "resolveScore": 81,
-      "valueScore": 0.0332
+      "warnings": [],
+      "resolveScore": 64,
+      "valueScore": 0.0263
     },
     {
       "id": "mactrade-vorgaenger-69821.0054",
@@ -145,6 +149,8 @@
       "productId": "69821.0054",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054",
       "description": "6'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 86,
       "valueIndex": 0.0182,
       "effectivePrice": 4719,
@@ -186,49 +192,8 @@
       "productId": "69811.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-silber-2024/69811.0001",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
-      "workflowScore": 65,
-      "valueIndex": 0.0332,
-      "effectivePrice": 1955,
-      "scoreBreakdown": {
-        "chip": 31,
-        "ram": 14,
-        "ssd": 4,
-        "thermal": 6,
-        "condition": 10,
-        "total": 65
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
-      ],
-      "warnings": [],
-      "resolveScore": 65,
-      "valueScore": 0.0332
-    },
-    {
-      "id": "mactrade-vorgaenger-69810.0001",
-      "sourceKey": "mactrade-vorgaenger",
-      "sourceType": "mactrade",
-      "sourceUrl": "https://www.mactrade.de/restposten/vorgaengermodelle/mac/",
-      "vendor": "Apple",
-      "title": "RP // Apple MacBook Pro 14'' M4 Pro 12-Core CPU 16-Core GPU - 512GB - 24GB Space Schwarz - 2024",
-      "variant": "24 GB;512 GB;70W USB-C Power Adapter;Standard-Display;Apple M4 Pro mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine",
-      "model": "MacBook Pro 14",
-      "chip": "M4 Pro",
-      "year": 2024,
-      "condition": "vorgaengermodell",
-      "price": 1955,
-      "currency": "EUR",
-      "ramGb": 24,
-      "storageGb": 512,
-      "cpuCores": 12,
-      "gpuCores": 16,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "productId": "69810.0001",
-      "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-space-schwarz-2024/69810.0001",
-      "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 65,
       "valueIndex": 0.0332,
       "effectivePrice": 1955,
@@ -272,6 +237,8 @@
       "productId": "69812.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69812.0001",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 71,
       "valueIndex": 0.0297,
       "effectivePrice": 2389,
@@ -289,6 +256,49 @@
       "warnings": [],
       "resolveScore": 71,
       "valueScore": 0.0297
+    },
+    {
+      "id": "mactrade-vorgaenger-69810.0054",
+      "sourceKey": "mactrade-vorgaenger",
+      "sourceType": "mactrade",
+      "sourceUrl": "https://www.mactrade.de/restposten/vorgaengermodelle/mac/",
+      "vendor": "Apple",
+      "title": "RP // Apple MacBook Pro 14'' M4 Pro 14-Core CPU 20-Core GPU - 1TB - 24GB Space Schwarz - 2024",
+      "variant": "24 GB;96W USB-C Power Adapter;Apple M4 Pro mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine;1 TB;Standard-Display",
+      "model": "MacBook Pro 14",
+      "chip": "M4 Pro",
+      "year": 2024,
+      "condition": "vorgaengermodell",
+      "price": 2455,
+      "currency": "EUR",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "cpuCores": 14,
+      "gpuCores": 20,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "productId": "69810.0054",
+      "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69810.0054",
+      "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
+      "workflowScore": 71,
+      "valueIndex": 0.0289,
+      "effectivePrice": 2455,
+      "scoreBreakdown": {
+        "chip": 34,
+        "ram": 14,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 10,
+        "total": 71
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [],
+      "warnings": [],
+      "resolveScore": 71,
+      "valueScore": 0.0289
     },
     {
       "id": "mactrade-vorgaenger-69817.0001",
@@ -313,6 +323,8 @@
       "productId": "69817.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-silber-2024/69817.0001",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 70,
       "valueIndex": 0.0292,
       "effectivePrice": 2399,
@@ -356,6 +368,8 @@
       "productId": "69816.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-space-schwarz-2024/69816.0001",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 70,
       "valueIndex": 0.0292,
       "effectivePrice": 2399,
@@ -399,6 +413,8 @@
       "productId": "69818.0006",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 48 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 77,
       "valueIndex": 0.0264,
       "effectivePrice": 2921.15,
@@ -442,6 +458,8 @@
       "productId": "68366",
       "link": "https://www.mactrade.de/rp-2144-apple-macbook-pro-16-m3-pro-12-core-cpu-18-core-gpu-512gb-18gb-space-schwarz-2023/68366",
       "description": "Ausstellungsstück, leichte Gebrauchsspuren, technisch einwandfreiDie Batteriekapazität kann von der eines Neugerätes abweichen. Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung inkl. komplettem originalen Lieferumfang, enthaltenes Zubehör ist in neuwertigem Zustand.Apple M3 Pro Chip mit 12-Core CPU, 18-Core GPU, 16-Core Neural Engine, 18 GB gemeinsamer Arbeitsspeicher, 512 GB SSD Speicher, 16'' Liquid Retina XDR Display, 140W USB-C Power Adapter, Drei Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss, Beleuchtetes Magic Keyboard mit Touch ID – Deutsch,",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 56,
       "valueIndex": 0.0295,
       "effectivePrice": 1899,
@@ -485,6 +503,8 @@
       "productId": "71881",
       "link": "https://www.mactrade.de/rp-2404-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-silber-2024/71881",
       "description": "Rückläufer, zu Prüfungszwecken geöffnet! technisch einwandfreier Zustand - wie neuDie Batteriekapazität kann von der eines Neugerätes abweichen. Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung inkl. komplettem originalen Lieferumfang, enthaltenes Zubehör ist in neuwertigem Zustand., , 16'' Liquid Retina XDR Display◊, Standard-Display, Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine, 24 GB gemeinsamer Arbeitsspeicher, 512 GB SSD Speicher, 140W USB-C Power Adapter, Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss, Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 67,
       "valueIndex": 0.0305,
       "effectivePrice": 2199,
@@ -528,6 +548,8 @@
       "productId": "72145",
       "link": "https://www.mactrade.de/rp-2459-apple-macbook-pro-14-m1-pro-8-core-512gb-spacegrau-2021/72145",
       "description": "Ausstellungsstück, leichte Gebrauchsspuren, technisch einwandfreiDie Batteriekapazität kann von der eines Neugerätes abweichen. Akku 100% Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung, Netzteil & Ladekabel sind nicht enthalten., 8-Core CPU, 14-Core GPU, 16 GB gemeinsamer Arbeitsspeicher, 512 GB SSD Speicher, 16-Core Neural Engine, 14'' Liquid Retina XDR Display, Drei Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, MagSafe 3 Anschluss, Magic Keyboard mit Touch ID, Force Touch Trackpad, 67W USB-C Power Adapter",
+      "gb6_mc": 10000,
+      "metal_gpu": 41000,
       "workflowScore": 45,
       "valueIndex": 0.03,
       "effectivePrice": 1499,
@@ -572,28 +594,29 @@
       "productId": "72147",
       "link": "https://www.mactrade.de/rp-2460-apple-macbook-pro-14-m4-10-core-cpu-10-core-gpu-512gb-16gb-space-schwarz-2024/72147",
       "description": "Ausstellungsstück, technisch einwandfreier Zustand - wie neuDie Batteriekapazität kann von der eines Neugerätes abweichen. Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung inkl. komplettem originalen Lieferumfang, enthaltenes Zubehör ist in neuwertigem Zustand., , 14'' Liquid Retina XDR Display◊, Standard-Display, Apple M4 Chip mit 10-Core CPU, 10-Core GPU und 16-Core Neural Engine, 16 GB gemeinsamer Arbeitsspeicher, 512 GB SSD Speicher, 70W USB-C Power Adapter, Drei Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss, Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
-      "workflowScore": 62,
-      "valueIndex": 0.0388,
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "workflowScore": 47,
+      "valueIndex": 0.0294,
       "effectivePrice": 1599,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 4,
         "thermal": 6,
         "condition": 7,
-        "total": 62
+        "total": 47
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 62,
-      "valueScore": 0.0388
+      "warnings": [],
+      "resolveScore": 47,
+      "valueScore": 0.0294
     },
     {
       "id": "mactrade-gebraucht-72129",
@@ -618,6 +641,8 @@
       "productId": "72129",
       "link": "https://www.mactrade.de/rp-2387-cto-apple-macbook-pro-14-silber-nanoglas-m4max-16-40-64gb-2tbssd/72129",
       "description": "Rückläufer, zu Prüfungszwecken geöffnet! technisch einwandfreier Zustand - wie neuDie Batteriekapazität kann von der eines Neugerätes abweichen. Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung inkl. komplettem originalen Lieferumfang, enthaltenes Zubehör ist in neuwertigem Zustand., 2 TB, 64 GB, Display mit Nanotexturglas, Apple M4 Max mit 16-Core CPU, 40-Core GPU, 16-Core Neural Engine,",
+      "gb6_mc": 26000,
+      "metal_gpu": 125000,
       "workflowScore": 89,
       "valueIndex": 0.02,
       "effectivePrice": 4439,
@@ -659,6 +684,8 @@
       "productId": "69814.0003",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 84,
       "valueIndex": 0.0181,
       "effectivePrice": 4649,
@@ -700,25 +727,27 @@
       "productId": "71776.0064",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m5-10-core-cpu-10-core-gpu-silber-nanoglas-32gb-1tbssd-kein-netzteil/71776.0064",
       "description": "14'' MacBook Pro. Mit der Power des M5. Das 14'' MacBook Pro mit M5 bringt dir unglaubliche Geschwindigkeit und leistungsstarke OnDevice KI für alle deine persönlichen, beruflichen und kreativen Aufgaben. Mit bis zu 24 Stunden Batterielaufzeit und einem Liquid Retina XDR Display.1 Wichtige Features • MIT DER POWER DES M5 – Neben einer schnelleren CPU und einem gemeinsamen Arbeitsspeicher hat der M5 eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern für schnellere KI Performance. So erledigst du anspruchsvolle Workloads mit unfassbarer Geschwindigkeit. • ENTWICKELT FÜR APPLE INTELLIGENCE – Apple Intelligence ist dein persönliches Intelligenz System. Es hilft dir, etwas zu schreiben, dich auszudrücken und Dinge mühelos zu erledigen. Und mit revolutionärem Datenschutz kannst du ganz beruhigt sein, dass niemand auf deine Daten zugreifen kann − nicht einmal Apple.2 • BIS ZU 24 STUNDEN BATTERIELAUFZEIT – Das 14'' MacBook Pro liefert die gleiche außergewöhnliche Performance, egal ob es mit Batterie läuft oder am Strom angeschlossen ist.1 • SUPERSCHNELLE APPS DANK APPLE CHIPS – Alle deine wichtigsten Apps, inklusive Microsoft 365 und Adobe Creative Cloud, laufen auf macOS blitzschnell.3 • DU LIEBST DEIN IPHONE? DU WIRST DEN MAC LIEBEN. – Der Mac funktioniert großartig mit deinen anderen Apple Geräten. Kopiere Inhalte auf dem iPhone und setze sie auf dem Mac ein. Sende mit der Nachrichten App Textnachrichten oder mach mit deinem Mac FaceTime Anrufe und beantworte sie.4 • BRILLANTES PRO DISPLAY – Das 14,2'' Liquid Retina XDR Display5 hat 1.600 Nits Spitzenhelligkeit,6 bis zu 1.000 Nits durchgehende Helligkeit und ein Kontrastverhältnis von 1.000.000:1. • FORTSCHRITTLICH BEI KAMERA UND SOUND – Mit einer 12MP Center Stage Kamera, drei Mikrofonen in Studioqualität und sechs Lautsprechern mit 3D Audio und Unterstützung für Dolby Atmos bleibst du immer in der Bildmitte und klingst großartig. • VERBINDE ALLES – Dieses MacBook Pro hat drei Thunderbolt 4 Anschlüsse und einen MagSafe 3 Ladeanschluss, einen SDXC Kartensteckplatz, einen HDMI Anschluss und einen Kopfhöreranschluss. Und es unterstützt bis zu zwei externe Displays. • DATENSCHUTZ UND SICHERHEIT SIND DIREKT MIT EINGEBAUT − Jeder Mac kommt mit zuverlässigem Schutz vor Malware und Viren. Bei Verlust oder Diebstahl des Mac kann „Wo ist?“ helfen, ihn wiederzufinden. FileVault sorgt dafür, dass die Dateien verschlüsselt sind, damit niemand darauf zugreifen kann. Und mit kostenlosen Sicherheitsupdates bleibt der Mac immer geschützt. Rechtliche Hinweise Es sind konfigurierbare Optionen verfügbar. 1 Die Batterielaufzeit variiert abhängig von Verwendung und Konfiguration. Weitere Infos unter apple.com/de/batteries. 2 Apple Intelligence ist in der Betaversion verfügbar. Einige Features sind u. U. nicht in allen Regionen oder Sprachen verfügbar. Informationen zur Verfügbarkeit von Features und Sprachen und zu den Systemanforderungen gibt es unter support.apple.com/de-de/121115. 3 Apps sind im App Store erhältlich. Software und Inhalte sind möglicherweise separat erhältlich. Änderungen an der Titelverfügbarkeit vorbehalten. 4 FaceTime ist nicht in allen Ländern oder Regionen verfügbar. 5 Das Display des 14'' MacBook Pro hat oben gerundete Ecken. Als Standard-Rechteck gemessen hat das Display eine Diagonale von 14,2'' (35,97 cm). Der tatsächlich sichtbare Displaybereich ist kleiner. 6 Bis zu 1.600 Nits Spitzenhelligkeit bei Temperaturen unter 25 °C. Technische Daten Eine vollständige Liste gibt es auf apple.com/de/macbook-pro-/specs.",
-      "workflowScore": 80,
-      "valueIndex": 0.0328,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 63,
+      "valueIndex": 0.0258,
       "effectivePrice": 2438,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 17,
         "ssd": 7,
         "thermal": 6,
         "condition": 9,
-        "total": 80
+        "total": 63
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "resolveScore": 80,
-      "valueScore": 0.0328
+      "warnings": [],
+      "resolveScore": 63,
+      "valueScore": 0.0258
     },
     {
       "id": "mactrade-aware-69821.0054",
@@ -743,6 +772,8 @@
       "productId": "69821.0054",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054",
       "description": "6'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 85,
       "valueIndex": 0.018,
       "effectivePrice": 4719,
@@ -784,49 +815,8 @@
       "productId": "69811.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-silber-2024/69811.0001",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
-      "workflowScore": 64,
-      "valueIndex": 0.0327,
-      "effectivePrice": 1955,
-      "scoreBreakdown": {
-        "chip": 31,
-        "ram": 14,
-        "ssd": 4,
-        "thermal": 6,
-        "condition": 9,
-        "total": 64
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
-      ],
-      "warnings": [],
-      "resolveScore": 64,
-      "valueScore": 0.0327
-    },
-    {
-      "id": "mactrade-aware-69810.0001",
-      "sourceKey": "mactrade-aware",
-      "sourceType": "mactrade",
-      "sourceUrl": "https://www.mactrade.de/restposten/a-ware/mac/",
-      "vendor": "Apple",
-      "title": "RP // Apple MacBook Pro 14'' M4 Pro 12-Core CPU 16-Core GPU - 512GB - 24GB Space Schwarz - 2024",
-      "variant": "24 GB;512 GB;70W USB-C Power Adapter;Standard-Display;Apple M4 Pro mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine",
-      "model": "MacBook Pro 14",
-      "chip": "M4 Pro",
-      "year": 2024,
-      "condition": "a-ware",
-      "price": 1955,
-      "currency": "EUR",
-      "ramGb": 24,
-      "storageGb": 512,
-      "cpuCores": 12,
-      "gpuCores": 16,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "productId": "69810.0001",
-      "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-12-core-cpu-16-core-gpu-512gb-24gb-space-schwarz-2024/69810.0001",
-      "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 64,
       "valueIndex": 0.0327,
       "effectivePrice": 1955,
@@ -870,6 +860,8 @@
       "productId": "69812.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69812.0001",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 70,
       "valueIndex": 0.0293,
       "effectivePrice": 2389,
@@ -887,6 +879,49 @@
       "warnings": [],
       "resolveScore": 70,
       "valueScore": 0.0293
+    },
+    {
+      "id": "mactrade-aware-69810.0054",
+      "sourceKey": "mactrade-aware",
+      "sourceType": "mactrade",
+      "sourceUrl": "https://www.mactrade.de/restposten/a-ware/mac/",
+      "vendor": "Apple",
+      "title": "RP // Apple MacBook Pro 14'' M4 Pro 14-Core CPU 20-Core GPU - 1TB - 24GB Space Schwarz - 2024",
+      "variant": "24 GB;96W USB-C Power Adapter;Apple M4 Pro mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine;1 TB;Standard-Display",
+      "model": "MacBook Pro 14",
+      "chip": "M4 Pro",
+      "year": 2024,
+      "condition": "a-ware",
+      "price": 2455,
+      "currency": "EUR",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "cpuCores": 14,
+      "gpuCores": 20,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "productId": "69810.0054",
+      "link": "https://www.mactrade.de/rp-apple-macbook-pro-14-m4-pro-14-core-cpu-20-core-gpu-1tb-24gb-space-schwarz-2024/69810.0054",
+      "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 12-Core CPU, 16-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 70W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
+      "workflowScore": 70,
+      "valueIndex": 0.0285,
+      "effectivePrice": 2455,
+      "scoreBreakdown": {
+        "chip": 34,
+        "ram": 14,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 9,
+        "total": 70
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [],
+      "warnings": [],
+      "resolveScore": 70,
+      "valueScore": 0.0285
     },
     {
       "id": "mactrade-aware-69817.0001",
@@ -911,6 +946,8 @@
       "productId": "69817.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-silber-2024/69817.0001",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 69,
       "valueIndex": 0.0288,
       "effectivePrice": 2399,
@@ -954,6 +991,8 @@
       "productId": "69816.0001",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-24gb-space-schwarz-2024/69816.0001",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 24 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 69,
       "valueIndex": 0.0288,
       "effectivePrice": 2399,
@@ -997,6 +1036,8 @@
       "productId": "69818.0006",
       "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006",
       "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 48 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
       "workflowScore": 76,
       "valueIndex": 0.026,
       "effectivePrice": 2921.15,
@@ -1040,28 +1081,29 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl73d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 54,
-      "valueIndex": 0.0458,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 39,
+      "valueIndex": 0.0331,
       "effectivePrice": 1179,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0458
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0331
     },
     {
       "id": "apple-refurbished-mbp-2",
@@ -1086,27 +1128,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher1 TB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 57,
-      "valueIndex": 0.041,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 42,
+      "valueIndex": 0.0302,
       "effectivePrice": 1389,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 57
+        "total": 42
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "RAM kritisch – Resolve nicht sinnvoll nutzbar"
+        "RAM kritisch – Resolve nicht sinnvoll nutzbar",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 57,
-      "valueScore": 0.041
+      "warnings": [],
+      "resolveScore": 42,
+      "valueScore": 0.0302
     },
     {
       "id": "apple-refurbished-mbp-3",
@@ -1131,27 +1174,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 68,
-      "valueIndex": 0.0454,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 53,
+      "valueIndex": 0.0354,
       "effectivePrice": 1499,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 14,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 68
+        "total": 53
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 68,
-      "valueScore": 0.0454
+      "warnings": [],
+      "resolveScore": 53,
+      "valueScore": 0.0354
     },
     {
       "id": "apple-refurbished-mbp-4",
@@ -1176,28 +1220,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-5",
@@ -1222,28 +1267,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-6",
@@ -1268,28 +1314,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-7",
@@ -1314,28 +1361,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-8",
@@ -1360,6 +1408,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -1404,6 +1454,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -1448,28 +1500,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-11",
@@ -1494,28 +1547,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kl2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-12",
@@ -1540,28 +1594,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0335,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0237,
       "effectivePrice": 1729,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0335
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0237
     },
     {
       "id": "apple-refurbished-mbp-13",
@@ -1586,6 +1641,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx33d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -1631,6 +1688,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/frx63d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -1676,28 +1735,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fcx04d/a/refurbished-14-zoll-macbook-pro-apple-m4-chip-mit-10-core-cpu-und-10-core-gpu-space-schwarz",
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell.",
-      "workflowScore": 54,
-      "valueIndex": 0.0309,
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "workflowScore": 39,
+      "valueIndex": 0.0223,
       "effectivePrice": 1749,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0309
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-16",
@@ -1722,28 +1782,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kj2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0324,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0229,
       "effectivePrice": 1789,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0324
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0229
     },
     {
       "id": "apple-refurbished-mbp-17",
@@ -1768,28 +1829,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0315,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0223,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0315
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-18",
@@ -1814,25 +1876,27 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher1 TB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
-      "workflowScore": 79,
-      "valueIndex": 0.043,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 62,
+      "valueIndex": 0.0337,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 79
+        "total": 62
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "resolveScore": 79,
-      "valueScore": 0.043
+      "warnings": [],
+      "resolveScore": 62,
+      "valueScore": 0.0337
     },
     {
       "id": "apple-refurbished-mbp-19",
@@ -1857,28 +1921,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0307,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0217,
       "effectivePrice": 1889,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0307
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0217
     },
     {
       "id": "apple-refurbished-mbp-20",
@@ -1903,6 +1968,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0342,
       "effectivePrice": 1929,
@@ -1946,6 +2013,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -1989,6 +2058,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -2032,6 +2103,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -2075,6 +2148,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -2118,6 +2193,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphf3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -2162,6 +2239,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphj3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -2206,6 +2285,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -2250,6 +2331,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -2294,6 +2377,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0316,
       "effectivePrice": 2089,
@@ -2337,6 +2422,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 61,
       "valueIndex": 0.0285,
       "effectivePrice": 2139,
@@ -2378,28 +2465,29 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl73d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 54,
-      "valueIndex": 0.0458,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 39,
+      "valueIndex": 0.0331,
       "effectivePrice": 1179,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0458
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0331
     },
     {
       "id": "apple-refurbished-mbp-2",
@@ -2424,27 +2512,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher1 TB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 57,
-      "valueIndex": 0.041,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 42,
+      "valueIndex": 0.0302,
       "effectivePrice": 1389,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 57
+        "total": 42
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "RAM kritisch – Resolve nicht sinnvoll nutzbar"
+        "RAM kritisch – Resolve nicht sinnvoll nutzbar",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 57,
-      "valueScore": 0.041
+      "warnings": [],
+      "resolveScore": 42,
+      "valueScore": 0.0302
     },
     {
       "id": "apple-refurbished-mbp-3",
@@ -2469,27 +2558,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 68,
-      "valueIndex": 0.0454,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 53,
+      "valueIndex": 0.0354,
       "effectivePrice": 1499,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 14,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 68
+        "total": 53
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 68,
-      "valueScore": 0.0454
+      "warnings": [],
+      "resolveScore": 53,
+      "valueScore": 0.0354
     },
     {
       "id": "apple-refurbished-mbp-4",
@@ -2514,28 +2604,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-5",
@@ -2560,28 +2651,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-6",
@@ -2606,28 +2698,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-7",
@@ -2652,28 +2745,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-8",
@@ -2698,6 +2792,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -2742,6 +2838,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -2786,28 +2884,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-11",
@@ -2832,28 +2931,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kl2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-12",
@@ -2878,28 +2978,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0335,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0237,
       "effectivePrice": 1729,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0335
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0237
     },
     {
       "id": "apple-refurbished-mbp-13",
@@ -2924,6 +3025,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx33d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -2969,6 +3072,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/frx63d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -3014,28 +3119,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fcx04d/a/refurbished-14-zoll-macbook-pro-apple-m4-chip-mit-10-core-cpu-und-10-core-gpu-space-schwarz",
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell.",
-      "workflowScore": 54,
-      "valueIndex": 0.0309,
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "workflowScore": 39,
+      "valueIndex": 0.0223,
       "effectivePrice": 1749,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0309
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-16",
@@ -3060,28 +3166,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kj2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0324,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0229,
       "effectivePrice": 1789,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0324
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0229
     },
     {
       "id": "apple-refurbished-mbp-17",
@@ -3106,28 +3213,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0315,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0223,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0315
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-18",
@@ -3152,25 +3260,27 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher1 TB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
-      "workflowScore": 79,
-      "valueIndex": 0.043,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 62,
+      "valueIndex": 0.0337,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 79
+        "total": 62
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "resolveScore": 79,
-      "valueScore": 0.043
+      "warnings": [],
+      "resolveScore": 62,
+      "valueScore": 0.0337
     },
     {
       "id": "apple-refurbished-mbp-19",
@@ -3195,28 +3305,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0307,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0217,
       "effectivePrice": 1889,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0307
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0217
     },
     {
       "id": "apple-refurbished-mbp-20",
@@ -3241,6 +3352,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0342,
       "effectivePrice": 1929,
@@ -3284,6 +3397,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -3327,6 +3442,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -3370,6 +3487,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -3413,6 +3532,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -3456,6 +3577,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphf3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -3500,6 +3623,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphj3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -3544,6 +3669,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -3588,6 +3715,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -3632,6 +3761,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0316,
       "effectivePrice": 2089,
@@ -3675,6 +3806,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 61,
       "valueIndex": 0.0285,
       "effectivePrice": 2139,
@@ -3716,28 +3849,29 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl73d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 54,
-      "valueIndex": 0.0458,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 39,
+      "valueIndex": 0.0331,
       "effectivePrice": 1179,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0458
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0331
     },
     {
       "id": "apple-refurbished-mbp-2",
@@ -3762,27 +3896,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/ftl83d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi8 GB gemeinsamer Arbeitsspeicher1 TB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 57,
-      "valueIndex": 0.041,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 42,
+      "valueIndex": 0.0302,
       "effectivePrice": 1389,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 0,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 57
+        "total": 42
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "RAM kritisch – Resolve nicht sinnvoll nutzbar"
+        "RAM kritisch – Resolve nicht sinnvoll nutzbar",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 57,
-      "valueScore": 0.041
+      "warnings": [],
+      "resolveScore": 42,
+      "valueScore": 0.0302
     },
     {
       "id": "apple-refurbished-mbp-3",
@@ -3807,27 +3942,28 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g1c81d/a/refurbished-14&quot;-macbook-pro-apple-m3-chip-mit-8‑core-cpu-und-10‑core-gpu-space-grau",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202314,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD2Touch ID1080p FaceTime HD KameraZwei Thunderbolt 4 (USB-C) Anschlüsse",
-      "workflowScore": 68,
-      "valueIndex": 0.0454,
+      "gb6_mc": 11800,
+      "metal_gpu": 47000,
+      "workflowScore": 53,
+      "valueIndex": 0.0354,
       "effectivePrice": 1499,
       "scoreBreakdown": {
-        "chip": 33,
+        "chip": 18,
         "ram": 14,
         "ssd": 4,
         "thermal": 6,
         "condition": 11,
-        "total": 68
+        "total": 53
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M3_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 68,
-      "valueScore": 0.0454
+      "warnings": [],
+      "resolveScore": 53,
+      "valueScore": 0.0354
     },
     {
       "id": "apple-refurbished-mbp-4",
@@ -3852,28 +3988,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde04d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-5",
@@ -3898,28 +4035,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde44d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0382,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.027,
       "effectivePrice": 1519,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0382
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.027
     },
     {
       "id": "apple-refurbished-mbp-6",
@@ -3944,28 +4082,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-7",
@@ -3990,28 +4129,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde54d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0356,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0252,
       "effectivePrice": 1629,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0356
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0252
     },
     {
       "id": "apple-refurbished-mbp-8",
@@ -4036,6 +4176,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphe3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -4080,6 +4222,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphh3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-10-core-cpu-und-16-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 12000,
+      "metal_gpu": 50000,
       "workflowScore": 41,
       "valueIndex": 0.025,
       "effectivePrice": 1639,
@@ -4124,28 +4268,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-11",
@@ -4170,28 +4315,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kl2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0345,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0244,
       "effectivePrice": 1679,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0345
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0244
     },
     {
       "id": "apple-refurbished-mbp-12",
@@ -4216,28 +4362,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0335,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0237,
       "effectivePrice": 1729,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0335
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0237
     },
     {
       "id": "apple-refurbished-mbp-13",
@@ -4262,6 +4409,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx33d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -4307,6 +4456,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/frx63d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 65,
       "valueIndex": 0.0374,
       "effectivePrice": 1739,
@@ -4352,28 +4503,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fcx04d/a/refurbished-14-zoll-macbook-pro-apple-m4-chip-mit-10-core-cpu-und-10-core-gpu-space-schwarz",
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell.",
-      "workflowScore": 54,
-      "valueIndex": 0.0309,
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "workflowScore": 39,
+      "valueIndex": 0.0223,
       "effectivePrice": 1749,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 54
+        "total": 39
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 54,
-      "valueScore": 0.0309
+      "warnings": [],
+      "resolveScore": 39,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-16",
@@ -4398,28 +4550,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kj2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0324,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0229,
       "effectivePrice": 1789,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0324
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0229
     },
     {
       "id": "apple-refurbished-mbp-17",
@@ -4444,28 +4597,29 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fde34d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0315,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0223,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0315
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0223
     },
     {
       "id": "apple-refurbished-mbp-18",
@@ -4490,25 +4644,27 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fde64d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher1 TB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
-      "workflowScore": 79,
-      "valueIndex": 0.043,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 62,
+      "valueIndex": 0.0337,
       "effectivePrice": 1839,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 11,
-        "total": 79
+        "total": 62
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "resolveScore": 79,
-      "valueScore": 0.043
+      "warnings": [],
+      "resolveScore": 62,
+      "valueScore": 0.0337
     },
     {
       "id": "apple-refurbished-mbp-19",
@@ -4533,28 +4689,29 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1kh3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit.",
-      "workflowScore": 58,
-      "valueIndex": 0.0307,
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "workflowScore": 41,
+      "valueIndex": 0.0217,
       "effectivePrice": 1889,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 0,
         "ssd": 0,
         "thermal": 6,
         "condition": 11,
-        "total": 58
+        "total": 41
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM kritisch – Resolve nicht sinnvoll nutzbar",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ],
-      "resolveScore": 58,
-      "valueScore": 0.0307
+      "warnings": [],
+      "resolveScore": 41,
+      "valueScore": 0.0217
     },
     {
       "id": "apple-refurbished-mbp-20",
@@ -4579,6 +4736,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/fx2h3d/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0342,
       "effectivePrice": 1929,
@@ -4622,6 +4781,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -4665,6 +4826,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1au7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -4708,6 +4871,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax0d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-11‑core-cpu-und-14‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 14000,
+      "metal_gpu": 49000,
       "workflowScore": 68,
       "valueIndex": 0.0349,
       "effectivePrice": 1949,
@@ -4751,6 +4916,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/g1ax7d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-silber",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 58,
       "valueIndex": 0.0298,
       "effectivePrice": 1949,
@@ -4794,6 +4961,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fphf3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -4838,6 +5007,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fphj3d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 43,
       "valueIndex": 0.0212,
       "effectivePrice": 2029,
@@ -4882,6 +5053,8 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/fnw83d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -4926,6 +5099,8 @@
       "color": "Silber",
       "link": "https://www.apple.com/de/shop/product/fnwc3d/a/refurbished-16-macbook-pro-mit-apple-m2-pro-chip-12‑core-cpu-und-19‑core-gpu-silber",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt.",
+      "gb6_mc": 14000,
+      "metal_gpu": 52000,
       "workflowScore": 45,
       "valueIndex": 0.0216,
       "effectivePrice": 2079,
@@ -4970,6 +5145,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/g1fedd/a/Refurbished-14-MacBook-Pro-mit-Apple-M4-Pro-Chip-12‑Core-CPU-und-16‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse",
+      "gb6_mc": 19000,
+      "metal_gpu": 70000,
       "workflowScore": 66,
       "valueIndex": 0.0316,
       "effectivePrice": 2089,
@@ -5013,6 +5190,8 @@
       "color": "Space Schwarz",
       "link": "https://www.apple.com/de/shop/product/frx43d/a/refurbished-14-zoll-mac-book-pro-apple-m3-pro-chip-mit-12‑core-cpu-und-18‑core-gpu-space-schwarz",
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse",
+      "gb6_mc": 15500,
+      "metal_gpu": 52000,
       "workflowScore": 61,
       "valueIndex": 0.0285,
       "effectivePrice": 2139,
@@ -5053,28 +5232,27 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2fcb094e8056a569e808aa6734aa048d&pos=1&price=1395.74&productid=205027047&sid=5300&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 63,
-      "valueScore": 0.0451,
-      "workflowScore": 63,
-      "valueIndex": 0.0451,
+      "resolveScore": 48,
+      "valueScore": 0.0344,
+      "workflowScore": 48,
+      "valueIndex": 0.0344,
       "effectivePrice": 1396,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 63
+        "total": 48
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m4-24gb-512gb-space-schwarz-neu",
@@ -5098,38 +5276,41 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4d6acd2edc0c3009303153bc7a5a6c0e&pos=1&price=1838.15&productid=205028676&sid=289287&type=offer",
       "gb6_mc": 19000,
       "metal_gpu": 70000,
-      "resolveScore": 67,
-      "valueScore": 0.0365,
-      "workflowScore": 67,
-      "valueIndex": 0.0365,
+      "resolveScore": 66,
+      "valueScore": 0.0359,
+      "workflowScore": 66,
+      "valueIndex": 0.0359,
       "effectivePrice": 1838,
       "scoreBreakdown": {
-        "chip": 31,
+        "chip": 30,
         "ram": 14,
         "ssd": 4,
         "thermal": 6,
         "condition": 12,
-        "total": 67
+        "total": 66
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": []
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M4_Base_16\" – Fallback aktiv"
+      ]
     },
     {
       "id": "idealo-m4-24gb-1000gb-space-schwarz-neu",
       "sourceKey": "idealo-m4-14",
       "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/205028674_-macbook-pro-14-m4-space-schwarz-mx2j3d-a-apple.html",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/206281429_-macbook-pro-14-m4-space-schwarz-4068668636111-apple.html",
       "vendor": "Apple",
       "title": "Apple MacBook Pro 14 M4 – 24 GB, 1000 GB, Space Schwarz",
       "model": "MacBook Pro 14",
       "chip": "M4",
       "year": 2024,
       "condition": "neu",
-      "price": 2299,
+      "price": 2260,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 1000,
@@ -5137,28 +5318,28 @@
       "gpuCores": 10,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=6c2896b308e166c2fa4241225c868c30&pos=1&price=2299.00&productid=205028674&sid=326031&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=c3942c6bbeb043b303e359eaec2fe19c&pos=1&price=2260.20&productid=206281429&sid=317105&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 76,
-      "valueScore": 0.0331,
-      "workflowScore": 76,
-      "valueIndex": 0.0331,
-      "effectivePrice": 2299,
+      "resolveScore": 61,
+      "valueScore": 0.027,
+      "workflowScore": 61,
+      "valueIndex": 0.027,
+      "effectivePrice": 2260,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 76
+        "total": 61
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
     },
     {
       "id": "idealo-m4-24gb-24gb-silber-neu",
@@ -5182,25 +5363,28 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5a123b8ffc52b01c629e4add2abb91c9&pos=1&price=1948.99&productid=205028675&sid=20481&type=offer",
       "gb6_mc": 19000,
       "metal_gpu": 70000,
-      "resolveScore": 63,
-      "valueScore": 0.0323,
-      "workflowScore": 63,
-      "valueIndex": 0.0323,
+      "resolveScore": 62,
+      "valueScore": 0.0318,
+      "workflowScore": 62,
+      "valueIndex": 0.0318,
       "effectivePrice": 1949,
       "scoreBreakdown": {
-        "chip": 31,
+        "chip": 30,
         "ram": 14,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 63
+        "total": 62
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": []
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M4_Base_16\" – Fallback aktiv"
+      ]
     },
     {
       "id": "idealo-m4-16gb-16gb-silber-neu",
@@ -5224,28 +5408,27 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2fcb094e8056a569e808aa6734aa048d&pos=1&price=1395.74&productid=206760125&sid=5300&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 63,
-      "valueScore": 0.0451,
-      "workflowScore": 63,
-      "valueIndex": 0.0451,
+      "resolveScore": 48,
+      "valueScore": 0.0344,
+      "workflowScore": 48,
+      "valueIndex": 0.0344,
       "effectivePrice": 1396,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 63
+        "total": 48
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m4-16gb-1024gb-silber-neu",
@@ -5269,27 +5452,26 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2d79f747ddc9447fe4b03114d3fbb937&pos=1&price=1599.00&productid=205028677&sid=329293&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 70,
-      "valueScore": 0.0438,
-      "workflowScore": 70,
-      "valueIndex": 0.0438,
+      "resolveScore": 55,
+      "valueScore": 0.0344,
+      "workflowScore": 55,
+      "valueIndex": 0.0344,
       "effectivePrice": 1599,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 70
+        "total": 55
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "RAM zu knapp für Resolve/Gyroflow mit 5K-Material"
+        "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m4-16gb-1024gb-space-schwarz-neu",
@@ -5313,69 +5495,26 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=3f7d3771a8adb9044f49fed149f5c898&pos=1&price=1564.71&productid=207798122&sid=5300&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 70,
-      "valueScore": 0.0447,
-      "workflowScore": 70,
-      "valueIndex": 0.0447,
+      "resolveScore": 55,
+      "valueScore": 0.0351,
+      "workflowScore": 55,
+      "valueIndex": 0.0351,
       "effectivePrice": 1565,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 70
+        "total": 55
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "RAM zu knapp für Resolve/Gyroflow mit 5K-Material"
+        "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
-    },
-    {
-      "id": "idealo-m4-24gb-1024gb-space-schwarz-neu",
-      "sourceKey": "idealo-m4-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/206170481_-macbook-pro-14-m4-space-schwarz-z1jr-us01-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M4 – 24 GB, 1 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M4",
-      "year": 2024,
-      "condition": "neu",
-      "price": 1746,
-      "currency": "EUR",
-      "ramGb": 24,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=6c06ae9a7fafba54dd22a4e4959eafe1&pos=1&price=1745.93&productid=206170481&sid=5300&type=offer",
-      "gb6_mc": 14500,
-      "metal_gpu": 55000,
-      "resolveScore": 76,
-      "valueScore": 0.0435,
-      "workflowScore": 76,
-      "valueIndex": 0.0435,
-      "effectivePrice": 1746,
-      "scoreBreakdown": {
-        "chip": 37,
-        "ram": 14,
-        "ssd": 7,
-        "thermal": 6,
-        "condition": 12,
-        "total": 76
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m4-24gb-1024gb-silber-neu",
@@ -5399,23 +5538,27 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=bb158add7a7949fcc991bb033666a084&pos=1&price=2469.95&productid=205028673&sid=20481&type=offer",
       "gb6_mc": 22000,
       "metal_gpu": 80000,
-      "resolveScore": 73,
-      "valueScore": 0.0296,
-      "workflowScore": 73,
-      "valueIndex": 0.0296,
+      "resolveScore": 70,
+      "valueScore": 0.0283,
+      "workflowScore": 70,
+      "valueIndex": 0.0283,
       "effectivePrice": 2470,
       "scoreBreakdown": {
-        "chip": 34,
+        "chip": 31,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 73
+        "total": 70
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": []
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M4_Base_20\" – Fallback aktiv"
+      ]
     },
     {
       "id": "idealo-m4-16gb-16gb-space-schwarz-neu",
@@ -5439,28 +5582,27 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=cbf7fb985a3a6cec9d6d1de0fcdfc450&pos=1&price=1599.00&productid=205028680&sid=326031&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 63,
-      "valueScore": 0.0394,
-      "workflowScore": 63,
-      "valueIndex": 0.0394,
+      "resolveScore": 48,
+      "valueScore": 0.03,
+      "workflowScore": 48,
+      "valueIndex": 0.03,
       "effectivePrice": 1599,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 8,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 63
+        "total": 48
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
         "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m4-24gb-24gb-space-schwarz-neu",
@@ -5473,7 +5615,7 @@
       "chip": "M4",
       "year": 2024,
       "condition": "neu",
-      "price": 1799,
+      "price": 1700,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 24,
@@ -5481,85 +5623,42 @@
       "gpuCores": 10,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=296491f7e992699b147af28dc939dec9&pos=1&price=1798.99&productid=205089382&sid=20481&type=offer",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=296491f7e992699b147af28dc939dec9&pos=1&price=1699.95&productid=205089382&sid=20481&type=offer",
       "gb6_mc": 14500,
       "metal_gpu": 55000,
-      "resolveScore": 69,
-      "valueScore": 0.0384,
-      "workflowScore": 69,
-      "valueIndex": 0.0384,
-      "effectivePrice": 1799,
+      "resolveScore": 54,
+      "valueScore": 0.0318,
+      "workflowScore": 54,
+      "valueIndex": 0.0318,
+      "effectivePrice": 1700,
       "scoreBreakdown": {
-        "chip": 37,
+        "chip": 22,
         "ram": 14,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 69
+        "total": 54
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M4_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
-      "id": "idealo-m5-32gb-1024gb-silber-neu",
-      "sourceKey": "idealo-m5-14",
+      "id": "idealo-m4-24gb-1024gb-space-schwarz-neu",
+      "sourceKey": "idealo-m4-14",
       "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209562388_-macbook-pro-14-m5-2026-apple.html",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/206170481_-macbook-pro-14-m4-space-schwarz-z1jr-us01-apple.html",
       "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Silber",
+      "title": "Apple MacBook Pro 14 M4 – 24 GB, 1 TB, Space Schwarz",
       "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
+      "chip": "M4",
+      "year": 2024,
       "condition": "neu",
-      "price": 2129,
-      "currency": "EUR",
-      "ramGb": 32,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209562388&sid=279743&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 83,
-      "valueScore": 0.039,
-      "workflowScore": 83,
-      "valueIndex": 0.039,
-      "effectivePrice": 2129,
-      "scoreBreakdown": {
-        "chip": 41,
-        "ram": 17,
-        "ssd": 7,
-        "thermal": 6,
-        "condition": 12,
-        "total": 83
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
-    },
-    {
-      "id": "idealo-m5-24gb-1024gb-space-schwarz-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597264_-macbook-pro-14-m5-2026-space-schwarz-mgdr4d-a-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 24 GB, 1 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 2135,
+      "price": 1746,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 1024,
@@ -5567,28 +5666,71 @@
       "gpuCores": 10,
       "screenInches": 14,
       "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=c2367da2d41686dadddb57a2053cb923&pos=1&price=2135.00&productid=209597264&sid=9701&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 80,
-      "valueScore": 0.0375,
-      "workflowScore": 80,
-      "valueIndex": 0.0375,
-      "effectivePrice": 2135,
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=6c06ae9a7fafba54dd22a4e4959eafe1&pos=1&price=1745.93&productid=206170481&sid=5300&type=offer",
+      "gb6_mc": 14500,
+      "metal_gpu": 55000,
+      "resolveScore": 61,
+      "valueScore": 0.0349,
+      "workflowScore": 61,
+      "valueIndex": 0.0349,
+      "effectivePrice": 1746,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 22,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 80
+        "total": 61
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "idealo-m5-xgb-1024gb-silber-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209562388_-macbook-pro-14-m5-2026-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – ? GB, 1 TB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 1689,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=b68824f54f871925d649829dcd0a71f3&pos=1&price=1689.00&productid=209562388&sid=1140&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 49,
+      "valueScore": 0.029,
+      "workflowScore": 49,
+      "valueIndex": 0.029,
+      "effectivePrice": 1689,
+      "scoreBreakdown": {
+        "chip": 24,
+        "ram": 0,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 12,
+        "total": 49
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "RAM kritisch – Resolve nicht sinnvoll nutzbar",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
     },
     {
       "id": "idealo-m5-24gb-1024gb-silber-neu",
@@ -5612,25 +5754,109 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=0cb9bed05bc74036a962fc7ab07a72a9&pos=1&price=2169.00&productid=209597261&sid=322253&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 80,
-      "valueScore": 0.0369,
-      "workflowScore": 80,
-      "valueIndex": 0.0369,
+      "resolveScore": 63,
+      "valueScore": 0.029,
+      "workflowScore": 63,
+      "valueIndex": 0.029,
       "effectivePrice": 2169,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 14,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 80
+        "total": 63
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "idealo-m5-24gb-1024gb-space-schwarz-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597264_-macbook-pro-14-m5-2026-space-schwarz-mgdr4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 24 GB, 1 TB, Space Schwarz",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2135,
+      "currency": "EUR",
+      "ramGb": 24,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=c2367da2d41686dadddb57a2053cb923&pos=1&price=2135.00&productid=209597264&sid=9701&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 63,
+      "valueScore": 0.0295,
+      "workflowScore": 63,
+      "valueIndex": 0.0295,
+      "effectivePrice": 2135,
+      "scoreBreakdown": {
+        "chip": 24,
+        "ram": 14,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 12,
+        "total": 63
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "idealo-m5-32gb-1024gb-silber-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597268_-macbook-pro-14-m5-2026-silber-mj3e4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2129,
+      "currency": "EUR",
+      "ramGb": 32,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209597268&sid=279743&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 66,
+      "valueScore": 0.031,
+      "workflowScore": 66,
+      "valueIndex": 0.031,
+      "effectivePrice": 2129,
+      "scoreBreakdown": {
+        "chip": 24,
+        "ram": 17,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 12,
+        "total": 66
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
     },
     {
       "id": "idealo-m5-32gb-32gb-space-schwarz-neu",
@@ -5654,27 +5880,26 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=c90aefd2c0d31358c4edacbd5b91b911&pos=1&price=2141.26&productid=209597267&sid=24111&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 76,
-      "valueScore": 0.0355,
-      "workflowScore": 76,
-      "valueIndex": 0.0355,
+      "resolveScore": 59,
+      "valueScore": 0.0276,
+      "workflowScore": 59,
+      "valueIndex": 0.0276,
       "effectivePrice": 2141,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 17,
         "ssd": 0,
         "thermal": 6,
         "condition": 12,
-        "total": 76
+        "total": 59
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
+      "warnings": []
     },
     {
       "id": "idealo-m5-24gb-2048gb-silber-neu",
@@ -5687,7 +5912,7 @@
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2699,
+      "price": 2698,
       "currency": "EUR",
       "ramGb": 24,
       "storageGb": 2048,
@@ -5695,28 +5920,31 @@
       "gpuCores": 16,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.51&productid=209598905&sid=20481&type=offer",
-      "gb6_mc": null,
-      "metal_gpu": null,
-      "resolveScore": 76,
-      "valueScore": 0.0282,
-      "workflowScore": 76,
-      "valueIndex": 0.0282,
-      "effectivePrice": 2699,
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.48&productid=209598905&sid=20481&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 75,
+      "valueScore": 0.0278,
+      "workflowScore": 75,
+      "valueIndex": 0.0278,
+      "effectivePrice": 2698,
       "scoreBreakdown": {
-        "chip": 35,
+        "chip": 34,
         "ram": 14,
         "ssd": 9,
         "thermal": 6,
         "condition": 12,
-        "total": 76
+        "total": 75
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
         "GPU-Benchmark unter Erwartung für diesen Chip"
       ],
-      "warnings": []
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M5_Base_16\" – Fallback aktiv"
+      ]
     },
     {
       "id": "idealo-m5-24gb-2048gb-space-schwarz-neu",
@@ -5740,25 +5968,25 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=ffbc64fa5e2d42babde471e2def159fb&pos=1&price=2697.99&productid=209598898&sid=29203&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 82,
-      "valueScore": 0.0304,
-      "workflowScore": 82,
-      "valueIndex": 0.0304,
+      "resolveScore": 65,
+      "valueScore": 0.0241,
+      "workflowScore": 65,
+      "valueIndex": 0.0241,
       "effectivePrice": 2698,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 14,
         "ssd": 9,
         "thermal": 6,
         "condition": 12,
-        "total": 82
+        "total": 65
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
     },
     {
       "id": "idealo-m5-36gb-2048gb-space-schwarz-neu",
@@ -5780,28 +6008,29 @@
       "screenInches": 14,
       "color": "Space Schwarz",
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=d081d21dcd60ee4567c813a5bb6e8479&pos=1&price=3699.00&productid=209597266&sid=4640&type=offer",
-      "gb6_mc": null,
-      "metal_gpu": null,
-      "resolveScore": 90,
-      "valueScore": 0.0243,
-      "workflowScore": 90,
-      "valueIndex": 0.0243,
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 83,
+      "valueScore": 0.0224,
+      "workflowScore": 83,
+      "valueIndex": 0.0224,
       "effectivePrice": 3699,
       "scoreBreakdown": {
-        "chip": 44,
+        "chip": 37,
         "ram": 19,
         "ssd": 9,
         "thermal": 6,
         "condition": 12,
-        "total": 90
+        "total": 83
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
         "GPU-Benchmark unter Erwartung für diesen Chip"
       ],
       "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_32\" – Fallback aktiv"
+        "Kein Lookup-Eintrag für \"M5_Base_32\" – Fallback aktiv"
       ]
     },
     {
@@ -5819,31 +6048,34 @@
       "currency": "EUR",
       "ramGb": 36,
       "storageGb": 2048,
-      "cpuCores": 10,
-      "gpuCores": 10,
+      "cpuCores": 18,
+      "gpuCores": 32,
       "screenInches": 14,
       "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5f6150eaa03aec165b585fd8a813f33a&pos=1&price=3725.22&productid=209597263&sid=5300&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 87,
-      "valueScore": 0.0234,
-      "workflowScore": 87,
-      "valueIndex": 0.0234,
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.21&productid=209597263&sid=20481&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 83,
+      "valueScore": 0.0223,
+      "workflowScore": 83,
+      "valueIndex": 0.0223,
       "effectivePrice": 3725,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 37,
         "ram": 19,
         "ssd": 9,
         "thermal": 6,
         "condition": 12,
-        "total": 87
+        "total": 83
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
+        "GPU-Benchmark unter Erwartung für diesen Chip"
+      ],
       "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+        "Kein Lookup-Eintrag für \"M5_Base_32\" – Fallback aktiv"
       ]
     },
     {
@@ -5868,25 +6100,112 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=61970231426497d53e6e0f31a38cb1e2&pos=1&price=2749.00&productid=209673525&sid=6980&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 87,
-      "valueScore": 0.0316,
-      "workflowScore": 87,
-      "valueIndex": 0.0316,
+      "resolveScore": 70,
+      "valueScore": 0.0255,
+      "workflowScore": 70,
+      "valueIndex": 0.0255,
       "effectivePrice": 2749,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 21,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 87
+        "total": 70
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "idealo-m5-16gb-1024gb-space-schwarz-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209976044_-macbook-pro-14-m5-2026-space-schwarz-z1kj-00000600-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 16 GB, 1 TB, Space Schwarz",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 1769,
+      "currency": "EUR",
+      "ramGb": 16,
+      "storageGb": 1024,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2686f9eb5671cd20d0dd8cdccba5a7df&pos=1&price=1769.00&productid=209976044&sid=1362&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 57,
+      "valueScore": 0.0322,
+      "workflowScore": 57,
+      "valueIndex": 0.0322,
+      "effectivePrice": 1769,
+      "scoreBreakdown": {
+        "chip": 24,
+        "ram": 8,
+        "ssd": 7,
+        "thermal": 6,
+        "condition": 12,
+        "total": 57
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "RAM zu knapp für Resolve/Gyroflow mit 5K-Material",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "idealo-m5-xgb-xgb-space-schwarz-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209916435_-macbook-pro-14-m5-2026-space-schwarz-z1ml-6724-de-cto-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – ? GB, ? GB, Space Schwarz",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2455,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "color": "Space Schwarz",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=0f3fd20b3aa9715b92115bfb18f1d948&pos=1&price=2454.74&productid=209916435&sid=24950&type=offer",
+      "gb6_mc": 16000,
+      "metal_gpu": 60000,
+      "resolveScore": 42,
+      "valueScore": 0.0171,
+      "workflowScore": 42,
+      "valueIndex": 0.0171,
+      "effectivePrice": 2455,
+      "scoreBreakdown": {
+        "chip": 24,
+        "ram": 0,
+        "ssd": 0,
+        "thermal": 6,
+        "condition": 12,
+        "total": 42
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "RAM kritisch – Resolve nicht sinnvoll nutzbar",
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien",
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
+      ],
+      "warnings": []
     },
     {
       "id": "idealo-m5-64gb-1024gb-space-schwarz-neu",
@@ -5910,72 +6229,28 @@
       "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fa1cec5748e612a33dc189c48cc326be&pos=1&price=3329.00&productid=209673534&sid=6980&type=offer",
       "gb6_mc": 16000,
       "metal_gpu": 60000,
-      "resolveScore": 89,
-      "valueScore": 0.0267,
-      "workflowScore": 89,
-      "valueIndex": 0.0267,
+      "resolveScore": 72,
+      "valueScore": 0.0216,
+      "workflowScore": 72,
+      "valueIndex": 0.0216,
       "effectivePrice": 3329,
       "scoreBreakdown": {
-        "chip": 41,
+        "chip": 24,
         "ram": 23,
         "ssd": 7,
         "thermal": 6,
         "condition": 12,
-        "total": 89
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
-    }
-  ],
-  "bestOffers": [
-    {
-      "id": "idealo-m5-36gb-2048gb-space-schwarz-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597266_-macbook-pro-14-m5-2026-space-schwarz-mgdu4d-a-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 36 GB, 2 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 3699,
-      "currency": "EUR",
-      "ramGb": 36,
-      "storageGb": 2048,
-      "cpuCores": 18,
-      "gpuCores": 32,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=d081d21dcd60ee4567c813a5bb6e8479&pos=1&price=3699.00&productid=209597266&sid=4640&type=offer",
-      "gb6_mc": null,
-      "metal_gpu": null,
-      "resolveScore": 90,
-      "valueScore": 0.0243,
-      "workflowScore": 90,
-      "valueIndex": 0.0243,
-      "effectivePrice": 3699,
-      "scoreBreakdown": {
-        "chip": 44,
-        "ram": 19,
-        "ssd": 9,
-        "thermal": 6,
-        "condition": 12,
-        "total": 90
+        "total": 72
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
       "redFlags": [
-        "GPU-Benchmark unter Erwartung für diesen Chip"
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_32\" – Fallback aktiv"
-      ]
-    },
+      "warnings": []
+    }
+  ],
+  "bestOffers": [
     {
       "id": "mactrade-gebraucht-72129",
       "sourceKey": "mactrade-gebraucht",
@@ -5999,6 +6274,8 @@
       "productId": "72129",
       "link": "https://www.mactrade.de/rp-2387-cto-apple-macbook-pro-14-silber-nanoglas-m4max-16-40-64gb-2tbssd/72129",
       "description": "Rückläufer, zu Prüfungszwecken geöffnet! technisch einwandfreier Zustand - wie neuDie Batteriekapazität kann von der eines Neugerätes abweichen. Da es sich um Gebrauchtware handelt, besteht möglicherweise keine Herstellergarantie. Das Gerät kommt in Originalverpackung inkl. komplettem originalen Lieferumfang, enthaltenes Zubehör ist in neuwertigem Zustand., 2 TB, 64 GB, Display mit Nanotexturglas, Apple M4 Max mit 16-Core CPU, 40-Core GPU, 16-Core Neural Engine,",
+      "gb6_mc": 26000,
+      "metal_gpu": 125000,
       "workflowScore": 89,
       "valueIndex": 0.02,
       "effectivePrice": 4439,
@@ -6016,132 +6293,6 @@
       "warnings": [],
       "resolveScore": 89,
       "valueScore": 0.02
-    },
-    {
-      "id": "idealo-m5-64gb-1024gb-space-schwarz-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209673534_-macbook-pro-14-m5-2026-space-schwarz-z1ml-13001000-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 64 GB, 1 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 3329,
-      "currency": "EUR",
-      "ramGb": 64,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fa1cec5748e612a33dc189c48cc326be&pos=1&price=3329.00&productid=209673534&sid=6980&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 89,
-      "valueScore": 0.0267,
-      "workflowScore": 89,
-      "valueIndex": 0.0267,
-      "effectivePrice": 3329,
-      "scoreBreakdown": {
-        "chip": 41,
-        "ram": 23,
-        "ssd": 7,
-        "thermal": 6,
-        "condition": 12,
-        "total": 89
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
-    },
-    {
-      "id": "idealo-m5-36gb-2048gb-silber-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597263_-macbook-pro-14-m5-2026-silber-mgdq4d-a-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 36 GB, 2 TB, Silber",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 3725,
-      "currency": "EUR",
-      "ramGb": 36,
-      "storageGb": 2048,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5f6150eaa03aec165b585fd8a813f33a&pos=1&price=3725.22&productid=209597263&sid=5300&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 87,
-      "valueScore": 0.0234,
-      "workflowScore": 87,
-      "valueIndex": 0.0234,
-      "effectivePrice": 3725,
-      "scoreBreakdown": {
-        "chip": 41,
-        "ram": 19,
-        "ssd": 9,
-        "thermal": 6,
-        "condition": 12,
-        "total": 87
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
-    },
-    {
-      "id": "idealo-m5-48gb-1024gb-space-schwarz-neu",
-      "sourceKey": "idealo-m5-14",
-      "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209673525_-macbook-pro-14-m5-2026-space-schwarz-z1ml-01000000-apple.html",
-      "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 48 GB, 1 TB, Space Schwarz",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": 2026,
-      "condition": "neu",
-      "price": 2749,
-      "currency": "EUR",
-      "ramGb": 48,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "color": "Space Schwarz",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=61970231426497d53e6e0f31a38cb1e2&pos=1&price=2749.00&productid=209673525&sid=6980&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
-      "resolveScore": 87,
-      "valueScore": 0.0316,
-      "workflowScore": 87,
-      "valueIndex": 0.0316,
-      "effectivePrice": 2749,
-      "scoreBreakdown": {
-        "chip": 41,
-        "ram": 21,
-        "ssd": 7,
-        "thermal": 6,
-        "condition": 12,
-        "total": 87
-      },
-      "scoreConfidence": 0.99,
-      "scoreStatus": "ok",
-      "redFlags": [],
-      "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
-      ]
     },
     {
       "id": "mactrade-vorgaenger-69821.0054",
@@ -6166,6 +6317,8 @@
       "productId": "69821.0054",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054",
       "description": "6'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 86,
       "valueIndex": 0.0182,
       "effectivePrice": 4719,
@@ -6207,6 +6360,8 @@
       "productId": "69814.0003",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 85,
       "valueIndex": 0.0183,
       "effectivePrice": 4649,
@@ -6248,6 +6403,8 @@
       "productId": "69821.0054",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-16-silber-nanoglas-m4max-16-40-48gb-2tbssd/69821.0054",
       "description": "6'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 85,
       "valueIndex": 0.018,
       "effectivePrice": 4719,
@@ -6289,6 +6446,8 @@
       "productId": "69814.0003",
       "link": "https://www.mactrade.de/cto-apple-macbook-pro-14-m4-space-schwarz-m4max-14-32-36gb-4tbssd/69814.0003",
       "description": "14'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Max Chip mit 14-Core CPU, 32-Core GPU, 16-Core Neural Engine 36 GB gemeinsamer Arbeitsspeicher 1 TB SSD Speicher 96W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 25000,
+      "metal_gpu": 110000,
       "workflowScore": 84,
       "valueIndex": 0.0181,
       "effectivePrice": 4649,
@@ -6308,45 +6467,228 @@
       "valueScore": 0.0181
     },
     {
-      "id": "idealo-m5-32gb-1024gb-silber-neu",
+      "id": "idealo-m5-36gb-2048gb-space-schwarz-neu",
       "sourceKey": "idealo-m5-14",
       "sourceType": "idealo",
-      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209562388_-macbook-pro-14-m5-2026-apple.html",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597266_-macbook-pro-14-m5-2026-space-schwarz-mgdu4d-a-apple.html",
       "vendor": "Apple",
-      "title": "Apple MacBook Pro 14 M5 – 32 GB, 1 TB, Silber",
+      "title": "Apple MacBook Pro 14 M5 – 36 GB, 2 TB, Space Schwarz",
       "model": "MacBook Pro 14",
       "chip": "M5",
       "year": 2026,
       "condition": "neu",
-      "price": 2129,
+      "price": 3699,
       "currency": "EUR",
-      "ramGb": 32,
-      "storageGb": 1024,
-      "cpuCores": 10,
-      "gpuCores": 10,
+      "ramGb": 36,
+      "storageGb": 2048,
+      "cpuCores": 18,
+      "gpuCores": 32,
       "screenInches": 14,
-      "color": "Silber",
-      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=1f19308fdfcdc758531d7086dd07dad3&pos=1&price=2129.25&productid=209562388&sid=279743&type=offer",
-      "gb6_mc": 16000,
-      "metal_gpu": 60000,
+      "color": "Space Schwarz",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=d081d21dcd60ee4567c813a5bb6e8479&pos=1&price=3699.00&productid=209597266&sid=4640&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
       "resolveScore": 83,
-      "valueScore": 0.039,
+      "valueScore": 0.0224,
       "workflowScore": 83,
-      "valueIndex": 0.039,
-      "effectivePrice": 2129,
+      "valueIndex": 0.0224,
+      "effectivePrice": 3699,
       "scoreBreakdown": {
-        "chip": 41,
-        "ram": 17,
-        "ssd": 7,
+        "chip": 37,
+        "ram": 19,
+        "ssd": 9,
         "thermal": 6,
         "condition": 12,
         "total": 83
       },
       "scoreConfidence": 0.99,
       "scoreStatus": "ok",
-      "redFlags": [],
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
+        "GPU-Benchmark unter Erwartung für diesen Chip"
+      ],
       "warnings": [
-        "Kein Lookup-Eintrag für \"M5_Pro_10\" – Fallback aktiv"
+        "Kein Lookup-Eintrag für \"M5_Base_32\" – Fallback aktiv"
+      ]
+    },
+    {
+      "id": "idealo-m5-36gb-2048gb-silber-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209597263_-macbook-pro-14-m5-2026-silber-mgdq4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 36 GB, 2 TB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 3725,
+      "currency": "EUR",
+      "ramGb": 36,
+      "storageGb": 2048,
+      "cpuCores": 18,
+      "gpuCores": 32,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.21&productid=209597263&sid=20481&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 83,
+      "valueScore": 0.0223,
+      "workflowScore": 83,
+      "valueIndex": 0.0223,
+      "effectivePrice": 3725,
+      "scoreBreakdown": {
+        "chip": 37,
+        "ram": 19,
+        "ssd": 9,
+        "thermal": 6,
+        "condition": 12,
+        "total": 83
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
+        "GPU-Benchmark unter Erwartung für diesen Chip"
+      ],
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M5_Base_32\" – Fallback aktiv"
+      ]
+    },
+    {
+      "id": "mactrade-vorgaenger-69818.0006",
+      "sourceKey": "mactrade-vorgaenger",
+      "sourceType": "mactrade",
+      "sourceUrl": "https://www.mactrade.de/restposten/vorgaengermodelle/mac/",
+      "vendor": "Apple",
+      "title": "RP // Apple MacBook Pro 16'' M4 Pro 14-Core CPU 20-Core GPU - 512GB - 48GB Space Schwarz - 2024",
+      "variant": "48 GB;512 GB;Apple M4 Pro mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine;Standard-Display",
+      "model": "MacBook Pro 16",
+      "chip": "M4 Pro",
+      "year": 2024,
+      "condition": "vorgaengermodell",
+      "price": 2921.15,
+      "currency": "EUR",
+      "ramGb": 48,
+      "storageGb": 512,
+      "cpuCores": 14,
+      "gpuCores": 20,
+      "screenInches": 16,
+      "color": "Space Schwarz",
+      "productId": "69818.0006",
+      "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006",
+      "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 48 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
+      "workflowScore": 77,
+      "valueIndex": 0.0264,
+      "effectivePrice": 2921.15,
+      "scoreBreakdown": {
+        "chip": 34,
+        "ram": 21,
+        "ssd": 4,
+        "thermal": 8,
+        "condition": 10,
+        "total": 77
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+      ],
+      "warnings": [],
+      "resolveScore": 77,
+      "valueScore": 0.0264
+    },
+    {
+      "id": "mactrade-aware-69818.0006",
+      "sourceKey": "mactrade-aware",
+      "sourceType": "mactrade",
+      "sourceUrl": "https://www.mactrade.de/restposten/a-ware/mac/",
+      "vendor": "Apple",
+      "title": "RP // Apple MacBook Pro 16'' M4 Pro 14-Core CPU 20-Core GPU - 512GB - 48GB Space Schwarz - 2024",
+      "variant": "48 GB;512 GB;Apple M4 Pro mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine;Standard-Display",
+      "model": "MacBook Pro 16",
+      "chip": "M4 Pro",
+      "year": 2024,
+      "condition": "a-ware",
+      "price": 2921.15,
+      "currency": "EUR",
+      "ramGb": 48,
+      "storageGb": 512,
+      "cpuCores": 14,
+      "gpuCores": 20,
+      "screenInches": 16,
+      "color": "Space Schwarz",
+      "productId": "69818.0006",
+      "link": "https://www.mactrade.de/rp-apple-macbook-pro-16-m4-pro-14-core-cpu-20-core-gpu-512gb-48gb-space-schwarz-2024/69818.0006",
+      "description": "16'' Liquid Retina XDR Display◊ Standard-Display Apple M4 Pro Chip mit 14-Core CPU, 20-Core GPU, 16-Core Neural Engine 48 GB gemeinsamer Arbeitsspeicher 512 GB SSD Speicher 140W USB-C Power Adapter Drei Thunderbolt 5 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz, Kopfhörer∆anschluss, MagSafe 3 Anschluss Beleuchtetes Magic Keyboard mit Touch ID – Deutsch",
+      "gb6_mc": 22000,
+      "metal_gpu": 80000,
+      "workflowScore": 76,
+      "valueIndex": 0.026,
+      "effectivePrice": 2921.15,
+      "scoreBreakdown": {
+        "chip": 34,
+        "ram": 21,
+        "ssd": 4,
+        "thermal": 8,
+        "condition": 9,
+        "total": 76
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "SSD knapp für Cache, Proxy- und Arbeitsmedien"
+      ],
+      "warnings": [],
+      "resolveScore": 76,
+      "valueScore": 0.026
+    },
+    {
+      "id": "idealo-m5-24gb-2048gb-silber-neu",
+      "sourceKey": "idealo-m5-14",
+      "sourceType": "idealo",
+      "sourceUrl": "https://www.idealo.de/preisvergleich/OffersOfProduct/209598905_-macbook-pro-14-m5-2026-silber-mjlv4d-a-apple.html",
+      "vendor": "Apple",
+      "title": "Apple MacBook Pro 14 M5 – 24 GB, 2 TB, Silber",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": 2026,
+      "condition": "neu",
+      "price": 2698,
+      "currency": "EUR",
+      "ramGb": 24,
+      "storageGb": 2048,
+      "cpuCores": 15,
+      "gpuCores": 16,
+      "screenInches": 14,
+      "color": "Silber",
+      "link": "https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=78ef1ba5a3083d009c4bcb0e23b43c7e&pos=1&price=2698.48&productid=209598905&sid=20481&type=offer",
+      "gb6_mc": 0,
+      "metal_gpu": 0,
+      "resolveScore": 75,
+      "valueScore": 0.0278,
+      "workflowScore": 75,
+      "valueIndex": 0.0278,
+      "effectivePrice": 2698,
+      "scoreBreakdown": {
+        "chip": 34,
+        "ram": 14,
+        "ssd": 9,
+        "thermal": 6,
+        "condition": 12,
+        "total": 75
+      },
+      "scoreConfidence": 0.99,
+      "scoreStatus": "ok",
+      "redFlags": [
+        "Basis-Chip für diesen Workflow nur eingeschränkt geeignet",
+        "GPU-Benchmark unter Erwartung für diesen Chip"
+      ],
+      "warnings": [
+        "Kein Lookup-Eintrag für \"M5_Base_16\" – Fallback aktiv"
       ]
     }
   ]
