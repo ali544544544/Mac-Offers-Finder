@@ -170,6 +170,8 @@ function renderOfferCard(offer, isBest = false, index = 0) {
         <div class="detail-item">${ICON.metal}<div><span>Metal GPU</span><strong>${offer.metal_gpu || "k.A."}</strong></div></div>
       </div>
 
+      ${renderScoringDetails(offer)}
+
       <div class="offer-actions">
         <a class="offer-link" href="${offer.link || "#"}" target="_blank" rel="noopener noreferrer">
           Zum Angebot →
@@ -177,6 +179,69 @@ function renderOfferCard(offer, isBest = false, index = 0) {
       </div>
     </article>
   `;
+}
+
+function renderScoringDetails(offer) {
+  if (!offer.scoreBreakdown && !offer.redFlags?.length && !offer.warnings?.length) {
+    return "";
+  }
+
+  const b = offer.scoreBreakdown || {};
+  const reds = offer.redFlags || [];
+  const warns = offer.warnings || [];
+  const confidence = offer.scoreConfidence ?? 1.0;
+  const status = offer.scoreStatus || "ok";
+
+  let html = `<div class="scoring-details">`;
+
+  // Status Badge
+  const statusClass = status === "ok" ? "status-ok" : "status-estimated";
+  const statusLabel = status === "ok" ? "Geprüft" : status === "estimated" ? "Geschätzt" : "Unvollständig";
+  
+  // Breakdown
+  html += `
+    <div class="breakdown-grid">
+      <div class="breakdown-item" title="Chip Score">
+        <span class="breakdown-label">Chip</span>
+        <span class="breakdown-value">${b.chip ?? 0}</span>
+      </div>
+      <div class="breakdown-item" title="RAM Score">
+        <span class="breakdown-label">RAM</span>
+        <span class="breakdown-value">${b.ram ?? 0}</span>
+      </div>
+      <div class="breakdown-item" title="SSD Score">
+        <span class="breakdown-label">SSD</span>
+        <span class="breakdown-value">${b.ssd ?? 0}</span>
+      </div>
+      <div class="breakdown-item" title="Zustand Score">
+        <span class="breakdown-label">Zustand</span>
+        <span class="breakdown-value">${b.condition ?? 0}</span>
+      </div>
+    </div>
+  `;
+
+  // Alerts
+  if (reds.length || warns.length) {
+    html += `<div class="alerts-zone">`;
+    reds.forEach(r => {
+      html += `<div class="alert-item alert-red">🚫 ${esc(r)}</div>`;
+    });
+    warns.forEach(w => {
+      html += `<div class="alert-item alert-warning">⚠️ ${esc(w)}</div>`;
+    });
+    html += `</div>`;
+  }
+
+  // Footer: Confidence & Status
+  html += `
+    <div style="display:flex; justify-content: space-between; align-items: center;">
+      <span class="status-badge ${statusClass}">${statusLabel}</span>
+      <div class="confidence-info">Vertrauen: ${Math.round(confidence * 100)}%</div>
+    </div>
+  `;
+
+  html += `</div>`;
+  return html;
 }
 
 function uniqueSorted(values) {

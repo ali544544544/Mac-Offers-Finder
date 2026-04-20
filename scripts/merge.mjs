@@ -10,7 +10,7 @@
  */
 
 import fs from "node:fs/promises";
-import { enrichOffers, pickBestOffers } from "./score.mjs";
+import { enrichOffers, pickBestOffers } from "./scoring/index.js";
 
 const INTERNAL_RAW = "data/internal-raw.json";
 const IDEALO_RAW   = "data/idealo-raw.json";
