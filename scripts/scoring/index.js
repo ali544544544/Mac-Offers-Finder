@@ -3,6 +3,7 @@
 
 import { normalizeOffer } from "./normalizeOffer.js";
 import { scoreListing } from "./scoreListing.js";
+import { lookupBenchmarks } from "./benchmarks.js";
 
 /**
  * Scores a single raw offer object.
@@ -15,8 +16,14 @@ import { scoreListing } from "./scoreListing.js";
 export function scoreOffer(offer) {
   const normalized = normalizeOffer(offer);
   const result     = scoreListing(normalized);
+  const benches    = lookupBenchmarks(normalized.chipFamily, normalized.cpuCores, normalized.gpuCores);
+
   return {
     ...offer,
+    // Benchmark-Werte aus Tabelle hinzufügen (falls Scraper sie nicht hat)
+    gb6_mc:           offer.gb6_mc || benches.gb6_mc,
+    metal_gpu:        offer.metal_gpu || benches.metal_gpu,
+
     workflowScore:    result.workflowScore,
     valueIndex:       result.valueIndex,
     effectivePrice:   result.effectivePriceEur,
