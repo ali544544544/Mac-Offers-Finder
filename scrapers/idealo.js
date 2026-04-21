@@ -109,6 +109,24 @@ export function parseChip(title, expectedChipBase) {
 }
 
 /**
+ * Leitet die genaue Chip-Variante (Basis/Pro/Max) aus CPU- und GPU-Kernanzahl ab.
+ * Wird als Fallback genutzt wenn der Seitentitel nur den Basis-Chip nennt.
+ *
+ * Bekannte Konfigurationen:
+ *   M4/M5 Basis:  10-Core CPU, 10-Core GPU
+ *   M4/M5 Pro:    12-Core CPU + 16-Core GPU  ODER  14-Core CPU + 20-Core GPU
+ *   M4/M5 Max:    14-Core CPU + 32-Core GPU  ODER  16-Core CPU + 40-Core GPU
+ */
+export function inferChipFromCores(baseChip, cpuCores, gpuCores) {
+  if (!cpuCores || !gpuCores) return baseChip;
+  // Max erkennen (hohe GPU-Kernzahl)
+  if (gpuCores >= 32) return `${baseChip} Max`;
+  // Pro erkennen (12+ CPU-Kerne, aber GPU < 32)
+  if (cpuCores >= 12) return `${baseChip} Pro`;
+  return baseChip;
+}
+
+/**
  * Extrahiert CPU- und GPU-Kerne aus einem Titel.
  * Muster: "12-Core CPU, 16-Core GPU"
  */
@@ -465,7 +483,7 @@ export async function scrapeVariant(page, variantUrl, product, condition, benchm
   const titleForParsing = offerData.titleRaw || pageTitle || "";
 
   // Chip: aus Seiten-Titel erkennen (z.B. "MacBook Pro 14 M4 Pro")
-  const chip = parseChip(pageTitle, product.chip);
+  let chip = parseChip(pageTitle, product.chip);
 
   // RAM + Storage aus Angebotstitel oder Seiten-Titel
   const combinedTitle = `${pageTitle} ${titleForParsing}`;
@@ -514,6 +532,16 @@ export async function scrapeVariant(page, variantUrl, product, condition, benchm
   color = color || null;
   cpuCores = cpuCores || (DEFAULT_CORES[chip]?.cpu ?? null);
   gpuCores = gpuCores || (DEFAULT_CORES[chip]?.gpu ?? null);
+
+  // Chip-Tier aus Kern-Anzahl ableiten falls Titel nur Basis-Chip nennt
+  // (Idealo-Variantseiten zeigen oft nur "M5" statt "M5 Pro" im Seitentitel)
+  const chipBase = product.chip; // z.B. "M5", "M4"
+  if (chip === chipBase && cpuCores && gpuCores) {
+    chip = inferChipFromCores(chipBase, cpuCores, gpuCores);
+    if (chip !== chipBase) {
+      console.log(`  [idealo] Chip aus Kerne abgeleitet: ${chipBase} → ${chip} (CPU ${cpuCores}, GPU ${gpuCores})`);
+    }
+  }
 
   // Benchmark-Werte aus benchmarks.json
   const bench = lookupBenchmark(benchmarks, chip, cpuCores, gpuCores);
