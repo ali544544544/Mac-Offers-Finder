@@ -1,0 +1,79 @@
+name: Manual Data Update
+
+on:
+  workflow_dispatch:
+    inputs:
+      update_type:
+        description: 'Update Type'
+        required: true
+        default: 'score_only'
+        type: choice
+        options:
+          - full_scrape
+          - score_only
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v5
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Abhängigkeiten installieren
+        run: npm install
+
+      - name: Playwright Browser installieren (nur für Full Scrape)
+        if: github.event.inputs.update_type == 'full_scrape'
+        run: npx playwright install --with-deps chromium
+
+      - name: Update ausführen (Full Scrape)
+        if: github.event.inputs.update_type == 'full_scrape'
+        run: npm run scrape
+
+      - name: Update ausführen (Score Update)
+        if: github.event.inputs.update_type == 'score_only'
+        run: npm run score:update
+
+      - name: Report erzeugen
+        run: npm run render:report
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/offers.json data/internal-raw.json data/idealo-raw.json report.md
+          git diff --cached --quiet || git commit -m "chore: manual update (${{ github.event.inputs.update_type }})"
+          git push
+
+      - name: Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Deploy-Artefakt vorbereiten
+        run: |
+          mkdir -p dist
+          cp -R web/* dist/
+          mkdir -p dist/data
+          cp data/offers.json dist/data/offers.json
+
+      - name: Pages-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Auf GitHub Pages deployen
+        id: deployment
+        uses: actions/deploy-pages@v4
