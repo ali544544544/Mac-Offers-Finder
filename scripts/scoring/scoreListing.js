@@ -119,8 +119,21 @@ export function scoreListing(input) {
     if (price.value) {
       // Value Index: pts/€ normalized to 0-100%.
       // 100% = M1 Max 64GB 2TB used @ ~€1700 (best historically recorded deal).
-      const ptsPerEuro = workflowScore / price.value;
-      valueIndex = +Math.min(100, (ptsPerEuro / VALUE_NORMALIZATION_FACTOR) * 100).toFixed(1);
+      const absolutePrice = price.value;
+      let valueEfficiency = workflowScore / absolutePrice;
+
+      // ─── Diminishing Returns Logic ──────────────────────────────────────────
+      // For machines costing more than €2500, we apply a "luxury/pro" penalty.
+      // While a €4500 machine might be 3x faster than a €1500 one, it is 
+      // rarely 3x more "valuable" to a typical price-conscious buyer.
+      if (absolutePrice > 2500) {
+        // Penalty: -15% efficiency for every €1000 above €2500, capped at 40% reduction.
+        const overshoot = (absolutePrice - 2500) / 1000;
+        const penaltyFactor = Math.max(0.60, 1 - (overshoot * 0.15));
+        valueEfficiency *= penaltyFactor;
+      }
+
+      valueIndex = +Math.min(100, (valueEfficiency / VALUE_NORMALIZATION_FACTOR) * 100).toFixed(1);
 
       // ─── Combined Allround Score ─────────────────────────────────────────────
       // Geometric mean of normalized Performance and Value.
