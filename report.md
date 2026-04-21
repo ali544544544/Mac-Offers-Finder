@@ -1,6 +1,6 @@
 # Aktuelle MacBook Pro Angebote
 
-Zuletzt aktualisiert: 21.4.2026, 10:22:34
+Zuletzt aktualisiert: 21.4.2026, 13:50:44
 
 | Modell | CPU/GPU | RAM | SSD | Preis | Händler | Link |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

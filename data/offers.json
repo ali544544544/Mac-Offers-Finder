@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T10:22:34.991Z",
+  "updatedAt": "2026-04-21T13:50:44.003Z",
   "sources": [
     {
       "key": "mactrade-vorgaenger",
@@ -64,8 +64,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.1,
-      "valueIndex": 60,
-      "combinedScore": 63.3,
+      "valueIndex": 40.7,
+      "combinedScore": 52.1,
       "effectivePrice": 4649,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -86,8 +86,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.1,
-      "valueScore": 60,
-      "allroundScore": 63.3
+      "valueScore": 40.7,
+      "allroundScore": 52.1
     },
     {
       "id": "mactrade-vorgaenger-71776.0064",
@@ -168,8 +168,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.3,
-      "valueIndex": 59.3,
-      "combinedScore": 63,
+      "valueIndex": 39.6,
+      "combinedScore": 51.5,
       "effectivePrice": 4719,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -190,8 +190,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.3,
-      "valueScore": 59.3,
-      "allroundScore": 63
+      "valueScore": 39.6,
+      "allroundScore": 51.5
     },
     {
       "id": "mactrade-vorgaenger-69811.0001",
@@ -378,8 +378,8 @@
       "gb6_mc": 22000,
       "metal_gpu": 80000,
       "workflowScore": 50,
-      "valueIndex": 59.6,
-      "combinedScore": 49.8,
+      "valueIndex": 55.9,
+      "combinedScore": 48.3,
       "effectivePrice": 2921.15,
       "scoreBreakdown": {
         "rawComputePts": 63,
@@ -402,8 +402,8 @@
       ],
       "warnings": [],
       "resolveScore": 50,
-      "valueScore": 59.6,
-      "allroundScore": 49.8
+      "valueScore": 55.9,
+      "allroundScore": 48.3
     },
     {
       "id": "mactrade-vorgaenger-69810.0007",
@@ -431,8 +431,8 @@
       "gb6_mc": 19000,
       "metal_gpu": 70000,
       "workflowScore": 44.1,
-      "valueIndex": 44.5,
-      "combinedScore": 40.4,
+      "valueIndex": 38.1,
+      "combinedScore": 37.4,
       "effectivePrice": 3455,
       "scoreBreakdown": {
         "rawComputePts": 55,
@@ -453,8 +453,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 44.1,
-      "valueScore": 44.5,
-      "allroundScore": 40.4
+      "valueScore": 38.1,
+      "allroundScore": 37.4
     },
     {
       "id": "mactrade-gebraucht-68366",
@@ -697,8 +697,8 @@
       "gb6_mc": 26000,
       "metal_gpu": 125000,
       "workflowScore": 89.6,
-      "valueIndex": 70.3,
-      "combinedScore": 72.5,
+      "valueIndex": 49.9,
+      "combinedScore": 61,
       "effectivePrice": 4439,
       "scoreBreakdown": {
         "rawComputePts": 95,
@@ -719,8 +719,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 89.6,
-      "valueScore": 70.3,
-      "allroundScore": 72.5
+      "valueScore": 49.9,
+      "allroundScore": 61
     },
     {
       "id": "mactrade-aware-69814.0003",
@@ -748,8 +748,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.1,
-      "valueIndex": 60,
-      "combinedScore": 63.3,
+      "valueIndex": 40.7,
+      "combinedScore": 52.1,
       "effectivePrice": 4649,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -770,8 +770,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.1,
-      "valueScore": 60,
-      "allroundScore": 63.3
+      "valueScore": 40.7,
+      "allroundScore": 52.1
     },
     {
       "id": "mactrade-aware-71776.0064",
@@ -852,8 +852,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.3,
-      "valueIndex": 59.3,
-      "combinedScore": 63,
+      "valueIndex": 39.6,
+      "combinedScore": 51.5,
       "effectivePrice": 4719,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -874,8 +874,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.3,
-      "valueScore": 59.3,
-      "allroundScore": 63
+      "valueScore": 39.6,
+      "allroundScore": 51.5
     },
     {
       "id": "mactrade-aware-69811.0001",
@@ -1062,8 +1062,8 @@
       "gb6_mc": 22000,
       "metal_gpu": 80000,
       "workflowScore": 50,
-      "valueIndex": 59.6,
-      "combinedScore": 49.8,
+      "valueIndex": 55.9,
+      "combinedScore": 48.3,
       "effectivePrice": 2921.15,
       "scoreBreakdown": {
         "rawComputePts": 63,
@@ -1086,8 +1086,8 @@
       ],
       "warnings": [],
       "resolveScore": 50,
-      "valueScore": 59.6,
-      "allroundScore": 49.8
+      "valueScore": 55.9,
+      "allroundScore": 48.3
     },
     {
       "id": "mactrade-aware-69810.0007",
@@ -1115,8 +1115,8 @@
       "gb6_mc": 19000,
       "metal_gpu": 70000,
       "workflowScore": 44.1,
-      "valueIndex": 44.5,
-      "combinedScore": 40.4,
+      "valueIndex": 38.1,
+      "combinedScore": 37.4,
       "effectivePrice": 3455,
       "scoreBreakdown": {
         "rawComputePts": 55,
@@ -1137,8 +1137,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 44.1,
-      "valueScore": 44.5,
-      "allroundScore": 40.4
+      "valueScore": 38.1,
+      "allroundScore": 37.4
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -6851,10 +6851,10 @@
       "gb6_mc": 16000,
       "metal_gpu": 60000,
       "resolveScore": 37.8,
-      "valueScore": 46.7,
+      "valueScore": 44.5,
       "workflowScore": 37.8,
-      "valueIndex": 46.7,
-      "combinedScore": 38.4,
+      "valueIndex": 44.5,
+      "combinedScore": 37.4,
       "effectivePrice": 2819,
       "scoreBreakdown": {
         "rawComputePts": 47,
@@ -6876,7 +6876,7 @@
         "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
       "warnings": [],
-      "allroundScore": 38.4
+      "allroundScore": 37.4
     },
     {
       "id": "idealo-m5-24gb-2048gb-space-schwarz-neu",
@@ -6901,10 +6901,10 @@
       "gb6_mc": 16000,
       "metal_gpu": 60000,
       "resolveScore": 37.8,
-      "valueScore": 47.1,
+      "valueScore": 44.9,
       "workflowScore": 37.8,
-      "valueIndex": 47.1,
-      "combinedScore": 38.5,
+      "valueIndex": 44.9,
+      "combinedScore": 37.6,
       "effectivePrice": 2799,
       "scoreBreakdown": {
         "rawComputePts": 47,
@@ -6926,7 +6926,7 @@
         "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
       "warnings": [],
-      "allroundScore": 38.5
+      "allroundScore": 37.6
     },
     {
       "id": "idealo-m5pro-24gb-2048gb-silber-neu",
@@ -6951,10 +6951,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 71.8,
-      "valueScore": 93.9,
+      "valueScore": 91.6,
       "workflowScore": 71.8,
-      "valueIndex": 93.9,
-      "combinedScore": 75,
+      "valueIndex": 91.6,
+      "combinedScore": 74,
       "effectivePrice": 2665,
       "scoreBreakdown": {
         "rawComputePts": 89,
@@ -6978,7 +6978,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 75
+      "allroundScore": 74
     },
     {
       "id": "idealo-m5max-36gb-2048gb-space-schwarz-neu",
@@ -7003,10 +7003,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 111.4,
-      "valueScore": 100,
+      "valueScore": 94.3,
       "workflowScore": 111.4,
-      "valueIndex": 100,
-      "combinedScore": 96.4,
+      "valueIndex": 94.3,
+      "combinedScore": 93.6,
       "effectivePrice": 3499,
       "scoreBreakdown": {
         "rawComputePts": 117,
@@ -7030,7 +7030,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 96.4
+      "allroundScore": 93.6
     },
     {
       "id": "idealo-m5-xgb-2048gb-space-schwarz-neu",
@@ -7055,10 +7055,10 @@
       "gb6_mc": 16000,
       "metal_gpu": 60000,
       "resolveScore": 17.8,
-      "valueScore": 23.2,
+      "valueScore": 22.6,
       "workflowScore": 17.8,
-      "valueIndex": 23.2,
-      "combinedScore": 18.6,
+      "valueIndex": 22.6,
+      "combinedScore": 18.3,
       "effectivePrice": 2673,
       "scoreBreakdown": {
         "rawComputePts": 47,
@@ -7081,7 +7081,7 @@
         "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
       "warnings": [],
-      "allroundScore": 18.6
+      "allroundScore": 18.3
     },
     {
       "id": "idealo-m5max-36gb-2048gb-silber-neu",
@@ -7106,10 +7106,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 111.4,
-      "valueScore": 100,
+      "valueScore": 85.1,
       "workflowScore": 111.4,
-      "valueIndex": 100,
-      "combinedScore": 96.4,
+      "valueIndex": 85.1,
+      "combinedScore": 88.9,
       "effectivePrice": 3725,
       "scoreBreakdown": {
         "rawComputePts": 117,
@@ -7133,7 +7133,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 96.4
+      "allroundScore": 88.9
     },
     {
       "id": "idealo-m5-48gb-1024gb-space-schwarz-neu",
@@ -7158,10 +7158,10 @@
       "gb6_mc": 16000,
       "metal_gpu": 60000,
       "resolveScore": 44.3,
-      "valueScore": 56.1,
+      "valueScore": 54.1,
       "workflowScore": 44.3,
-      "valueIndex": 56.1,
-      "combinedScore": 45.5,
+      "valueIndex": 54.1,
+      "combinedScore": 44.7,
       "effectivePrice": 2749,
       "scoreBreakdown": {
         "rawComputePts": 47,
@@ -7183,7 +7183,7 @@
         "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
       "warnings": [],
-      "allroundScore": 45.5
+      "allroundScore": 44.7
     },
     {
       "id": "idealo-m5pro-24gb-1024gb-space-schwarz-neu",
@@ -7260,10 +7260,10 @@
       "gb6_mc": 16000,
       "metal_gpu": 60000,
       "resolveScore": 46.5,
-      "valueScore": 48.7,
+      "valueScore": 42.6,
       "workflowScore": 46.5,
-      "valueIndex": 48.7,
-      "combinedScore": 43.4,
+      "valueIndex": 42.6,
+      "combinedScore": 40.6,
       "effectivePrice": 3329,
       "scoreBreakdown": {
         "rawComputePts": 47,
@@ -7285,7 +7285,7 @@
         "Basis-Chip für diesen Workflow nur eingeschränkt geeignet"
       ],
       "warnings": [],
-      "allroundScore": 43.4
+      "allroundScore": 40.6
     }
   ],
   "bestOffers": [
@@ -7312,10 +7312,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 111.4,
-      "valueScore": 100,
+      "valueScore": 94.3,
       "workflowScore": 111.4,
-      "valueIndex": 100,
-      "combinedScore": 96.4,
+      "valueIndex": 94.3,
+      "combinedScore": 93.6,
       "effectivePrice": 3499,
       "scoreBreakdown": {
         "rawComputePts": 117,
@@ -7339,7 +7339,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 96.4
+      "allroundScore": 93.6
     },
     {
       "id": "idealo-m5max-36gb-2048gb-silber-neu",
@@ -7364,10 +7364,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 111.4,
-      "valueScore": 100,
+      "valueScore": 85.1,
       "workflowScore": 111.4,
-      "valueIndex": 100,
-      "combinedScore": 96.4,
+      "valueIndex": 85.1,
+      "combinedScore": 88.9,
       "effectivePrice": 3725,
       "scoreBreakdown": {
         "rawComputePts": 117,
@@ -7391,7 +7391,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 96.4
+      "allroundScore": 88.9
     },
     {
       "id": "mactrade-gebraucht-72129",
@@ -7419,8 +7419,8 @@
       "gb6_mc": 26000,
       "metal_gpu": 125000,
       "workflowScore": 89.6,
-      "valueIndex": 70.3,
-      "combinedScore": 72.5,
+      "valueIndex": 49.9,
+      "combinedScore": 61,
       "effectivePrice": 4439,
       "scoreBreakdown": {
         "rawComputePts": 95,
@@ -7441,8 +7441,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 89.6,
-      "valueScore": 70.3,
-      "allroundScore": 72.5
+      "valueScore": 49.9,
+      "allroundScore": 61
     },
     {
       "id": "mactrade-vorgaenger-69821.0054",
@@ -7470,8 +7470,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.3,
-      "valueIndex": 59.3,
-      "combinedScore": 63,
+      "valueIndex": 39.6,
+      "combinedScore": 51.5,
       "effectivePrice": 4719,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -7492,8 +7492,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.3,
-      "valueScore": 59.3,
-      "allroundScore": 63
+      "valueScore": 39.6,
+      "allroundScore": 51.5
     },
     {
       "id": "mactrade-aware-69821.0054",
@@ -7521,8 +7521,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.3,
-      "valueIndex": 59.3,
-      "combinedScore": 63,
+      "valueIndex": 39.6,
+      "combinedScore": 51.5,
       "effectivePrice": 4719,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -7543,8 +7543,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.3,
-      "valueScore": 59.3,
-      "allroundScore": 63
+      "valueScore": 39.6,
+      "allroundScore": 51.5
     },
     {
       "id": "mactrade-vorgaenger-69814.0003",
@@ -7572,8 +7572,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.1,
-      "valueIndex": 60,
-      "combinedScore": 63.3,
+      "valueIndex": 40.7,
+      "combinedScore": 52.1,
       "effectivePrice": 4649,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -7594,8 +7594,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.1,
-      "valueScore": 60,
-      "allroundScore": 63.3
+      "valueScore": 40.7,
+      "allroundScore": 52.1
     },
     {
       "id": "mactrade-aware-69814.0003",
@@ -7623,8 +7623,8 @@
       "gb6_mc": 25000,
       "metal_gpu": 110000,
       "workflowScore": 80.1,
-      "valueIndex": 60,
-      "combinedScore": 63.3,
+      "valueIndex": 40.7,
+      "combinedScore": 52.1,
       "effectivePrice": 4649,
       "scoreBreakdown": {
         "rawComputePts": 85,
@@ -7645,8 +7645,8 @@
       "redFlags": [],
       "warnings": [],
       "resolveScore": 80.1,
-      "valueScore": 60,
-      "allroundScore": 63.3
+      "valueScore": 40.7,
+      "allroundScore": 52.1
     },
     {
       "id": "idealo-m5pro-24gb-2048gb-silber-neu",
@@ -7671,10 +7671,10 @@
       "gb6_mc": 0,
       "metal_gpu": 0,
       "resolveScore": 71.8,
-      "valueScore": 93.9,
+      "valueScore": 91.6,
       "workflowScore": 71.8,
-      "valueIndex": 93.9,
-      "combinedScore": 75,
+      "valueIndex": 91.6,
+      "combinedScore": 74,
       "effectivePrice": 2665,
       "scoreBreakdown": {
         "rawComputePts": 89,
@@ -7698,7 +7698,7 @@
       "warnings": [
         "Benchmarks geschätzt – Score weniger präzise"
       ],
-      "allroundScore": 75
+      "allroundScore": 74
     },
     {
       "id": "idealo-m5pro-24gb-1024gb-space-schwarz-neu",
@@ -7778,8 +7778,8 @@
       "gb6_mc": 22000,
       "metal_gpu": 80000,
       "workflowScore": 50,
-      "valueIndex": 59.6,
-      "combinedScore": 49.8,
+      "valueIndex": 55.9,
+      "combinedScore": 48.3,
       "effectivePrice": 2921.15,
       "scoreBreakdown": {
         "rawComputePts": 63,
@@ -7802,8 +7802,8 @@
       ],
       "warnings": [],
       "resolveScore": 50,
-      "valueScore": 59.6,
-      "allroundScore": 49.8
+      "valueScore": 55.9,
+      "allroundScore": 48.3
     }
   ]
 }
