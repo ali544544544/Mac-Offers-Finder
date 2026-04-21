@@ -1,6 +1,6 @@
 # Aktuelle MacBook Pro Angebote
 
-Zuletzt aktualisiert: 21.4.2026, 08:51:07
+Zuletzt aktualisiert: 21.4.2026, 10:22:34
 
 | Modell | CPU/GPU | RAM | SSD | Preis | Händler | Link |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -135,9 +135,9 @@ Zuletzt aktualisiert: 21.4.2026, 08:51:07
 | MacBook Pro 14 | 10/10 | 24GB | 2048GB | 2.819 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=39f2a9a8799264ee336b7331258b0683&pos=1&price=2819.00&productid=209597262&sid=322253&type=offer) |
 | MacBook Pro 14 | 10/10 | 24GB | 2048GB | 2.799 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=2c788c0f23bb360a774ccaf4598d4acb&pos=1&price=2799.00&productid=209597265&sid=322253&type=offer) |
 | MacBook Pro 14 | 15/16 | 24GB | 2048GB | 2.665 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=f34a7fe6697962828f80f43ddedc1016&pos=1&price=2665.05&productid=209598905&sid=279743&type=offer) |
+| MacBook Pro 14 | 10/32 | 36GB | 2048GB | 3.499 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=982ae4476a31a81f34cf869c762f600c&pos=1&price=3499.00&productid=209597266&sid=326031&type=offer) |
 | MacBook Pro 14 | 10/10 | ?GB | 2048GB | 2.673 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=aa66c9c50341d632c8e22e0424ac1316&pos=1&price=2673.32&productid=209598898&sid=9701&type=offer) |
-| MacBook Pro 14 | 18/32 | 36GB | 2048GB | 3.566 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=4f150fa046a2a72b7bc1de2de61a783f&pos=1&price=3565.77&productid=209597266&sid=295945&type=offer) |
-| MacBook Pro 14 | 10/10 | 36GB | 2048GB | 3.725 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=5f6150eaa03aec165b585fd8a813f33a&pos=1&price=3725.15&productid=209597263&sid=5300&type=offer) |
+| MacBook Pro 14 | 18/32 | 36GB | 2048GB | 3.725 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=563608c499c66aa4a0e53475090979d3&pos=1&price=3725.14&productid=209597263&sid=20481&type=offer) |
 | MacBook Pro 14 | 10/10 | 48GB | 1024GB | 2.749 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=61970231426497d53e6e0f31a38cb1e2&pos=1&price=2749.00&productid=209673525&sid=6980&type=offer) |
 | MacBook Pro 14 | 15/16 | 24GB | 1024GB | 2.455 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=f509444c0c85aeb2e560ff28b8b46c43&pos=1&price=2454.73&productid=209850473&sid=20481&type=offer) |
 | MacBook Pro 14 | 10/10 | 64GB | 1024GB | 3.329 € | Apple | [Link](https://www.idealo.de/relocator/relocate?categoryId=3751&offerKey=fa1cec5748e612a33dc189c48cc326be&pos=1&price=3329.00&productid=209673534&sid=6980&type=offer) |
