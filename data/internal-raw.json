@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-02T09:03:50.660Z",
+  "scrapedAt": "2026-05-03T09:58:25.034Z",
   "sources": [
     {
       "key": "mactrade-vorgaenger",
@@ -973,6 +973,30 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE14D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -992,7 +1016,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1016,7 +1040,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1040,7 +1064,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1064,7 +1088,55 @@
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell."
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH0D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-11",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KL0D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/g1kl0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1088,7 +1160,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1112,7 +1184,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1136,7 +1208,31 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-15",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1939,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH1D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh1d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1160,7 +1256,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1184,7 +1280,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1208,7 +1304,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1232,7 +1328,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1256,7 +1352,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1280,31 +1376,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-18",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-22",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1328,7 +1400,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-23",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1352,7 +1424,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-21",
+      "id": "apple-refurbished-mbp-24",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1376,7 +1448,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-22",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1400,7 +1472,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-23",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1424,7 +1496,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-24",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1448,31 +1520,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Silber",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2209,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KN8D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kn8d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1496,7 +1544,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1520,7 +1568,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-30",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1542,54 +1590,6 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g17h0d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
-    },
-    {
-      "id": "apple-refurbished-mbp-29",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Silber",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FP3D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1fp3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
-    },
-    {
-      "id": "apple-refurbished-mbp-30",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FT3D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1ft3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -1693,6 +1693,30 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE14D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -1712,7 +1736,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1736,7 +1760,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1760,7 +1784,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1784,7 +1808,55 @@
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell."
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH0D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-11",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KL0D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/g1kl0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1808,7 +1880,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1832,7 +1904,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1856,7 +1928,31 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-15",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1939,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH1D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh1d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1880,7 +1976,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1904,7 +2000,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1928,7 +2024,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1952,7 +2048,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -1976,7 +2072,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2000,31 +2096,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-18",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-22",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2048,7 +2120,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-23",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2072,7 +2144,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-21",
+      "id": "apple-refurbished-mbp-24",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2096,7 +2168,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-22",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2120,7 +2192,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-23",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2144,7 +2216,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-24",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2168,31 +2240,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Silber",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2209,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KN8D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kn8d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2216,7 +2264,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2240,7 +2288,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-30",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2262,54 +2310,6 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g17h0d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
-    },
-    {
-      "id": "apple-refurbished-mbp-29",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Silber",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FP3D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1fp3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
-    },
-    {
-      "id": "apple-refurbished-mbp-30",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FT3D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1ft3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -2413,6 +2413,30 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE14D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -2432,7 +2456,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2456,7 +2480,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2480,7 +2504,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2504,7 +2528,55 @@
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell."
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH0D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-11",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KL0D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/g1kl0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2528,7 +2600,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2552,7 +2624,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2576,7 +2648,31 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-15",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1939,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH1D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh1d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2600,7 +2696,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2624,7 +2720,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2648,7 +2744,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2672,7 +2768,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2696,7 +2792,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2720,31 +2816,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-18",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-22",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2768,7 +2840,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-23",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2792,7 +2864,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-21",
+      "id": "apple-refurbished-mbp-24",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2816,7 +2888,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-22",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2840,7 +2912,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-23",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2864,7 +2936,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-24",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2888,31 +2960,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Silber",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2209,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KN8D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kn8d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2936,7 +2984,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2960,7 +3008,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-30",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -2982,54 +3030,6 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g17h0d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
-    },
-    {
-      "id": "apple-refurbished-mbp-29",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Silber",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FP3D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1fp3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
-    },
-    {
-      "id": "apple-refurbished-mbp-30",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FT3D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1ft3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
       "id": "apple-refurbished-mbp-1",
@@ -3133,6 +3133,30 @@
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
       "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1629,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "FDE14D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/fde14d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-6",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
       "title": "Refurbished 14\" MacBook Pro mit Apple M2 Pro Chip, 10-Core CPU und 16-Core GPU – Space Grau",
       "variant": "",
       "model": "MacBook Pro 14",
@@ -3152,7 +3176,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-6",
+      "id": "apple-refurbished-mbp-7",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3176,7 +3200,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-7",
+      "id": "apple-refurbished-mbp-8",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3200,7 +3224,7 @@
       "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
     },
     {
-      "id": "apple-refurbished-mbp-8",
+      "id": "apple-refurbished-mbp-9",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3224,7 +3248,55 @@
       "description": "Das MacBook Pro verfügt über die fortschrittlichsten Chips, die je für einen Pro Laptop entwickelt wurden. Phänomenale CPU Performance bei Aufgaben mit einem und mehreren Threads, schnellerer gemein-samer Arbeitsspeicher, verbesserte Beschleunigung für maschinelles Lernen – die M4 Chips sorgen für Geschwindig-keiten und Potenziale, die du nicht für möglich gehalten hättest. Und die leistungs-starke Neural Engine macht KI-Aufgaben wie das Upscaling von Bildern und Erstellen von Untertiteln sowie On-Device Apple Intelligence Features extrem schnell."
     },
     {
-      "id": "apple-refurbished-mbp-9",
+      "id": "apple-refurbished-mbp-10",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH0D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-11",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Silber",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1729,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KL0D/A",
+      "color": "Silber",
+      "link": "https://www.apple.com/de/shop/product/g1kl0d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Silber",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-12",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3248,7 +3320,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-10",
+      "id": "apple-refurbished-mbp-13",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3272,7 +3344,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-11",
+      "id": "apple-refurbished-mbp-14",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3296,7 +3368,31 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202414,2\" Liquid Retina XDR Display (35,97 cm Diagonale)¹; 3024 x 1964 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeitsspeicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-12",
+      "id": "apple-refurbished-mbp-15",
+      "sourceKey": "apple-refurbished-mbp",
+      "sourceType": "apple",
+      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
+      "vendor": "Apple",
+      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
+      "variant": "",
+      "model": "MacBook Pro 14",
+      "chip": "M5",
+      "year": null,
+      "condition": "refurbished",
+      "price": 1939,
+      "currency": "EUR",
+      "ramGb": null,
+      "storageGb": null,
+      "cpuCores": 10,
+      "gpuCores": 10,
+      "screenInches": 14,
+      "productId": "G1KH1D/A",
+      "color": "Space Schwarz",
+      "link": "https://www.apple.com/de/shop/product/g1kh1d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
+      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
+    },
+    {
+      "id": "apple-refurbished-mbp-16",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3320,7 +3416,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale),1 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1TB SSD2 Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-13",
+      "id": "apple-refurbished-mbp-17",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3344,7 +3440,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-14",
+      "id": "apple-refurbished-mbp-18",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3368,7 +3464,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-15",
+      "id": "apple-refurbished-mbp-19",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3392,7 +3488,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 512 GB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-16",
+      "id": "apple-refurbished-mbp-20",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3416,7 +3512,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-17",
+      "id": "apple-refurbished-mbp-21",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3440,31 +3536,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-18",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU – Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2049,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KK2D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1kk2d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Space-Schwarz",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-19",
+      "id": "apple-refurbished-mbp-22",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3488,7 +3560,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-20",
+      "id": "apple-refurbished-mbp-23",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3512,7 +3584,7 @@
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
     },
     {
-      "id": "apple-refurbished-mbp-21",
+      "id": "apple-refurbished-mbp-24",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3536,7 +3608,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-22",
+      "id": "apple-refurbished-mbp-25",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3560,7 +3632,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 2023 14,2\" Liquid Retina XDR Display (35,97 cm Diagonale);¹ 3024 x 1964 native Auflösung bei 254 ppi 18 GB gemeinsamer Arbeits-speicher 1 TB SSD² Touch ID 1080p FaceTime HD Kamera Drei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-23",
+      "id": "apple-refurbished-mbp-26",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3584,7 +3656,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-24",
+      "id": "apple-refurbished-mbp-27",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3608,31 +3680,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202316,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹; 3.456 x 2.234 native Auflösung bei 254 ppi18 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID1080p FaceTime HD KameraDrei Thunderbolt 4 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-25",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 14\" MacBook Pro mit Apple M5 Chip, 10-Core CPU und 10-Core GPU, Display mit Nanotextur – Silber",
-      "variant": "",
-      "model": "MacBook Pro 14",
-      "chip": "M5",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2209,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": null,
-      "cpuCores": 10,
-      "gpuCores": 10,
-      "screenInches": 14,
-      "productId": "G1KN8D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1kn8d/a/Refurbished-14-MacBook-Pro-mit-Apple-M5-Chip-10‑Core-CPU-und-10‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Neben einer schnelleren CPU und einem schnelleren gemeinsamen Arbeitsspeicher hat der M5 auch eine leistungsstärkere GPU mit einem Neural Accelerator in jedem Kern. So erreicht dieser Chip seine beschleunigte KI Performance. So erledigst du anspruchsvolle Workloads in unfassbarer Geschwindigkeit."
-    },
-    {
-      "id": "apple-refurbished-mbp-26",
+      "id": "apple-refurbished-mbp-28",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3656,7 +3704,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-27",
+      "id": "apple-refurbished-mbp-29",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3680,7 +3728,7 @@
       "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     },
     {
-      "id": "apple-refurbished-mbp-28",
+      "id": "apple-refurbished-mbp-30",
       "sourceKey": "apple-refurbished-mbp",
       "sourceType": "apple",
       "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
@@ -3702,54 +3750,6 @@
       "color": "Space Grau",
       "link": "https://www.apple.com/de/shop/product/g17h0d/a/refurbished-14-macbook-pro-mit-apple-m2-pro-chip-12-core-cpu-und-19-core-gpu-space-grau",
       "description": "Mit der Power des M2 Pro oder M2 Max ist das MacBook Pro jetzt so leistungsstark und effizient wie noch nie. Es liefert außergewöhnliche Performance, egal ob es am Strom hängt oder nicht, und das bei noch längerer Batterielaufzeit. Dazu hast du ein brillantes Liquid Retina XDR Display und alle Anschlüsse, die du brauchst – es ist ein Pro Laptop, an den kein anderer herankommt."
-    },
-    {
-      "id": "apple-refurbished-mbp-29",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Silber",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FP3D/A",
-      "color": "Silber",
-      "link": "https://www.apple.com/de/shop/product/g1fp3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Silber",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
-    },
-    {
-      "id": "apple-refurbished-mbp-30",
-      "sourceKey": "apple-refurbished-mbp",
-      "sourceType": "apple",
-      "sourceUrl": "https://www.apple.com/de/shop/refurbished/mac/macbook-pro",
-      "vendor": "Apple",
-      "title": "Refurbished 16\" MacBook Pro mit Apple M4 Pro Chip, 14-Core CPU und 20-Core GPU, Display mit Nanotextur - Space Schwarz",
-      "variant": "",
-      "model": "MacBook Pro 16",
-      "chip": "M4 Pro",
-      "year": null,
-      "condition": "refurbished",
-      "price": 2509,
-      "currency": "EUR",
-      "ramGb": null,
-      "storageGb": 512,
-      "cpuCores": 14,
-      "gpuCores": 20,
-      "screenInches": 16,
-      "productId": "G1FT3D/A",
-      "color": "Space Schwarz",
-      "link": "https://www.apple.com/de/shop/product/g1ft3d/a/Refurbished-16-MacBook-Pro-mit-Apple-M4-Pro-Chip-14‑Core-CPU-und-20‑Core-GPU-Display-mit-Nanotextur-Space-Schwarz",
-      "description": "Ursprüngliche Veröffentlichung: Oktober 202416,2\" Liquid Retina XDR Display (41,05 cm Diagonale)¹, 3456 x 2234 native Auflösung bei 254 ppi24 GB gemeinsamer Arbeits-speicher512 GB SSD²Touch ID12MP Center Stage Kamera mit Unterstützung für SchreibtischansichtDrei Thunderbolt 5 (USB-C) Anschlüsse"
     }
   ]
 }
