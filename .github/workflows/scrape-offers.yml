@@ -3,7 +3,7 @@ name: Scrape live offers
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 5 * * *'  # täglich um 05:00 UTC
+    - cron: '0 3 * * 1'  # täglich um 05:00 UTC
 
 permissions:
   contents: write
